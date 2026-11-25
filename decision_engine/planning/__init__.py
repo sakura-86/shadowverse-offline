@@ -1,13 +1,5 @@
 # -*- coding: utf-8 -*-
-"""新架构规划层。
-
-本包只导出**未被冻结**的规划基础设施。PUCT 搜索、proof search 与已证伪的
-value target 见 :mod:`decision_engine.planning.frozen`：它们在 tests / tools 中
-仍可 import（保留回归与诊断证据），但 ``decision_engine`` 主路径不得依赖。
-
-当前唯一有数据支撑的验收锚点见 :func:`decision_engine.planning.turn_planner.plan_turn`
-（严格配对镜像 12:0 完胜 PUCT(128 sims)）。
-"""
+"""规划层：搜索原语、评估函数与轨迹记录。"""
 
 from .result import PlanCandidate
 from .search_prior import PriorResult, SearchPrior, StructuredNeuralPrior, UniformSearchPrior
