@@ -1,0 +1,97 @@
+{
+  "class_id": 6,
+  "archetype_id": "guard_haven",
+  "archetype_label": null,
+  "format": null,
+  "cards": [
+    {
+      "card_id": 10161210,
+      "count": 2
+    },
+    {
+      "card_id": 10161211,
+      "count": 1
+    },
+    {
+      "card_id": 10162111,
+      "count": 1
+    },
+    {
+      "card_id": 10361121,
+      "count": 3
+    },
+    {
+      "card_id": 10863210,
+      "count": 3
+    },
+    {
+      "card_id": 10204120,
+      "count": 3
+    },
+    {
+      "card_id": 10464110,
+      "count": 3
+    },
+    {
+      "card_id": 10863110,
+      "count": 1
+    },
+    {
+      "card_id": 10364120,
+      "count": 1
+    },
+    {
+      "card_id": 10564110,
+      "count": 3
+    },
+    {
+      "card_id": 10864120,
+      "count": 1
+    },
+    {
+      "card_id": 10864121,
+      "count": 1
+    },
+    {
+      "card_id": 10264120,
+      "count": 3
+    },
+    {
+      "card_id": 10164120,
+      "count": 2
+    },
+    {
+      "card_id": 10164121,
+      "count": 1
+    },
+    {
+      "card_id": 10264110,
+      "count": 2
+    },
+    {
+      "card_id": 10264111,
+      "count": 1
+    },
+    {
+      "card_id": 10864110,
+      "count": 3
+    },
+    {
+      "card_id": 10464120,
+      "count": 2
+    },
+    {
+      "card_id": 10862111,
+      "count": 1
+    },
+    {
+      "card_id": 10804120,
+      "count": 1
+    },
+    {
+      "card_id": 10804121,
+      "count": 1
+    }
+  ],
+  "total_cards": 40
+}

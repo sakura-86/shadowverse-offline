@@ -1,0 +1,69 @@
+{
+  "class_id": 4,
+  "archetype_id": "set10_dragon_control_dragon",
+  "archetype_label": "控制龙",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 11003210,
+      "count": 3
+    },
+    {
+      "card_id": 11041110,
+      "count": 3
+    },
+    {
+      "card_id": 10843310,
+      "count": 1
+    },
+    {
+      "card_id": 11001110,
+      "count": 3
+    },
+    {
+      "card_id": 11042310,
+      "count": 3
+    },
+    {
+      "card_id": 11002110,
+      "count": 2
+    },
+    {
+      "card_id": 10042310,
+      "count": 3
+    },
+    {
+      "card_id": 11043310,
+      "count": 2
+    },
+    {
+      "card_id": 11043110,
+      "count": 3
+    },
+    {
+      "card_id": 10643110,
+      "count": 2
+    },
+    {
+      "card_id": 10944120,
+      "count": 3
+    },
+    {
+      "card_id": 10844120,
+      "count": 3
+    },
+    {
+      "card_id": 10804110,
+      "count": 3
+    },
+    {
+      "card_id": 11004110,
+      "count": 3
+    },
+    {
+      "card_id": 10544110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

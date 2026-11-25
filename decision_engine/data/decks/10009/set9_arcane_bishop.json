@@ -1,0 +1,69 @@
+{
+  "class_id": 6,
+  "archetype_id": "set9_arcane_bishop",
+  "archetype_label": null,
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10403120,
+      "count": 3
+    },
+    {
+      "card_id": 10861110,
+      "count": 3
+    },
+    {
+      "card_id": 10863210,
+      "count": 3
+    },
+    {
+      "card_id": 10461110,
+      "count": 3
+    },
+    {
+      "card_id": 10463210,
+      "count": 2
+    },
+    {
+      "card_id": 10763210,
+      "count": 3
+    },
+    {
+      "card_id": 10564110,
+      "count": 3
+    },
+    {
+      "card_id": 10864120,
+      "count": 3
+    },
+    {
+      "card_id": 10404110,
+      "count": 2
+    },
+    {
+      "card_id": 10862120,
+      "count": 3
+    },
+    {
+      "card_id": 10964110,
+      "count": 3
+    },
+    {
+      "card_id": 10963210,
+      "count": 2
+    },
+    {
+      "card_id": 10864110,
+      "count": 3
+    },
+    {
+      "card_id": 10963110,
+      "count": 2
+    },
+    {
+      "card_id": 10804120,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

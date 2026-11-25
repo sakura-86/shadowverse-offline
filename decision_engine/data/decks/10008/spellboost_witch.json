@@ -1,0 +1,69 @@
+{
+  "class_id": 3,
+  "archetype_id": "spellboost_witch",
+  "archetype_label": null,
+  "format": null,
+  "cards": [
+    {
+      "card_id": 10431121,
+      "count": 3
+    },
+    {
+      "card_id": 10031311,
+      "count": 3
+    },
+    {
+      "card_id": 10831311,
+      "count": 2
+    },
+    {
+      "card_id": 10831111,
+      "count": 3
+    },
+    {
+      "card_id": 10131311,
+      "count": 3
+    },
+    {
+      "card_id": 10531311,
+      "count": 3
+    },
+    {
+      "card_id": 10631311,
+      "count": 2
+    },
+    {
+      "card_id": 10832311,
+      "count": 2
+    },
+    {
+      "card_id": 10133311,
+      "count": 3
+    },
+    {
+      "card_id": 10833311,
+      "count": 3
+    },
+    {
+      "card_id": 10532121,
+      "count": 3
+    },
+    {
+      "card_id": 10834111,
+      "count": 3
+    },
+    {
+      "card_id": 10133321,
+      "count": 3
+    },
+    {
+      "card_id": 10534121,
+      "count": 2
+    },
+    {
+      "card_id": 10134311,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

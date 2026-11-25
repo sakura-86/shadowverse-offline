@@ -1,0 +1,69 @@
+{
+  "class_id": 5,
+  "archetype_id": "set10_nightmare_midrange_nightmare",
+  "archetype_label": "中速梦",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10851120,
+      "count": 3
+    },
+    {
+      "card_id": 10751120,
+      "count": 3
+    },
+    {
+      "card_id": 10951120,
+      "count": 3
+    },
+    {
+      "card_id": 11054120,
+      "count": 3
+    },
+    {
+      "card_id": 10651120,
+      "count": 2
+    },
+    {
+      "card_id": 10753310,
+      "count": 3
+    },
+    {
+      "card_id": 10551120,
+      "count": 1
+    },
+    {
+      "card_id": 10752110,
+      "count": 3
+    },
+    {
+      "card_id": 10754110,
+      "count": 3
+    },
+    {
+      "card_id": 10952110,
+      "count": 3
+    },
+    {
+      "card_id": 11054110,
+      "count": 3
+    },
+    {
+      "card_id": 10954110,
+      "count": 3
+    },
+    {
+      "card_id": 10854110,
+      "count": 1
+    },
+    {
+      "card_id": 10954120,
+      "count": 3
+    },
+    {
+      "card_id": 10754120,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

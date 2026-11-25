@@ -1,0 +1,73 @@
+{
+  "class_id": 7,
+  "archetype_id": "set10_nemesis_fusion_nemesis",
+  "archetype_label": "融合鱼",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10503210,
+      "count": 2
+    },
+    {
+      "card_id": 10703210,
+      "count": 2
+    },
+    {
+      "card_id": 11003210,
+      "count": 3
+    },
+    {
+      "card_id": 11073310,
+      "count": 3
+    },
+    {
+      "card_id": 11001110,
+      "count": 2
+    },
+    {
+      "card_id": 11071110,
+      "count": 3
+    },
+    {
+      "card_id": 10072210,
+      "count": 2
+    },
+    {
+      "card_id": 11002110,
+      "count": 3
+    },
+    {
+      "card_id": 10602210,
+      "count": 1
+    },
+    {
+      "card_id": 11072110,
+      "count": 3
+    },
+    {
+      "card_id": 11074120,
+      "count": 3
+    },
+    {
+      "card_id": 10874110,
+      "count": 2
+    },
+    {
+      "card_id": 11072310,
+      "count": 3
+    },
+    {
+      "card_id": 10974120,
+      "count": 2
+    },
+    {
+      "card_id": 11073110,
+      "count": 3
+    },
+    {
+      "card_id": 11074110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

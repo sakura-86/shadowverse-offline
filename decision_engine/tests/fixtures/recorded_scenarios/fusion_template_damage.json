@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_fusion_template_damage",
+  "metadata": {
+    "id": "fusion_template_damage",
+    "title": "Fusion template damage",
+    "description": "A fusion action consumes explicit material, records fusion count, and resolves a deterministic template damage effect."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [
+          {
+            "UniqueId": 21,
+            "CardId": 821,
+            "BaseCardId": 821,
+            "Name": "Fixture Fusion Source",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 1,
+            "MaxLife": 1,
+            "CardType": "follower"
+          },
+          {
+            "UniqueId": 22,
+            "CardId": 822,
+            "BaseCardId": 822,
+            "Name": "Fixture Fusion Material",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 1,
+            "MaxLife": 1,
+            "CardType": "follower"
+          }
+        ],
+        "FieldCards": [],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ],
+    "CanFusionCards": [21],
+    "SelectFusionMap": {
+      "21": {
+        "MaterialGroups": [[22]]
+      }
+    }
+  },
+  "transitions": [
+    {
+      "note": "Fusion consumes uid 22, records fusion count, and deals 3 damage to opponent leader via template effect.",
+      "action": {
+        "kind": "fusion",
+        "source_uid": 21,
+        "material_uids": [22]
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "Players": [
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [
+              {
+                "UniqueId": 21,
+                "CardId": 821,
+                "BaseCardId": 821,
+                "Name": "Fixture Fusion Source",
+                "Cost": 1,
+                "Atk": 1,
+                "Life": 1,
+                "MaxLife": 1,
+                "CardType": "follower",
+                "SupplementInfo": {"fusion_count": 1, "fusion_used_this_turn": 1}
+              }
+            ],
+            "FieldCards": [],
+            "GraveyardCount": 1,
+            "DestroyedCardIds": []
+          },
+          {
+            "Life": 17,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          }
+        ],
+        "CanFusionCards": [21]
+      }
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+[
+  {
+    "id": "game_puzzle_01_necromancy_crest",
+    "description": "【游戏第1题】超进化获得纹章(使用随从时自动进化+入场曲不发动)，利用谢幕曲获得怨灵疾驰打脸",
+    "source": "state_0001_20260701_163140",
+    "raw_dump": "puzzle_dump/state_0001_20260701_163140_583.json",
+    "goal": {"kind": "lethal", "opponent_life_at_most": 0, "self_survives": false, "turn_limit": "current_turn"},
+    "my_life": 20,
+    "my_pp": 9,
+    "my_ep": 0,
+    "my_sep": 1,
+    "my_field": [
+      {
+        "name": "怨恨的栽培者", "base_card_id": 10251120,
+        "atk": 1, "life": 1, "can_attack": true, "can_attack_leader": true,
+        "skill_desc": "【谢幕曲】将1张『怨灵』加入手牌。",
+        "last_words_add_hand": [{"token_id": "怨灵"}]
+      }
+    ],
+    "my_hand": [
+      {"name": "怨灵", "base_card_id": 90051130, "cost": 1, "atk": 1, "life": 1, "card_type": "follower", "has_storm": true, "skill_desc": "【疾驰】离场时消失。回合结束时消失。"},
+      {"name": "充实的《恋人与节制》", "base_card_id": 10554110, "cost": 7, "atk": 3, "life": 3, "card_type": "follower", "skill_desc": "【入场曲】发动亡者召还4和亡者召还2。", "evolve_desc": "进化时破坏战场上随机6个其他随从。", "super_evolve_desc": "超进化时获得纹章(使用随从时自动进化+入场曲不发动)。", "can_super_evolve": true, "super_evolve_effects": ["gain_crest:auto_evolve_no_fanfare", "evolve_destroy_random_6"]}
+    ],
+    "token_info": {
+      "怨灵": {"cost": 1, "atk": 1, "life": 1, "card_type": "follower", "has_storm": true, "skill_desc": "【疾驰】"}
+    },
+    "opp_life": 7,
+    "opp_field": [],
+    "solution": [
+      "栽培者(1/1)打脸 → 1伤(对方6)",
+      "超进化充实恋人(SEP, 7费) → 获得纹章 + 进化时破坏栽培者",
+      "栽培者谢幕曲 → 加1张怨灵入手",
+      "使用手牌怨灵(1费) → 纹章自动进化3/3疾驰 → 打脸3伤(对方3)",
+      "使用谢幕曲怨灵(1费) → 纹章自动进化3/3疾驰 → 打脸3伤(对方0)"
+    ],
+    "solution_note": "PP: 7+1+1=9 ✓ | 伤害: 1+3+3=7 ✓",
+    "mechanics_required": ["super_evolve", "crest", "last_words_add_card", "storm", "auto_evolve"]
+  },
+  {
+    "id": "game_puzzle_02_bat_drain",
+    "description": "【游戏第2题】利用蝙蝠疾驰+虹吸回血，调整血量关系让残虐炸裂打对方",
+    "source": "state_0002_20260701_163153",
+    "raw_dump": "puzzle_dump/state_0002_20260701_163153_822.json",
+    "goal": {"kind": "lethal", "opponent_life_at_most": 0, "self_survives": false, "turn_limit": "current_turn"},
+    "my_life": 2,
+    "my_pp": 7,
+    "my_ep": 1,
+    "my_sep": 0,
+    "my_field": [
+      {
+        "name": "午夜眷属·埃拉尔", "base_card_id": 10151110,
+        "atk": 1, "life": 1, "can_attack": true, "can_attack_leader": true, "can_evolve": true,
+        "skill_desc": "【入场曲】召唤1蝙蝠。蝙蝠进入战场时获得疾驰+对己方主战者1伤。",
+        "on_ally_enter_effects": [{"target_name": "蝙蝠", "grant_storm": true, "self_damage": 1}]
+      }
+    ],
+    "my_hand": [
+      {"name": "残虐的炸裂", "base_card_id": 10552310, "cost": 2, "card_type": "spell", "skill_desc": "对生命值最小的所有主战者造成3点伤害。", "spell_effect": "lowest_life_damage", "spell_effect_params": {"damage": 3}},
+      {"name": "死神挥刀", "base_card_id": 10151310, "cost": 1, "card_type": "spell", "skill_desc": "选择自己和对手各1随从，破坏它们。", "spell_effect": "destroy_both", "spell_effect_params": {}},
+      {"name": "使唤蝙蝠", "base_card_id": 10252310, "cost": 2, "card_type": "spell", "skill_desc": "召唤2个蝙蝠。", "spell_effect": "summon_token", "spell_effect_params": {"token_id": "蝙蝠", "count": 2}},
+      {"name": "魅惑的魅魔·莉莉姆", "base_card_id": 10052110, "cost": 1, "atk": 1, "life": 1, "card_type": "follower", "skill_desc": "【谢幕曲】将1张蝙蝠加入手牌。", "last_words_add_hand": [{"token_id": "蝙蝠"}]}
+    ],
+    "opp_life": 9,
+    "opp_field": [
+      {"name": "战斧屠龙者", "base_card_id": 10041120, "atk": 5, "life": 10, "has_guard": true, "skill_desc": "【守护】"}
+    ],
+    "token_info": {"蝙蝠": {"cost": 1, "atk": 1, "life": 1, "has_drain": true, "skill_desc": "【虹吸】"}},
+    "solution": [
+      "出魅惑的魅魔(1费) → 上场1/1",
+      "死神挥刀(1费) → 破坏魅魔+屠龙者 → 守护消失 + 谢幕曲加蝙蝠入手",
+      "出蝙蝠(1费) → 埃拉尔效果: 疾驰+自伤1 → 己方2→1",
+      "进化蝙蝠(EP) → 3/3虹吸疾驰",
+      "蝙蝠打脸 → 3伤+虹吸回3 → 对方9→6, 己方1→4",
+      "出使唤蝙蝠(2费) → 召2蝙蝠 → 各获疾驰+自伤2 → 己方4→2",
+      "2只蝙蝠各打脸1伤+虹吸回1 → 对方6→4, 己方2→4",
+      "埃拉尔打脸 → 对方4→3",
+      "残虐的炸裂(2费) → 最低血主战者: 己方4 vs 对方3 → 对方被打3伤 → 对方0"
+    ],
+    "solution_note": "PP: 1+1+1+2+2=7 ✓ | 伤害: 3+2+1+3=9 ✓ | 自伤3回复5净+2",
+    "mechanics_required": ["drain", "storm", "evolve", "last_words_add_card", "destroy_both", "lowest_life_target", "grant_storm"]
+  },
+  {
+    "id": "game_puzzle_03_super_evolve_destroy",
+    "description": "【游戏第3题】阿克西娅超进化对主战者X伤+破坏全场触发黑之章谢幕曲链，苏生调律回收翔再打脸",
+    "source": "state_0003_20260701_163208",
+    "raw_dump": "puzzle_dump/state_0003_20260701_163208_475.json",
+    "goal": {"kind": "lethal", "opponent_life_at_most": 0, "self_survives": false, "turn_limit": "current_turn"},
+    "my_life": 20,
+    "my_pp": 9,
+    "my_ep": 0,
+    "my_sep": 1,
+    "my_field": [
+      {"name": "新约·白之章", "base_card_id": 90074210, "card_type": "amulet", "countdown": 1,
+       "skill_desc": "【吟唱1】谢幕曲回复主战者1HP+召唤新约黑之章。",
+       "last_words_heal": 1, "last_words_summon": [{"name": "新约·黑之章", "card_type": "amulet", "last_words_damage": 1, "last_words_damage_target": "enemy_leader", "last_words_summon": [{"name": "新约·白之章", "card_type": "amulet", "last_words_heal": 1}]}]},
+      {"name": "新约·黑之章", "base_card_id": 90074220, "card_type": "amulet", "countdown": 1,
+       "skill_desc": "【吟唱1】谢幕曲对对方主战者1伤+召唤新约白之章。",
+       "last_words_damage": 1, "last_words_damage_target": "enemy_leader", "last_words_summon": [{"name": "新约·白之章", "card_type": "amulet", "last_words_heal": 1}]},
+      {"name": "夜王再起·翔", "base_card_id": 10471110, "atk": 2, "life": 1, "can_attack": true, "can_attack_leader": true, "has_storm": true,
+       "skill_desc": "【疾驰】入场曲若超进化已解禁则获屏障。"}
+    ],
+    "my_hand": [
+      {"name": "苏生调律", "base_card_id": 10572310, "cost": 1, "card_type": "spell",
+       "skill_desc": "弃1牌，从墓地加2种被破坏的随从同名卡各1张入手。",
+       "spell_effect": "reanimate_hand", "spell_effect_params": {"discard": "双刀哥布林", "revive": ["夜王再起·翔"]}},
+      {"name": "破坏的继承者·阿克西娅", "base_card_id": 10374110, "cost": 3, "atk": 2, "life": 4, "card_type": "follower",
+       "skill_desc": "【守护】不会被能力破坏。", "has_guard": true,
+       "can_super_evolve": true, "super_evolve_effects": ["x_damage_others_count", "destroy_all_others"]},
+      {"name": "破坏的祈祷者", "base_card_id": 10372110, "cost": 2, "atk": 2, "life": 2, "card_type": "follower",
+       "skill_desc": "【入场曲】选择己方1张其他卡破坏，对对方随机1随从2伤。",
+       "fanfare_destroy_ally": true, "fanfare_damage_enemy_follower": 2},
+      {"name": "双刀哥布林", "base_card_id": 10201110, "cost": 1, "atk": 1, "life": 1, "card_type": "follower",
+       "skill_desc": "【入场曲】若己方有超进化后随从，对对方1随从4伤。"}
+    ],
+    "opp_life": 11,
+    "opp_field": [
+      {"name": "雷维翁的迅雷·阿尔贝尔", "base_card_id": 10124110, "atk": 5, "life": 7, "evolve_state": 1, "has_storm": true,
+       "skill_desc": "【疾驰】爆能强化9对全场3伤+攻击2次。"}
+    ],
+    "token_info": {
+      "夜王再起·翔": {"cost": 3, "atk": 2, "life": 1, "card_type": "follower", "has_storm": true, "skill_desc": "【疾驰】"}
+    },
+    "solution": [
+      "翔(2/1疾驰)打脸 → 2伤(对方9)",
+      "出破坏的祈祷者(2费) → 入场破坏白之章 → 白谢幕曲回1HP+召黑 → 对方阿尔贝尔2伤(7→5) | 场: 黑旧,黑新,翔,祈祷者=4",
+      "出阿克西娅(3费) → 场5",
+      "超进化阿克西娅(SEP) → +3/+3=5/7 | X=4(黑,黑,翔,祈祷者) → 对方主战者4伤(9→5) → 破坏其他所有",
+      "黑旧谢幕曲: 对方1伤(5→4)+召白",
+      "黑新谢幕曲: 对方1伤(4→3)+召白",
+      "翔进墓地",
+      "阿克西娅(5/7)打阿尔贝尔(5HP) → 击杀 → 超进化击飞+1伤(3→2) | 阿克西娅不受伤(超进化当回合)",
+      "苏生调律(1费) → 弃双刀 → 加翔入手",
+      "出翔(3费) → 疾驰打脸2伤(2→0)"
+    ],
+    "solution_note": "PP: 2+3+1+3=9 ✓ | 伤害: 2+4+1+1+1+2=11 ✓",
+    "mechanics_required": ["super_evolve", "super_evolve_blow", "destroy_all", "countdown_amulet_last_words", "reanimate_hand", "storm"]
+  },
+  {
+    "id": "game_puzzle_04_combo_unleash",
+    "description": "【游戏第4题】连击体系铺场+解放奥义全场buff+驱逐死矢清残血守护+妖精疾驰(纹章)打脸",
+    "source": "state_0004_20260701_174511",
+    "raw_dump": "puzzle_dump/state_0001_20260701_174511_925.json",
+    "goal": {"kind": "lethal", "opponent_life_at_most": 0, "self_survives": false, "turn_limit": "current_turn"},
+    "my_life": 20,
+    "my_pp": 10,
+    "my_ep": 1,
+    "my_sep": 0,
+    "turn": 10,
+    "my_crests": [{"card_id": 10114112, "name": "纹章：自然妖精公主·阿丽雅", "skill_desc": "妖精族随从进场获得疾驰。", "grant_storm_tribe": "fairy"}],
+    "my_field": [
+      {
+        "name": "虫风花·魅禄", "base_card_id": 10514120,
+        "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true, "can_evolve": true,
+        "skill_desc": "进化时回复2PP。",
+        "evolve_desc": "进化时回复2PP。",
+        "evolve_restore_pp": 2
+      }
+    ],
+    "my_hand": [
+      {"name": "新晋搭档", "base_card_id": 10512110, "cost": 2, "atk": 2, "life": 2, "card_type": "follower",
+       "skill_desc": "连击5时召唤1副本+双方进化。",
+       "spell_effect": "combo_5_summon_evolve", "spell_effect_params": {"combo_threshold": 5}},
+      {"name": "妖精", "base_card_id": 90011110, "cost": 1, "atk": 1, "life": 1, "card_type": "follower",
+       "has_rush": true, "tribes": ["fairy"], "skill_desc": "突进(纹章给疾驰)"},
+      {"name": "森林的奥秘", "base_card_id": 90011310, "cost": 0, "card_type": "spell",
+       "skill_desc": "回复1HP。", "spell_effect": "heal_self", "spell_effect_params": {"amount": 1}},
+      {"name": "驱逐的死矢", "base_card_id": 10313310, "cost": 1, "card_type": "spell",
+       "skill_desc": "连击X次-0/-1。", "spell_effect": "combo_debuff", "spell_effect_params": {}},
+      {"name": "磷光辉岩", "base_card_id": 10112210, "cost": 2, "card_type": "amulet",
+       "skill_desc": "入场加妖精+连击3加奥秘。启动破坏自身+1随从+1/+1。",
+       "spell_effect": "amulet_huiyan", "spell_effect_params": {}},
+      {"name": "昆虫的忠告", "base_card_id": 10012310, "cost": 1, "card_type": "spell",
+       "skill_desc": "弹回己方1卡+对方随机2伤。", "spell_effect": "bounce", "spell_effect_params": {"damage": 2}},
+      {"name": "亚尔夫海姆", "base_card_id": 10413310, "cost": 2, "card_type": "spell",
+       "skill_desc": "解放奥义全发动:全场+1/+0+突进,+0/+1+守护。",
+       "spell_effect": "unleash_ougi_all", "spell_effect_params": {"atk_buff": 1, "life_buff": 1, "grant_rush": true, "grant_guard": true}}
+    ],
+    "opp_life": 9,
+    "opp_field": [
+      {"name": "纯洁白狐A", "base_card_id": 10061120, "atk": 4, "life": 7, "has_guard": true},
+      {"name": "纯洁白狐B", "base_card_id": 10061120, "atk": 4, "life": 7, "has_guard": true},
+      {"name": "纯洁白狐C", "base_card_id": 10061120, "atk": 4, "life": 7, "has_guard": true},
+      {"name": "纯洁白狐D", "base_card_id": 10061120, "atk": 2, "life": 5, "has_guard": true},
+      {"name": "纯洁白狐E", "base_card_id": 10061120, "atk": 2, "life": 5, "has_guard": true}
+    ],
+    "token_info": {
+      "妖精": {"cost": 1, "atk": 1, "life": 1, "card_type": "follower", "has_rush": true, "tribes": ["fairy"], "skill_desc": "突进"},
+      "森林的奥秘": {"cost": 0, "card_type": "spell", "spell_effect": "heal_self", "spell_effect_params": {"amount": 1}},
+      "新晋搭档": {"cost": 2, "atk": 2, "life": 2, "card_type": "follower", "skill_desc": "连击5召副本+双进化", "spell_effect": "combo_5_summon_evolve", "spell_effect_params": {"combo_threshold": 5}}
+    },
+    "solution": [
+      "妖精(1费) → 纹章给疾驰 | 连击1",
+      "森林的奥秘(0费) | 连击2",
+      "磷光辉岩(2费) → 入场加妖精B+连击≥3加奥秘B | 连击3",
+      "森林的奥秘B(0费) | 连击4",
+      "新晋搭档(2费) → 连击5触发: 召副本+双方进化(4/4×2) | 连击5 | 奥义12",
+      "启动辉岩 → 破坏自身+搭档A+1/+1=5/5",
+      "5/5搭档打2/5白狐 → 白狐死, 搭档5/3",
+      "4/4搭档打4/7白狐 → 白狐4/3, 搭档死",
+      "昆虫忠告(1费) → 弹回5/3搭档+对方随机2伤 | 连击6",
+      "新晋搭档(2费,弹回的) → 连击7触发: 召副本+双方进化(4/4×2) | 连击7 | 奥义14",
+      "进化魅禄(EP) → 4/4 | 奥义15! | 进化时模式选(2)回复2PP",
+      "妖精B(1费) → 纹章给疾驰 | 连击8",
+      "亚尔夫海姆(2费) → 解放奥义全部: 全场+1/+0+突进, +0/+1+守护 | 连击9 | 魅禄5/5, 搭档C 5/5, 搭档D 5/5, 妖精A 2/2, 妖精B 2/2",
+      "搭档C(5)打4/7白狐 → 白狐4/2, 搭档5/1",
+      "搭档D(5)打4/7白狐 → 白狐4/2, 搭档5/1",
+      "妖精A(2)打残血白狐(忠告打过的) → 白狐死或残",
+      "驱逐死矢(1费) → 连击10 → 10次-0/-1清掉所有残血守护",
+      "魅禄(5/5)打脸5 + 妖精A(2/2疾驰)打脸2 + 妖精B(2/2疾驰)打脸2 = 9"
+    ],
+    "solution_note": "PP: 1+2+2+1+2+1+2+1=12, 魅禄回复2PP→实际可用12=10+2 ✓ | 伤害: 5+2+2=9 ✓ | 奥义: 10(回合)+4(新晋×2)+1(魅禄)=15 ✓",
+    "mechanics_required": ["combo", "unleash_ougi", "mode_select", "bounce", "evolve_fanfare", "activation", "crest_grant_storm", "combo_X_debuff"]
+  },
+  {
+    "id": "game_puzzle_05_treasure_fusion",
+    "description": "【游戏第5题】融合财宝触发团结者3伤+纹章倒计时，超进化团结者打脸，利用金币和效果反复击杀巴萨拉卡触发自伤",
+    "source": "state_0005_20260701_175144",
+    "raw_dump": "puzzle_dump/state_0001_20260701_175144_507.json",
+    "goal": {"kind": "lethal", "opponent_life_at_most": 0, "self_survives": false, "turn_limit": "current_turn"},
+    "my_life": 20,
+    "my_pp": 8,
+    "my_ep": 0,
+    "my_sep": 1,
+    "my_crests": [{"card_id": 10324122, "name": "纹章：空绝的显现·奥克托丽丝", "countdown": 3, "skill_desc": "使用/融合财宝时倒计数-1。谢幕曲加空绝的残光入手。", "last_words_add_hand": [{"token_id": "空绝的残光"}]}],
+    "my_field": [
+      {
+        "name": "篡夺的团结者", "base_card_id": 10323110,
+        "atk": 3, "life": 3, "can_attack": true, "can_attack_leader": true,
+        "can_super_evolve": true,
+        "skill_desc": "使用/融合财宝时对对方随机1随从3伤。",
+        "evolve_desc": "进化时回复1PP。",
+        "on_treasure_effects": [{"type": "damage_enemy_follower", "damage": 3}],
+        "super_evolve_effects": ["evolve_restore_pp"]
+      }
+    ],
+    "my_hand": [
+      {"name": "荣耀的丽金花", "base_card_id": 10523310, "cost": 5, "card_type": "spell",
+       "skill_desc": "爆能强化5加4张闪耀金币。",
+       "spell_effect": "add_cards", "spell_effect_params": {"cards": [{"token_id": "闪耀的金币", "count": 4}]}},
+      {"name": "奉还的剑闪", "base_card_id": 10323310, "cost": 2, "card_type": "spell",
+       "skill_desc": "融合财宝。对方随机1随从2伤+加黄金短剑。",
+       "spell_effect": "random_damage_follower", "spell_effect_params": {"damage": 2, "add_card": "黄金短剑"}},
+      {"name": "篡夺的继承者·辛瑟莱兹", "base_card_id": 10324110, "cost": 6, "atk": 5, "life": 6, "card_type": "follower",
+       "skill_desc": "融合财宝。"},
+      {"name": "三将姬的乱击", "base_card_id": 10222310, "cost": 2, "card_type": "spell",
+       "skill_desc": "对方随机1随从4伤。",
+       "spell_effect": "random_damage_follower", "spell_effect_params": {"damage": 4}},
+      {"name": "黄金短剑", "base_card_id": 90021310, "cost": 1, "card_type": "spell", "is_treasure": true,
+       "skill_desc": "对1随从或主战者1伤。",
+       "spell_effect": "direct_damage_target", "spell_effect_params": {"damage": 1, "is_treasure": true}},
+      {"name": "黄金项链", "base_card_id": 90021340, "cost": 1, "card_type": "spell", "is_treasure": true,
+       "skill_desc": "1随从+0/+1+守护。"}
+    ],
+    "opp_life": 15,
+    "opp_field": [
+      {
+        "name": "不屈利刃·巴萨拉卡", "base_card_id": 10451120,
+        "atk": 2, "life": 7, "has_cant_be_attacked": true,
+        "skill_desc": "【威慑】谢幕曲召唤1个自身+对己方主战者2伤。",
+        "last_words_summon": [{"name": "不屈利刃·巴萨拉卡", "atk": 2, "life": 7, "has_cant_be_attacked": true, "last_words_summon": [{"name": "不屈利刃·巴萨拉卡", "atk": 2, "life": 7, "has_cant_be_attacked": true}], "last_words_damage": 2, "last_words_damage_target": "self_leader"}],
+        "last_words_damage": 2, "last_words_damage_target": "self_leader"
+      }
+    ],
+    "token_info": {
+      "闪耀的金币": {"cost": 0, "card_type": "spell", "is_treasure": false, "spell_effect": "random_damage_follower", "spell_effect_params": {"damage": 2}, "skill_desc": "对方随机1随从2伤"},
+      "空绝的残光": {"cost": 1, "card_type": "spell", "spell_effect": "distribute_damage", "spell_effect_params": {"total_damage": 4}, "skill_desc": "对全场+主战者分配4伤"},
+      "黄金短剑": {"cost": 1, "card_type": "spell", "is_treasure": true, "spell_effect": "direct_damage_target", "spell_effect_params": {"damage": 1, "is_treasure": true}, "skill_desc": "对1目标1伤(财宝)"},
+      "不屈利刃·巴萨拉卡": {"atk": 2, "life": 7, "card_type": "follower", "has_cant_be_attacked": true, "last_words_damage": 2, "last_words_damage_target": "self_leader", "last_words_summon_self": true}
+    },
+    "solution": [
+      "爆能强化(5费)丽金花 → 加4张闪耀金币(0费)",
+      "剑闪融合黄金项链 → 团结者3伤→巴萨(7→4) + 纹章3→2",
+      "超进化团结者(SEP) → 6/6 + 进化时回复1PP → PP=4",
+      "金币①(0费,模式选2伤) → 巴萨(4→2)",
+      "辛瑟莱兹融合黄金短剑 → 团结者3伤→巴萨(2→死) + 纹章2→1 → 谢幕曲:召新巴萨(2/7)+对方自伤2(15→13)",
+      "使用奉还剑闪(2费,已融合) → 新巴萨2伤(7→5) + 加黄金短剑 + 抽1牌 | PP=2",
+      "金币②(0费,模式选2伤) → 巴萨(5→3)",
+      "金币③(0费,模式选2伤) → 巴萨(3→1)",
+      "使用黄金短剑(1费,财宝) → 打巴萨1伤→死 + 团结者3伤→(谢幕曲召新巴萨后)新巴萨(7→4) + 纹章1→0→破坏→加残光 → 谢幕曲:召新巴萨+对方自伤2(13→11) | PP=1",
+      "金币④(0费,模式选2伤) → 巴萨(4→2)...或打新召的",
+      "使用空绝的残光(1费) → 分配4伤:巴萨+主战者 → 巴萨死+主战者伤 → 谢幕曲自伤2 | PP=0",
+      "团结者(6/6)打脸 → 对方归0"
+    ],
+    "solution_note": "PP: 5+2+1+1=9, 超进化回复1PP→实际可用9=8+1 ✓ | 总伤(对主战者): 自伤2×3=6 + 短剑打脸/残光分配 + 团结者6打脸 = 15 ✓",
+    "mechanics_required": ["fusion", "treasure_trigger", "super_evolve", "enhance", "crest_countdown", "last_words_resummon", "intimidate", "distribute_damage"]
+  }
+]

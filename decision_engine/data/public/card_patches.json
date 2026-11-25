@@ -1,0 +1,941 @@
+{
+  "patches": [
+    {
+      "base_card_id": 10001110,
+      "name": "不屈的剑斗士",
+      "effects": [
+        {
+          "timing": "spell",
+          "kind": "buff",
+          "target": "self",
+          "amount": null,
+          "params": {
+            "atk": 3,
+            "life": 3,
+            "confidence": "high",
+            "source_text": "本随从+3/+3",
+            "source_key": "SD_10001110_01",
+            "parser_rule": "buff_self_fixed_stats"
+          },
+          "note": "verified from generated candidate patch; source text is a fixed self buff."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed self buff source text."
+    },
+    {
+      "base_card_id": 10011130,
+      "name": "温厚的树精",
+      "effects": [
+        {
+          "timing": "fanfare",
+          "kind": "heal",
+          "target": "self",
+          "amount": 2,
+          "params": {
+            "recipient": "leader",
+            "confidence": "high",
+            "source_text": "回复自己的主战者2点生命值",
+            "source_key": "SD_10011130_01",
+            "parser_rule": "heal_self_leader_fixed_amount"
+          },
+          "note": "verified from generated candidate patch; source text is a fixed self leader heal."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed self leader heal source text."
+    },
+    {
+      "base_card_id": 10132310,
+      "name": "理光的证明",
+      "effects": [
+        {
+          "timing": "spell",
+          "kind": "heal",
+          "target": "self",
+          "amount": 4,
+          "params": {
+            "recipient": "leader",
+            "confidence": "high",
+            "source_text": "回复自己的主战者4点生命值",
+            "source_key": "SD_10132310_01",
+            "parser_rule": "heal_self_leader_fixed_amount"
+          },
+          "note": "verified from generated candidate patch; source text is a fixed self leader heal."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed self leader heal source text."
+    },
+    {
+      "base_card_id": 10231310,
+      "name": "冰锥穿击",
+      "effects": [
+        {
+          "timing": "spell",
+          "kind": "damage",
+          "target": "enemy_leader",
+          "amount": 2,
+          "params": {
+            "confidence": "high",
+            "source_text": "对对手的主战者造成2点伤害",
+            "source_key": "SD_10231310_01",
+            "parser_rule": "damage_enemy_leader_fixed_amount"
+          },
+          "note": "verified from generated candidate patch; source text is fixed enemy leader damage."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed enemy leader damage source text."
+    },
+    {
+      "base_card_id": 10361310,
+      "name": "圣辉闪烁",
+      "effects": [
+        {
+          "timing": "spell",
+          "kind": "heal",
+          "target": "self",
+          "amount": 3,
+          "params": {
+            "recipient": "leader",
+            "confidence": "high",
+            "source_text": "回复自己的主战者3点生命值",
+            "source_key": "SD_10361310_01",
+            "parser_rule": "heal_self_leader_fixed_amount"
+          },
+          "note": "verified from generated candidate patch; source text is a fixed self leader heal."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed self leader heal source text."
+    },
+    {
+      "base_card_id": 10743310,
+      "name": "黑炎的奔流",
+      "effects": [
+        {
+          "timing": "spell",
+          "kind": "damage",
+          "target": "enemy_leader",
+          "amount": 3,
+          "params": {
+            "confidence": "high",
+            "source_text": "对对手的主战者造成3点伤害",
+            "source_key": "SD_10743310_01",
+            "parser_rule": "damage_enemy_leader_fixed_amount"
+          },
+          "note": "verified from generated candidate patch; source text is fixed enemy leader damage."
+        }
+      ],
+      "tags": [
+        "verified",
+        "target_hint",
+        "generated_candidate_reviewed"
+      ],
+      "note": "High-confidence verified target patch: real base_card_id, fixed enemy leader damage source text."
+    },
+    {
+      "base_card_id": 10404110,
+      "name": "Sandalphon",
+      "ignored_auto_fact_raw_texts": [],
+      "effect_facts": [
+        {
+          "timing": "unknown",
+          "kind": "crest_or_faith",
+          "target_side": "self",
+          "target_type": "crest",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:sandalphon-invoke-crest",
+          "unsupported_reason": "invoke_trigger"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "leader_damage",
+          "amount": 2,
+          "count": 5,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "leader",
+          "targeting": "random",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:sandalphon-super-skybound-random-damage",
+          "unsupported_reason": "random,skybound_art"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "meta_fixture"
+      ],
+      "note": "Phase 4 fixture patch: filters auto keyword-gain false positive and adds oracle-only facts for invoke crest and random multi-hit fanfare."
+    },
+    {
+      "base_card_id": 10514120,
+      "name": "Miroku",
+      "effect_facts": [
+        {
+          "timing": "on_evolve",
+          "kind": "unknown_complex",
+          "targeting": "selected",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:miroku-evolve-reuses-fanfare-mode",
+          "unsupported_reason": "mode_choice,reuses_fanfare"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "field_damage",
+          "amount": 3,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "all",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:miroku-mode-distributed-field-damage",
+          "unsupported_reason": "mode_choice,distributed_damage"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "meta_fixture"
+      ],
+      "note": "Phase 4 fixture patch: preserves the mode/evolve reference and distributed damage as oracle-only facts."
+    },
+    {
+      "base_card_id": 10824120,
+      "name": "Mars",
+      "ignored_auto_fact_raw_texts": [
+        "自己的士兵·随从进入战场时，使其+2/+0且获得【突进】。",
+        "本随从+1/+0。"
+      ],
+      "effect_facts": [
+        {
+          "timing": "continuous",
+          "kind": "stat_buff",
+          "amount": 2,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "follower",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:mars-soldier-entry-buff",
+          "unsupported_reason": "triggered_aura,trait_filter"
+        },
+        {
+          "timing": "continuous",
+          "kind": "keyword_gain",
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "follower",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:mars-soldier-entry-rush",
+          "unsupported_reason": "triggered_aura,trait_filter"
+        },
+        {
+          "timing": "continuous",
+          "kind": "stat_buff",
+          "amount": 1,
+          "target_side": "self",
+          "target_type": "follower",
+          "targeting": "self",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:mars-self-triggered-buff",
+          "unsupported_reason": "triggered_aura"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "meta_fixture"
+      ],
+      "note": "Phase 5 fixture patch: keeps Mars triggered soldier aura and self buff as oracle-only facts instead of safe continuous effects."
+    },
+    {
+      "base_card_id": 10633310,
+      "name": "Magic Crystal of Love",
+      "ignored_auto_fact_raw_texts": [
+        "（1）召唤1个『天晶魔手』，使其+1/+0且获得【疾驰】。",
+        "（2）召唤2个『天晶魔手』，使其+1/+0。"
+      ],
+      "effect_facts": [
+        {
+          "timing": "unknown",
+          "kind": "summon",
+          "count": 1,
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:magic-crystal-mode-one-summon",
+          "unsupported_reason": "mode_choice"
+        },
+        {
+          "timing": "unknown",
+          "kind": "stat_buff",
+          "amount": 1,
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:magic-crystal-mode-one-buff",
+          "unsupported_reason": "mode_choice"
+        },
+        {
+          "timing": "unknown",
+          "kind": "keyword_gain",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:magic-crystal-mode-one-storm",
+          "unsupported_reason": "mode_choice"
+        },
+        {
+          "timing": "unknown",
+          "kind": "summon",
+          "count": 2,
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:magic-crystal-mode-two-summon",
+          "unsupported_reason": "mode_choice"
+        },
+        {
+          "timing": "unknown",
+          "kind": "stat_buff",
+          "amount": 1,
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:magic-crystal-mode-two-buff",
+          "unsupported_reason": "mode_choice"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "meta_fixture"
+      ],
+      "note": "Phase 5 fixture patch: models mode options as oracle-only facts and filters unsafe auto-safe mode buff/keyword facts."
+    },
+    {
+      "base_card_id": 10753310,
+      "name": "Night Song Concert",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "field_damage",
+          "amount": 6,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "all",
+          "value_source": "fixed",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:night-song-concert-distributed-field-damage",
+          "unsupported_reason": "distributed_damage"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "meta_fixture"
+      ],
+      "note": "Phase 5 fixture patch: records distributed field damage as oracle-only while preserving the necromancy leader damage auto fact."
+    },
+    {
+      "base_card_id": 10134110,
+      "name": "五行之巅·久苑",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "summon",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "shikigami_tenko",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:kuon-summon-shikigami-tenko-body-4-5-guard-last-words-spellboost-3",
+          "unsupported_reason": "summoned_token,body:4/5,keyword:guard,last_words_spellboost:3"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "summon",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "shikigami_aboki",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:kuon-summon-shikigami-aboki-body-3-3-rush-last-words-spellboost-1",
+          "unsupported_reason": "summoned_token,body:3/3,keyword:rush,last_words_spellboost:1"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "summon",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "shikigami_paper",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:kuon-summon-shikigami-paper-body-2-1-rush-last-words-spellboost-1",
+          "unsupported_reason": "summoned_token,body:2/1,keyword:rush,last_words_spellboost:1"
+        },
+        {
+          "timing": "on_super_evolve",
+          "kind": "keyword_gain",
+          "amount": 4,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "shikigami_follower",
+          "targeting": "selected",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:kuon-super-evolve-grant-storm-to-shikigami-tenko-face-burst-4",
+          "unsupported_reason": "selected_trait,keyword:storm,face_burst:4"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 fixture patch: records Kuon shikigami package and super-evolve storm burst as oracle-only facts for future deck-level evaluation."
+    },
+    {
+      "base_card_id": 10831110,
+      "name": "森绿的恩惠·喵鲁&圆滚滚2号&吉娜",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "field_damage",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:verdant-grace-fanfare-selected-field-damage-1",
+          "amount": 1,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "selected",
+          "value_source": "fixed",
+          "unsupported_reason": "selected_target"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:verdant-grace-fanfare-hand-spellboost-1",
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_spellboost:1,all_scope"
+        },
+        {
+          "timing": "on_evolve",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:verdant-grace-evolve-reuses-fanfare",
+          "targeting": "selected",
+          "unsupported_reason": "reuses_fanfare,selected_target"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records Verdant Grace ping, hand spellboost and evolve reference as oracle-only facts."
+    },
+    {
+      "base_card_id": 10832310,
+      "name": "其乐融融的团聚",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "heal",
+          "safe_to_apply": true,
+          "requires_oracle": false,
+          "raw_text": "patch:cheerful-reunion-heal-leader-2",
+          "amount": 2,
+          "target_side": "self",
+          "target_type": "leader",
+          "value_source": "fixed"
+        },
+        {
+          "timing": "on_play",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:cheerful-reunion-hand-spellboost-1",
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_spellboost:1,all_scope"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records heal and hand spellboost as explicit facts."
+    },
+    {
+      "base_card_id": 10133310,
+      "name": "做作业啦！",
+      "effect_facts": [
+        {
+          "timing": "spellboost",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:homework-transform-at-x5",
+          "value_source": "variable_x",
+          "conditions": [
+            "spellboost_threshold_5"
+          ],
+          "unsupported_reason": "variable_x_threshold,transform,generated_card,cost:1,draw:2,random_field_damage:2"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records the X>=5 transform threshold as oracle-only."
+    },
+    {
+      "base_card_id": 10833310,
+      "name": "钢铁的小憩",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "draw",
+          "safe_to_apply": true,
+          "requires_oracle": false,
+          "raw_text": "patch:steel-rest-draw-2",
+          "amount": 2,
+          "value_source": "fixed"
+        },
+        {
+          "timing": "on_play",
+          "kind": "heal",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:steel-rest-threshold5-heal-leader-2",
+          "amount": 2,
+          "target_side": "self",
+          "target_type": "leader",
+          "value_source": "fixed",
+          "conditions": [
+            "spellboost_threshold_5"
+          ],
+          "unsupported_reason": "variable_x_threshold"
+        },
+        {
+          "timing": "on_play",
+          "kind": "pp_change",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:steel-rest-threshold5-pp-refund-2",
+          "amount": 2,
+          "target_side": "self",
+          "value_source": "fixed",
+          "conditions": [
+            "spellboost_threshold_5"
+          ],
+          "unsupported_reason": "variable_x_threshold,pp_refund"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records draw and X>=5 heal/PP refund package."
+    },
+    {
+      "base_card_id": 10134120,
+      "name": "玛纳利亚密友·安&古蕾雅",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "summon",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:anne-grea-summon-anne-great-spirit",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "anne_great_spirit",
+          "value_source": "fixed",
+          "unsupported_reason": "summoned_token,body:5/5,keyword:rush,keyword:guard,temporary_until_opponent_turn_end"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:anne-grea-fanfare-hand-spellboost-3",
+          "amount": 3,
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_spellboost:3,all_scope"
+        },
+        {
+          "timing": "on_evolve",
+          "kind": "field_damage",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:anne-grea-evolve-selected-field-damage-3",
+          "amount": 3,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "selected",
+          "value_source": "fixed",
+          "unsupported_reason": "selected_target"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records summon, hand spellboost and evolve removal facts."
+    },
+    {
+      "base_card_id": 10532120,
+      "name": "余韵俳谐师",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "draw",
+          "safe_to_apply": true,
+          "requires_oracle": false,
+          "raw_text": "patch:haikuist-fanfare-draw-1",
+          "amount": 1,
+          "value_source": "fixed"
+        },
+        {
+          "timing": "last_words",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:haikuist-last-words-hand-spellboost-1",
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_spellboost:1,last_words,all_scope"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records draw and last-words hand spellboost."
+    },
+    {
+      "base_card_id": 10834110,
+      "name": "恩爱的大地·坦忒拉&拉缇卡",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "add_to_hand",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:tantella-add-blue-four-at-x10",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "hand",
+          "target_type": "blue_four",
+          "value_source": "fixed",
+          "conditions": [
+            "spellboost_threshold_10"
+          ],
+          "unsupported_reason": "variable_x_threshold,generated_card,combo_piece,cost:1,aoe_field_damage:5"
+        },
+        {
+          "timing": "fanfare",
+          "kind": "add_to_hand",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:tantella-add-grand-return-at-x20",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "hand",
+          "target_type": "grand_return",
+          "value_source": "fixed",
+          "conditions": [
+            "spellboost_threshold_20"
+          ],
+          "unsupported_reason": "variable_x_threshold,generated_card,combo_piece,cost:1,double_attack,ally_follower_target"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records Tantella threshold generated combo pieces."
+    },
+    {
+      "base_card_id": 10133320,
+      "name": "唤鬼术",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "summon",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:summon-aboki-body-3-3-rush-last-words-spellboost-1",
+          "count": 1,
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "shikigami_aboki",
+          "value_source": "fixed",
+          "unsupported_reason": "summoned_token,body:3/3,keyword:rush,last_words_spellboost:1"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records Summon Oni shikigami body and delayed spellboost."
+    },
+    {
+      "base_card_id": 10534120,
+      "name": "明越花·阿罗",
+      "effect_facts": [
+        {
+          "timing": "fanfare",
+          "kind": "field_damage",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:aro-fanfare-selected-field-damage-10",
+          "amount": 10,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "selected",
+          "value_source": "fixed",
+          "unsupported_reason": "selected_target"
+        },
+        {
+          "timing": "on_evolve",
+          "kind": "transform",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:aro-evolve-transform-other-followers",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "selected",
+          "unsupported_reason": "transform,selected_target,other_followers,target_body:4/4,keyword:storm"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records Aro removal and evolve transform facts."
+    },
+    {
+      "base_card_id": 10134310,
+      "name": "超越次元",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "deck_operation",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:dimension-shift-hand-reset-to-deck",
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_reset,return_to_deck,all_scope"
+        },
+        {
+          "timing": "on_play",
+          "kind": "draw",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:dimension-shift-draw-5-after-hand-reset",
+          "amount": 5,
+          "value_source": "fixed",
+          "unsupported_reason": "hand_reset_bound"
+        },
+        {
+          "timing": "on_play",
+          "kind": "pp_change",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:dimension-shift-refill-pp-to-max",
+          "target_side": "self",
+          "value_source": "unknown",
+          "unsupported_reason": "refill_to_max"
+        },
+        {
+          "timing": "on_play",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:dimension-shift-hand-spellboost-5",
+          "amount": 5,
+          "target_side": "self",
+          "target_zone": "hand",
+          "targeting": "all",
+          "unsupported_reason": "hand_spellboost:5,all_scope"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost deck fixture: records Dimension Shift hand reset, draw, PP refill and hand spellboost package."
+    },
+    {
+      "base_card_id": 90034130,
+      "name": "安的巨大英灵",
+      "effect_facts": [
+        {
+          "timing": "unknown",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:anne-great-spirit-token-body",
+          "unsupported_reason": "summoned_token,body:5/5,keyword:rush,keyword:guard,temporary_until_opponent_turn_end"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost token fixture: records Anne's Great Spirit token body and keywords."
+    },
+    {
+      "base_card_id": 90034340,
+      "name": "苍奏之四",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "field_damage",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:blue-four-aoe-field-damage-5",
+          "amount": 5,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "all",
+          "value_source": "fixed",
+          "unsupported_reason": "generated_card,combo_piece,cost:1,aoe_field_damage:5"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost token fixture: records Blue Four generated AoE damage."
+    },
+    {
+      "base_card_id": 90034350,
+      "name": "宏大的回归",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "unknown_complex",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:grand-return-grant-double-attack",
+          "target_side": "self",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "selected",
+          "unsupported_reason": "generated_card,combo_piece,cost:1,double_attack,ally_follower_target"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost token fixture: records Grand Return as oracle-bound double attack combo piece."
+    },
+    {
+      "base_card_id": 90033310,
+      "name": "有所成长了！",
+      "effect_facts": [
+        {
+          "timing": "on_play",
+          "kind": "draw",
+          "safe_to_apply": true,
+          "requires_oracle": false,
+          "raw_text": "patch:grown-up-draw-2",
+          "amount": 2,
+          "value_source": "fixed"
+        },
+        {
+          "timing": "on_play",
+          "kind": "field_damage",
+          "safe_to_apply": false,
+          "requires_oracle": true,
+          "raw_text": "patch:grown-up-random-field-damage-2",
+          "amount": 2,
+          "target_side": "opponent",
+          "target_zone": "field",
+          "target_type": "follower",
+          "targeting": "random",
+          "value_source": "fixed",
+          "unsupported_reason": "random_field_damage:2"
+        }
+      ],
+      "tags": [
+        "verified",
+        "effect_fact_patch",
+        "wizard_deck_fixture"
+      ],
+      "note": "Phase 5 spellboost token fixture: records Grown Up draw and random damage package."
+    }
+  ]
+}

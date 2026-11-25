@@ -1,0 +1,85 @@
+{
+  "class_id": 4,
+  "archetype_id": "ramp_dragon",
+  "archetype_label": null,
+  "format": null,
+  "cards": [
+    {
+      "card_id": 10403120,
+      "count": 3
+    },
+    {
+      "card_id": 10542121,
+      "count": 2
+    },
+    {
+      "card_id": 10644120,
+      "count": 2
+    },
+    {
+      "card_id": 10543310,
+      "count": 3
+    },
+    {
+      "card_id": 10342211,
+      "count": 3
+    },
+    {
+      "card_id": 10304120,
+      "count": 3
+    },
+    {
+      "card_id": 10042311,
+      "count": 3
+    },
+    {
+      "card_id": 10344120,
+      "count": 2
+    },
+    {
+      "card_id": 10344121,
+      "count": 1
+    },
+    {
+      "card_id": 10444120,
+      "count": 3
+    },
+    {
+      "card_id": 10144120,
+      "count": 2
+    },
+    {
+      "card_id": 10204110,
+      "count": 2
+    },
+    {
+      "card_id": 10243111,
+      "count": 1
+    },
+    {
+      "card_id": 10644110,
+      "count": 1
+    },
+    {
+      "card_id": 10644111,
+      "count": 1
+    },
+    {
+      "card_id": 10844120,
+      "count": 1
+    },
+    {
+      "card_id": 10844121,
+      "count": 2
+    },
+    {
+      "card_id": 10744110,
+      "count": 2
+    },
+    {
+      "card_id": 10544111,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

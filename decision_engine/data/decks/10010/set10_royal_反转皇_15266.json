@@ -1,0 +1,77 @@
+{
+  "class_id": 2,
+  "archetype_id": "set10_royal_reversal_royal",
+  "archetype_label": "反转皇",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 11003210,
+      "count": 3
+    },
+    {
+      "card_id": 10021110,
+      "count": 3
+    },
+    {
+      "card_id": 11023310,
+      "count": 3
+    },
+    {
+      "card_id": 11001110,
+      "count": 2
+    },
+    {
+      "card_id": 10803310,
+      "count": 2
+    },
+    {
+      "card_id": 10722110,
+      "count": 3
+    },
+    {
+      "card_id": 11021110,
+      "count": 3
+    },
+    {
+      "card_id": 11002110,
+      "count": 3
+    },
+    {
+      "card_id": 11022110,
+      "count": 3
+    },
+    {
+      "card_id": 10523110,
+      "count": 2
+    },
+    {
+      "card_id": 11003110,
+      "count": 2
+    },
+    {
+      "card_id": 10624110,
+      "count": 1
+    },
+    {
+      "card_id": 11023110,
+      "count": 3
+    },
+    {
+      "card_id": 10724120,
+      "count": 3
+    },
+    {
+      "card_id": 11022120,
+      "count": 1
+    },
+    {
+      "card_id": 11024110,
+      "count": 2
+    },
+    {
+      "card_id": 10924120,
+      "count": 1
+    }
+  ],
+  "total_cards": 40
+}

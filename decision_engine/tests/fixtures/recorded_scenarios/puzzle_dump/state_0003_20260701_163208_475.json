@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "puzzle_dump_state_0003_20260701_163208_475",
+    "title": "Puzzle dump current-turn fixture: state_0003_20260701_163208_475",
+    "status": "pending",
+    "source_kind": "puzzle_dump_current_turn_fixture",
+    "requires_runtime_confirmation": true,
+    "raw_dump": "puzzle_dump/state_0003_20260701_163208_475.json",
+    "raw_stem": "state_0003_20260701_163208_475",
+    "raw_prefix": "state",
+    "raw_index": 3,
+    "raw_timestamp": "20260701_163208_475",
+    "normalized_root": false,
+    "root_patches": [],
+    "identity_enriched": true,
+    "identity_enrichment_count": 8,
+    "identity_enrichment": [
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 0,
+        "unique_id": 6,
+        "card_id": 10572310,
+        "updates": {
+          "base_card_id": 10572310,
+          "name": "苏生调律"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 1,
+        "unique_id": 7,
+        "card_id": 10374110,
+        "updates": {
+          "base_card_id": 10374110,
+          "name": "破坏的继承者·阿克西娅"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 2,
+        "unique_id": 8,
+        "card_id": 10372110,
+        "updates": {
+          "base_card_id": 10372110,
+          "name": "破坏的祈祷者"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 3,
+        "unique_id": 9,
+        "card_id": 10201110,
+        "updates": {
+          "base_card_id": 10201110,
+          "name": "双刀哥布林"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 3,
+        "card_id": 90074210,
+        "updates": {
+          "base_card_id": 90074210,
+          "name": "新约·白之章"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 1,
+        "unique_id": 4,
+        "card_id": 90074220,
+        "updates": {
+          "base_card_id": 90074220,
+          "name": "新约·黑之章"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 2,
+        "unique_id": 5,
+        "card_id": 10471110,
+        "updates": {
+          "base_card_id": 10471110,
+          "name": "夜王再起·翔"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 15,
+        "card_id": 10124110,
+        "updates": {
+          "base_card_id": 10124110,
+          "name": "雷维翁的迅雷·阿尔贝尔"
+        },
+        "source": "card_database"
+      }
+    ],
+    "turn_limit": "current_turn",
+    "executable_transition_count": 0,
+    "converted_transition_count": 0,
+    "is_bare_battle_root": true,
+    "is_svhook_raw_envelope": false,
+    "has_action_request": false,
+    "has_action_response": false,
+    "fixture_role": "current_turn_puzzle_search_start",
+    "pending_fields": [
+      "solution_transitions"
+    ],
+    "actionable_action_count": 9,
+    "non_turn_end_action_count": 8,
+    "legal_action_counts": {
+      "play": 4,
+      "attack_leader": 1,
+      "attack_follower": 2,
+      "evolve": 0,
+      "super_evolve": 1,
+      "activate": 0,
+      "fusion": 0,
+      "special_action": 0,
+      "extra_pp": 0,
+      "turn_end": 1,
+      "turn_start": 0
+    },
+    "legal_field_counts": {
+      "can_play_cards": 4,
+      "can_attack_leader_cards": 1,
+      "can_attack_field_cards": 1,
+      "can_evolve_cards": 0,
+      "can_super_evolve_cards": 1,
+      "can_fusion_cards": 0,
+      "can_activation_field_cards": 0,
+      "can_special_action_field_cards": 0,
+      "can_enhance_play_cards": 0,
+      "can_accelerate_play_cards": 0,
+      "can_crystal_play_cards": 0,
+      "can_super_evolve_with_skill_cards": 0,
+      "can_play_cards_with_ex_pp": 0,
+      "can_activation_field_cards_with_ex_pp": 0
+    },
+    "player_summary": {
+      "my_life": 20,
+      "opp_life": 11,
+      "my_pp": 9,
+      "my_ep": 0,
+      "my_sep": 1,
+      "my_hand_count": 4,
+      "my_field_count": 3,
+      "opp_field_count": 1
+    },
+    "adapter_snapshot_summary": {
+      "is_ally_turn": true,
+      "is_turn_ended": false,
+      "cards_by_uid_count": 8
+    },
+    "puzzle_id": "game_puzzle_03_super_evolve_destroy",
+    "description": "【游戏第3题】阿克西娅超进化对主战者X伤+破坏全场触发黑之章谢幕曲链，苏生调律回收翔再打脸",
+    "mechanics_required": [
+      "super_evolve",
+      "super_evolve_blow",
+      "destroy_all",
+      "countdown_amulet_last_words",
+      "reanimate_hand",
+      "storm"
+    ],
+    "solution_note": "PP: 2+3+1+3=9 ✓ | 伤害: 2+4+1+1+1+2=11 ✓"
+  },
+  "source": "puzzle_dump/state_0003_20260701_163208_475.json",
+  "expected_goal": {
+    "kind": "lethal",
+    "opponent_life_at_most": 0,
+    "self_survives": false,
+    "turn_limit": "current_turn",
+    "does_not_verify": [
+      "action identity",
+      "LocalPredictor transition correctness",
+      "full puzzle solution"
+    ]
+  },
+  "note": "Converted from a bare puzzle_dump BattleRoot-like state. It is an independent current-turn puzzle start; no action_request/action_response exists, so transitions are intentionally empty.",
+  "initial_root": {
+    "is_ally_turn": true,
+    "is_turn_ended": false,
+    "can_play_cards": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "can_attack_leader_cards": [
+      5
+    ],
+    "can_attack_field_cards": [
+      5
+    ],
+    "can_evolve_cards": [],
+    "can_super_evolve_cards": [
+      5
+    ],
+    "can_fusion_cards": [],
+    "can_activation_field_cards": [],
+    "can_special_action_field_cards": [],
+    "attack_targets_map": {
+      "3": [],
+      "4": [],
+      "5": [
+        2,
+        15
+      ]
+    },
+    "players": [
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 9,
+        "max_pp": 9,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 1,
+        "max_sep": 2,
+        "super_evolve_turn": 7,
+        "deck_count": 5,
+        "turn": 9,
+        "cemetery_count": 0,
+        "is_first_side": true,
+        "is_kakusei": true,
+        "play_count": 0,
+        "unique_id": 1,
+        "hand_cards": [
+          {
+            "unique_id": 6,
+            "card_id": 10572310,
+            "cost": 1,
+            "atk": 0,
+            "life": 0,
+            "card_type": 4,
+            "base_card_id": 10572310,
+            "name": "苏生调律"
+          },
+          {
+            "unique_id": 7,
+            "card_id": 10374110,
+            "cost": 3,
+            "atk": 2,
+            "life": 4,
+            "card_type": 1,
+            "base_card_id": 10374110,
+            "name": "破坏的继承者·阿克西娅"
+          },
+          {
+            "unique_id": 8,
+            "card_id": 10372110,
+            "cost": 2,
+            "atk": 2,
+            "life": 2,
+            "card_type": 1,
+            "base_card_id": 10372110,
+            "name": "破坏的祈祷者"
+          },
+          {
+            "unique_id": 9,
+            "card_id": 10201110,
+            "cost": 1,
+            "atk": 1,
+            "life": 1,
+            "card_type": 1,
+            "base_card_id": 10201110,
+            "name": "双刀哥布林"
+          }
+        ],
+        "field_cards": [
+          {
+            "unique_id": 3,
+            "card_id": 90074210,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 1,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90074210,
+            "name": "新约·白之章"
+          },
+          {
+            "unique_id": 4,
+            "card_id": 90074220,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 1,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90074220,
+            "name": "新约·黑之章"
+          },
+          {
+            "unique_id": 5,
+            "card_id": 10471110,
+            "cost": 3,
+            "atk": 2,
+            "life": 1,
+            "max_life": 1,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10471110,
+            "name": "夜王再起·翔"
+          }
+        ]
+      },
+      {
+        "life": 11,
+        "max_life": 20,
+        "pp": 8,
+        "max_pp": 8,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 0,
+        "max_sep": 2,
+        "super_evolve_turn": 6,
+        "deck_count": 5,
+        "turn": 8,
+        "cemetery_count": 0,
+        "is_first_side": false,
+        "is_kakusei": true,
+        "play_count": 0,
+        "unique_id": 2,
+        "hand_cards": [],
+        "field_cards": [
+          {
+            "unique_id": 15,
+            "card_id": 10124110,
+            "cost": 5,
+            "atk": 5,
+            "life": 7,
+            "max_life": 7,
+            "card_type": 1,
+            "evolve_state": 1,
+            "countdown": 0,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10124110,
+            "name": "雷维翁的迅雷·阿尔贝尔"
+          }
+        ]
+      }
+    ]
+  },
+  "transitions": []
+}

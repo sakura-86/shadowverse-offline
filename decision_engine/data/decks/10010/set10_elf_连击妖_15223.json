@@ -1,0 +1,69 @@
+{
+  "class_id": 1,
+  "archetype_id": "set10_elf_combo_elf",
+  "archetype_label": "连击妖",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10503210,
+      "count": 3
+    },
+    {
+      "card_id": 10614120,
+      "count": 3
+    },
+    {
+      "card_id": 10811130,
+      "count": 3
+    },
+    {
+      "card_id": 10911110,
+      "count": 3
+    },
+    {
+      "card_id": 11001110,
+      "count": 2
+    },
+    {
+      "card_id": 10712110,
+      "count": 3
+    },
+    {
+      "card_id": 10912110,
+      "count": 3
+    },
+    {
+      "card_id": 10913110,
+      "count": 3
+    },
+    {
+      "card_id": 10514120,
+      "count": 3
+    },
+    {
+      "card_id": 10914110,
+      "count": 3
+    },
+    {
+      "card_id": 10513310,
+      "count": 1
+    },
+    {
+      "card_id": 10714110,
+      "count": 3
+    },
+    {
+      "card_id": 10913310,
+      "count": 2
+    },
+    {
+      "card_id": 10714120,
+      "count": 2
+    },
+    {
+      "card_id": 10814110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

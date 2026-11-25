@@ -1,0 +1,65 @@
+{
+  "class_id": 3,
+  "archetype_id": "set10_witch_earth_witch",
+  "archetype_label": "土片法",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10031310,
+      "count": 3
+    },
+    {
+      "card_id": 10831310,
+      "count": 3
+    },
+    {
+      "card_id": 11032310,
+      "count": 3
+    },
+    {
+      "card_id": 10031210,
+      "count": 3
+    },
+    {
+      "card_id": 10731120,
+      "count": 3
+    },
+    {
+      "card_id": 10732310,
+      "count": 3
+    },
+    {
+      "card_id": 10832310,
+      "count": 2
+    },
+    {
+      "card_id": 11033310,
+      "count": 2
+    },
+    {
+      "card_id": 10732110,
+      "count": 3
+    },
+    {
+      "card_id": 10833110,
+      "count": 3
+    },
+    {
+      "card_id": 10833310,
+      "count": 3
+    },
+    {
+      "card_id": 11034110,
+      "count": 3
+    },
+    {
+      "card_id": 11034120,
+      "count": 3
+    },
+    {
+      "card_id": 10534120,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

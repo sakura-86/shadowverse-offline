@@ -1,0 +1,73 @@
+{
+  "class_id": 6,
+  "archetype_id": "set10_bishop_dice_bishop",
+  "archetype_label": "骰子教",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10503210,
+      "count": 2
+    },
+    {
+      "card_id": 10962310,
+      "count": 3
+    },
+    {
+      "card_id": 10761210,
+      "count": 3
+    },
+    {
+      "card_id": 11002110,
+      "count": 2
+    },
+    {
+      "card_id": 10962120,
+      "count": 2
+    },
+    {
+      "card_id": 10561310,
+      "count": 2
+    },
+    {
+      "card_id": 11063310,
+      "count": 2
+    },
+    {
+      "card_id": 10563210,
+      "count": 3
+    },
+    {
+      "card_id": 10763210,
+      "count": 2
+    },
+    {
+      "card_id": 10503310,
+      "count": 3
+    },
+    {
+      "card_id": 10562120,
+      "count": 3
+    },
+    {
+      "card_id": 10661110,
+      "count": 3
+    },
+    {
+      "card_id": 10864120,
+      "count": 3
+    },
+    {
+      "card_id": 11062310,
+      "count": 2
+    },
+    {
+      "card_id": 10564120,
+      "count": 3
+    },
+    {
+      "card_id": 11063110,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

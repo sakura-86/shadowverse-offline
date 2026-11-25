@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "puzzle_dump_puzzle_0009_20260701_151644_421",
+    "title": "Puzzle dump current-turn fixture: puzzle_0009_20260701_151644_421",
+    "status": "pending",
+    "source_kind": "puzzle_dump_current_turn_fixture",
+    "requires_runtime_confirmation": true,
+    "raw_dump": "puzzle_dump/puzzle_0009_20260701_151644_421.json",
+    "raw_stem": "puzzle_0009_20260701_151644_421",
+    "raw_prefix": "puzzle",
+    "raw_index": 9,
+    "raw_timestamp": "20260701_151644_421",
+    "normalized_root": false,
+    "root_patches": [],
+    "identity_enriched": true,
+    "identity_enrichment_count": 6,
+    "identity_enrichment": [
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 0,
+        "unique_id": 15,
+        "card_id": 10304121,
+        "updates": {
+          "base_card_id": 10304120,
+          "name": "涸绝的显现·吉尔内莉莎"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 1,
+        "unique_id": 25,
+        "card_id": 10314110,
+        "updates": {
+          "base_card_id": 10314110,
+          "name": "不弑的继承者·库露露"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 2,
+        "unique_id": 10,
+        "card_id": 10414110,
+        "updates": {
+          "base_card_id": 10414110,
+          "name": "风之法则·艾云尼亚"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 3,
+        "unique_id": 6,
+        "card_id": 10401121,
+        "updates": {
+          "base_card_id": 10401120,
+          "name": "亲爱的搭档·碧"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 4,
+        "unique_id": 35,
+        "card_id": 10612311,
+        "updates": {
+          "base_card_id": 10612310,
+          "name": "向女王献花"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 5,
+        "unique_id": 8,
+        "card_id": 10414110,
+        "updates": {
+          "base_card_id": 10414110,
+          "name": "风之法则·艾云尼亚"
+        },
+        "source": "card_database"
+      }
+    ],
+    "turn_limit": "current_turn",
+    "executable_transition_count": 0,
+    "converted_transition_count": 0,
+    "is_bare_battle_root": true,
+    "is_svhook_raw_envelope": false,
+    "has_action_request": false,
+    "has_action_response": false,
+    "fixture_role": "current_turn_puzzle_search_start",
+    "pending_fields": [
+      "solution_transitions"
+    ],
+    "actionable_action_count": 4,
+    "non_turn_end_action_count": 3,
+    "legal_action_counts": {
+      "play": 3,
+      "attack_leader": 0,
+      "attack_follower": 0,
+      "evolve": 0,
+      "super_evolve": 0,
+      "activate": 0,
+      "fusion": 0,
+      "special_action": 0,
+      "extra_pp": 0,
+      "turn_end": 1,
+      "turn_start": 0
+    },
+    "legal_field_counts": {
+      "can_play_cards": 3,
+      "can_attack_leader_cards": 0,
+      "can_attack_field_cards": 0,
+      "can_evolve_cards": 0,
+      "can_super_evolve_cards": 0,
+      "can_fusion_cards": 0,
+      "can_activation_field_cards": 0,
+      "can_special_action_field_cards": 0,
+      "can_enhance_play_cards": 0,
+      "can_accelerate_play_cards": 0,
+      "can_crystal_play_cards": 0,
+      "can_super_evolve_with_skill_cards": 0,
+      "can_play_cards_with_ex_pp": 0,
+      "can_activation_field_cards_with_ex_pp": 0
+    },
+    "player_summary": {
+      "my_life": 20,
+      "opp_life": 10,
+      "my_pp": 2,
+      "my_ep": 2,
+      "my_sep": 0,
+      "my_hand_count": 6,
+      "my_field_count": 0,
+      "opp_field_count": 0
+    },
+    "adapter_snapshot_summary": {
+      "is_ally_turn": true,
+      "is_turn_ended": false,
+      "cards_by_uid_count": 6
+    }
+  },
+  "source": "puzzle_dump/puzzle_0009_20260701_151644_421.json",
+  "expected_goal": {
+    "kind": "lethal",
+    "opponent_life_at_most": 0,
+    "self_survives": false,
+    "turn_limit": "current_turn",
+    "does_not_verify": [
+      "action identity",
+      "LocalPredictor transition correctness",
+      "full puzzle solution"
+    ]
+  },
+  "note": "Converted from a bare puzzle_dump BattleRoot-like state. It is an independent current-turn puzzle start; no action_request/action_response exists, so transitions are intentionally empty.",
+  "initial_root": {
+    "is_ally_turn": true,
+    "is_turn_ended": false,
+    "can_play_cards": [
+      10,
+      6,
+      8
+    ],
+    "can_attack_leader_cards": [],
+    "can_attack_field_cards": [],
+    "can_evolve_cards": [],
+    "can_fusion_cards": [],
+    "can_activation_field_cards": [],
+    "can_special_action_field_cards": [],
+    "attack_targets_map": {},
+    "players": [
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 2,
+        "max_pp": 2,
+        "ep": 2,
+        "max_ep": 2,
+        "deck_count": 34,
+        "turn": 2,
+        "cemetery_count": 0,
+        "is_first_side": true,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 1,
+        "hand_cards": [
+          {
+            "unique_id": 15,
+            "card_id": 10304121,
+            "cost": 3,
+            "atk": 0,
+            "life": 3,
+            "card_type": 1,
+            "base_card_id": 10304120,
+            "name": "涸绝的显现·吉尔内莉莎"
+          },
+          {
+            "unique_id": 25,
+            "card_id": 10314110,
+            "cost": 4,
+            "atk": 1,
+            "life": 3,
+            "card_type": 1,
+            "base_card_id": 10314110,
+            "name": "不弑的继承者·库露露"
+          },
+          {
+            "unique_id": 10,
+            "card_id": 10414110,
+            "cost": 2,
+            "atk": 2,
+            "life": 1,
+            "card_type": 1,
+            "base_card_id": 10414110,
+            "name": "风之法则·艾云尼亚"
+          },
+          {
+            "unique_id": 6,
+            "card_id": 10401121,
+            "cost": 2,
+            "atk": 2,
+            "life": 2,
+            "card_type": 1,
+            "base_card_id": 10401120,
+            "name": "亲爱的搭档·碧"
+          },
+          {
+            "unique_id": 35,
+            "card_id": 10612311,
+            "cost": 5,
+            "atk": 0,
+            "life": 0,
+            "card_type": 4,
+            "base_card_id": 10612310,
+            "name": "向女王献花"
+          },
+          {
+            "unique_id": 8,
+            "card_id": 10414110,
+            "cost": 2,
+            "atk": 2,
+            "life": 1,
+            "card_type": 1,
+            "base_card_id": 10414110,
+            "name": "风之法则·艾云尼亚"
+          }
+        ],
+        "field_cards": []
+      },
+      {
+        "life": 10,
+        "max_life": 10,
+        "pp": 0,
+        "max_pp": 1,
+        "ep": 2,
+        "max_ep": 2,
+        "deck_count": 34,
+        "turn": 1,
+        "cemetery_count": 1,
+        "is_first_side": false,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 2,
+        "hand_cards": [
+          {
+            "unique_id": 0,
+            "card_id": 0,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 1
+          },
+          {
+            "unique_id": 0,
+            "card_id": 0,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 1
+          },
+          {
+            "unique_id": 0,
+            "card_id": 0,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 1
+          },
+          {
+            "unique_id": 0,
+            "card_id": 0,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 1
+          },
+          {
+            "unique_id": 0,
+            "card_id": 0,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 1
+          }
+        ],
+        "field_cards": []
+      }
+    ]
+  },
+  "transitions": []
+}

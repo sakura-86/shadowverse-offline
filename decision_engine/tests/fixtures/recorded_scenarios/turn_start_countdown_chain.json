@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_turn_start_countdown_chain",
+  "metadata": {
+    "id": "turn_start_countdown_chain",
+    "title": "Turn start countdown chain",
+    "description": "Turn start decrements a countdown amulet to zero, triggers its Last Words damage, then draws a recorded card."
+  },
+  "initial_root": {
+    "IsAllyTurn": false,
+    "IsTurnEnded": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "Turn": 0,
+        "IsFirstSide": false,
+        "DeckCount": 1,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 6,
+            "CardId": 731,
+            "BaseCardId": 731,
+            "Name": "Countdown Amulet",
+            "Cost": 1,
+            "Atk": 0,
+            "Life": 0,
+            "MaxLife": 0,
+            "CardType": "amulet",
+            "Countdown": 1,
+            "IsRemoveFieldAtTurnChange": true
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "DeckCount": 0,
+        "HandCards": [],
+        "FieldCards": [],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ]
+  },
+  "transitions": [
+    {
+      "note": "Turn start decrements countdown to zero, resolves Last Words damage, then draws the recorded card.",
+      "action": {
+        "kind": "turn_start",
+        "source_uid": 0
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "IsTurnEnded": false,
+        "Players": [
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 1,
+            "MaxPP": 1,
+            "Turn": 1,
+            "IsFirstSide": false,
+            "ExtraPP": 1,
+            "PreparationExtraPP": 0,
+            "ExtraPPState": 0,
+            "RestoreExtraPPTurn": 6,
+            "IsUsedExtraPPThisTurn": false,
+            "DeckCount": 0,
+            "HandCards": [
+              {
+                "UniqueId": 9,
+                "CardId": 739,
+                "BaseCardId": 739,
+                "Name": "Turn Start Draw",
+                "Cost": 1,
+                "Atk": 1,
+                "Life": 1,
+                "MaxLife": 1,
+                "CardType": "follower"
+              }
+            ],
+            "FieldCards": [],
+            "GraveyardCount": 1,
+            "DestroyedCardIds": [
+              {"CardId": 731, "Count": 0}
+            ]
+          },
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "DeckCount": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          }
+        ]
+      }
+    }
+  ]
+}

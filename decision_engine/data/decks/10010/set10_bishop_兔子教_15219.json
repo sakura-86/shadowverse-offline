@@ -1,0 +1,65 @@
+{
+  "class_id": 6,
+  "archetype_id": "set10_bishop_rabbit_bishop",
+  "archetype_label": "兔子教",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10503210,
+      "count": 3
+    },
+    {
+      "card_id": 11001110,
+      "count": 3
+    },
+    {
+      "card_id": 10861110,
+      "count": 3
+    },
+    {
+      "card_id": 11061110,
+      "count": 3
+    },
+    {
+      "card_id": 10962120,
+      "count": 3
+    },
+    {
+      "card_id": 11062110,
+      "count": 3
+    },
+    {
+      "card_id": 11063310,
+      "count": 3
+    },
+    {
+      "card_id": 10061210,
+      "count": 2
+    },
+    {
+      "card_id": 10864120,
+      "count": 3
+    },
+    {
+      "card_id": 11062310,
+      "count": 3
+    },
+    {
+      "card_id": 10964110,
+      "count": 2
+    },
+    {
+      "card_id": 11064110,
+      "count": 3
+    },
+    {
+      "card_id": 10861120,
+      "count": 3
+    },
+    {
+      "card_id": 11063110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

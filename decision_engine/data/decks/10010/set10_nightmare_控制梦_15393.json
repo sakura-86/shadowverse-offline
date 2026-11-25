@@ -1,0 +1,81 @@
+{
+  "class_id": 5,
+  "archetype_id": "set10_nightmare_control_nightmare",
+  "archetype_label": "控制梦",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10751110,
+      "count": 2
+    },
+    {
+      "card_id": 10951120,
+      "count": 3
+    },
+    {
+      "card_id": 11054120,
+      "count": 3
+    },
+    {
+      "card_id": 10953310,
+      "count": 3
+    },
+    {
+      "card_id": 10653310,
+      "count": 3
+    },
+    {
+      "card_id": 10753310,
+      "count": 3
+    },
+    {
+      "card_id": 10701310,
+      "count": 1
+    },
+    {
+      "card_id": 10752110,
+      "count": 3
+    },
+    {
+      "card_id": 10854120,
+      "count": 3
+    },
+    {
+      "card_id": 10952110,
+      "count": 3
+    },
+    {
+      "card_id": 10954110,
+      "count": 3
+    },
+    {
+      "card_id": 10652310,
+      "count": 1
+    },
+    {
+      "card_id": 10903210,
+      "count": 1
+    },
+    {
+      "card_id": 10854110,
+      "count": 2
+    },
+    {
+      "card_id": 10954120,
+      "count": 2
+    },
+    {
+      "card_id": 10804110,
+      "count": 1
+    },
+    {
+      "card_id": 10654110,
+      "count": 1
+    },
+    {
+      "card_id": 10754120,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

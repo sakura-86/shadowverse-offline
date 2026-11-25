@@ -1,0 +1,65 @@
+{
+  "class_id": 1,
+  "archetype_id": "set10_elf_midrange_elf",
+  "archetype_label": "中速妖",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10501110,
+      "count": 3
+    },
+    {
+      "card_id": 10503210,
+      "count": 3
+    },
+    {
+      "card_id": 10711120,
+      "count": 3
+    },
+    {
+      "card_id": 11012110,
+      "count": 3
+    },
+    {
+      "card_id": 10814120,
+      "count": 3
+    },
+    {
+      "card_id": 11011110,
+      "count": 2
+    },
+    {
+      "card_id": 11012310,
+      "count": 3
+    },
+    {
+      "card_id": 10514120,
+      "count": 3
+    },
+    {
+      "card_id": 10914110,
+      "count": 3
+    },
+    {
+      "card_id": 11013310,
+      "count": 3
+    },
+    {
+      "card_id": 11013110,
+      "count": 3
+    },
+    {
+      "card_id": 10513110,
+      "count": 2
+    },
+    {
+      "card_id": 11014110,
+      "count": 3
+    },
+    {
+      "card_id": 10814110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

@@ -1,0 +1,73 @@
+{
+  "class_id": 7,
+  "archetype_id": "artifact_nemesis",
+  "archetype_label": null,
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10573310,
+      "count": 3
+    },
+    {
+      "card_id": 10771310,
+      "count": 3
+    },
+    {
+      "card_id": 10574120,
+      "count": 3
+    },
+    {
+      "card_id": 10674120,
+      "count": 1
+    },
+    {
+      "card_id": 10772110,
+      "count": 3
+    },
+    {
+      "card_id": 10874120,
+      "count": 3
+    },
+    {
+      "card_id": 10773110,
+      "count": 3
+    },
+    {
+      "card_id": 10773310,
+      "count": 1
+    },
+    {
+      "card_id": 10771110,
+      "count": 2
+    },
+    {
+      "card_id": 10774120,
+      "count": 3
+    },
+    {
+      "card_id": 10874110,
+      "count": 3
+    },
+    {
+      "card_id": 10671110,
+      "count": 2
+    },
+    {
+      "card_id": 10473310,
+      "count": 1
+    },
+    {
+      "card_id": 10674110,
+      "count": 3
+    },
+    {
+      "card_id": 10673110,
+      "count": 3
+    },
+    {
+      "card_id": 10774110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

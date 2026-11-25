@@ -1,0 +1,65 @@
+{
+  "class_id": 3,
+  "archetype_id": "set9_experiment_witch",
+  "archetype_label": null,
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10031310,
+      "count": 3
+    },
+    {
+      "card_id": 10831310,
+      "count": 3
+    },
+    {
+      "card_id": 10931310,
+      "count": 3
+    },
+    {
+      "card_id": 10803310,
+      "count": 3
+    },
+    {
+      "card_id": 10931110,
+      "count": 3
+    },
+    {
+      "card_id": 10833310,
+      "count": 3
+    },
+    {
+      "card_id": 10932310,
+      "count": 3
+    },
+    {
+      "card_id": 10932110,
+      "count": 3
+    },
+    {
+      "card_id": 10832110,
+      "count": 3
+    },
+    {
+      "card_id": 10933110,
+      "count": 3
+    },
+    {
+      "card_id": 10933310,
+      "count": 3
+    },
+    {
+      "card_id": 10901110,
+      "count": 2
+    },
+    {
+      "card_id": 10834110,
+      "count": 2
+    },
+    {
+      "card_id": 10934110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

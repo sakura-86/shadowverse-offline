@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "special_action_pending",
+    "title": "Pending CanSpecialActionFieldCards evidence scenario",
+    "status": "pending",
+    "requires_runtime_confirmation": true,
+    "pending_fields": ["CanSpecialActionFieldCards"],
+    "description": "Mock evidence fixture for special action candidate presence only. The action kind and encoder payload are not confirmed."
+  },
+  "source": "protocol_mock_pending_evidence",
+  "note": "Contains only pending CanSpecialActionFieldCards candidates and no currently supported Can* legal-action fields.",
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 2,
+        "MaxPP": 2,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 2301,
+            "CardId": 862301,
+            "BaseCardId": 862300,
+            "Name": "Pending Special Action Source",
+            "Cost": 2,
+            "Atk": 1,
+            "Life": 3,
+            "MaxLife": 3,
+            "CardType": "follower"
+          }
+        ]
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": []
+      }
+    ],
+    "CanSpecialActionFieldCards": [2301]
+  },
+  "transitions": []
+}

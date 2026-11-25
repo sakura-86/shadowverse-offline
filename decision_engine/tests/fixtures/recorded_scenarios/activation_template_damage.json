@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_activation_template_damage",
+  "metadata": {
+    "id": "activation_template_damage",
+    "title": "Activation template damage",
+    "description": "A field card activation resolves a deterministic template damage effect."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 11,
+            "CardId": 811,
+            "BaseCardId": 811,
+            "Name": "Fixture Activation Source",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 1,
+            "MaxLife": 1,
+            "CardType": "follower",
+            "HasActivation": true
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ],
+    "CanActivationFieldCards": [11]
+  },
+  "transitions": [
+    {
+      "note": "Activation deals 2 damage to opponent leader via template effect.",
+      "action": {
+        "kind": "activate",
+        "source_uid": 11
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "Players": [
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [
+              {
+                "UniqueId": 11,
+                "CardId": 811,
+                "BaseCardId": 811,
+                "Name": "Fixture Activation Source",
+                "Cost": 1,
+                "Atk": 1,
+                "Life": 1,
+                "MaxLife": 1,
+                "CardType": "follower",
+                "HasActivation": true
+              }
+            ],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          },
+          {
+            "Life": 18,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          }
+        ],
+        "CanActivationFieldCards": [11]
+      }
+    }
+  ]
+}

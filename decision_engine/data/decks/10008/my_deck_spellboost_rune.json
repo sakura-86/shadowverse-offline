@@ -1,0 +1,93 @@
+{
+  "class_id": 3,
+  "archetype_id": "spellboost_rune",
+  "archetype_label": null,
+  "format": null,
+  "cards": [
+    {
+      "card_id": 10031310,
+      "count": 3,
+      "name": "智慧光辉",
+      "cost": 1
+    },
+    {
+      "card_id": 10831310,
+      "count": 3,
+      "name": "暴风破",
+      "cost": 1
+    },
+    {
+      "card_id": 10831110,
+      "count": 3,
+      "name": "森绿的恩惠·喵鲁&圆滚滚2号&吉娜",
+      "cost": 2
+    },
+    {
+      "card_id": 10531310,
+      "count": 2,
+      "name": "明越花的转变",
+      "cost": 2
+    },
+    {
+      "card_id": 10832310,
+      "count": 3,
+      "name": "其乐融融的团聚",
+      "cost": 2
+    },
+    {
+      "card_id": 10133310,
+      "count": 3,
+      "name": "做作业啦！",
+      "cost": 3
+    },
+    {
+      "card_id": 10833310,
+      "count": 3,
+      "name": "钢铁的小憩",
+      "cost": 3
+    },
+    {
+      "card_id": 10134120,
+      "count": 3,
+      "name": "玛纳利亚密友·安&古蕾雅",
+      "cost": 5
+    },
+    {
+      "card_id": 10532120,
+      "count": 3,
+      "name": "余韵俳谐师",
+      "cost": 6
+    },
+    {
+      "card_id": 10834110,
+      "count": 3,
+      "name": "恩爱的大地·坦忒拉&拉缇卡",
+      "cost": 6
+    },
+    {
+      "card_id": 10134110,
+      "count": 3,
+      "name": "五行之巅·久苑",
+      "cost": 7
+    },
+    {
+      "card_id": 10133320,
+      "count": 3,
+      "name": "唤鬼术",
+      "cost": 7
+    },
+    {
+      "card_id": 10534120,
+      "count": 2,
+      "name": "明越花·阿罗",
+      "cost": 10
+    },
+    {
+      "card_id": 10134310,
+      "count": 3,
+      "name": "超越次元",
+      "cost": 18
+    }
+  ],
+  "total_cards": 40
+}

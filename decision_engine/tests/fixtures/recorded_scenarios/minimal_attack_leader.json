@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "minimal_attack_leader",
+    "title": "Minimal recorded attack leader scenario",
+    "description": "One protocol-legal follower attack is replayed by ReplayOracle; extra state fields are protocol facts only and do not imply local effect simulation."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "SkillEffectYellowCards": [1001],
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "Buff": {
+          "MaxLife": 0,
+          "TempShield": false,
+          "DamageCut": 0,
+          "IncreaseDamage": 0
+        },
+        "HandCards": [
+          {
+            "UniqueId": 9001,
+            "CardId": 12001,
+            "BaseCardId": 12000,
+            "Name": "Recorded Spellboost Hand Card",
+            "Cost": 2,
+            "CardType": "spell",
+            "EnhanceCosts": [6],
+            "HasSpellBoost": true,
+            "SpellBoostCount": 3,
+            "VariableX": 2,
+            "AccelerateCosts": [1],
+            "CrystalCosts": [],
+            "FusionList": [[9002]],
+            "Tribes": [5],
+            "Buff": {
+              "Cost": -1,
+              "Atk": 0,
+              "MaxLifeDiff": 0,
+              "Quick": false,
+              "Rush": false,
+              "TempShield": false,
+              "AttackLimit": 0,
+              "AddDeadByReanimate": false,
+              "AddTribe": []
+            },
+            "StyleId": 0,
+            "SupplementInfo": {
+              "sample": 1
+            },
+            "CantActionType": 0,
+            "IsChangedAbility": false,
+            "CanEnhance": false,
+            "ActivatedRandomOnceIndexes": [0],
+            "CurrentRunInOrderCount": 1
+          }
+        ],
+        "FieldCards": [
+          {
+            "UniqueId": 1001,
+            "CardId": 11001,
+            "BaseCardId": 11000,
+            "Name": "Recorded Attacker",
+            "Atk": 3,
+            "Life": 3,
+            "MaxLife": 3,
+            "CardType": "follower",
+            "AttackTargets": [2],
+            "Stack": 1,
+            "HasCantBeAttacked": false,
+            "HasCantSelect": false,
+            "HasLastWord": true,
+            "IsEarthSigil": false,
+            "HasSpellBoost": false,
+            "EnhancedCost": 0,
+            "HasDamageCut": false,
+            "HasCantAttack": false,
+            "HasInduction": false,
+            "HasActivation": false,
+            "HasReduceDamage": false,
+            "HasCantDestroy": false,
+            "HasSuperEvolveBuff": false,
+            "Buff": {
+              "Cost": 0,
+              "Atk": 0,
+              "MaxLifeDiff": 0,
+              "Quick": false,
+              "Rush": false,
+              "TempShield": true,
+              "AttackLimit": 1,
+              "AddDeadByReanimate": false,
+              "AddTribe": []
+            },
+            "StyleId": 0,
+            "FusionList": [],
+            "SupplementInfo": {
+              "field": 2
+            },
+            "CantActionType": 0,
+            "IsRemoveFieldAtTurnChange": false,
+            "HasTempShield": true,
+            "ActivatedRandomOnceIndexes": [],
+            "ContentUhT9MJ": 0,
+            "CurrentRunInOrderCount": 0,
+            "AttackLimit": 1,
+            "IsSameNameToken": false
+          }
+        ],
+        "Crests": [
+          {
+            "CardId": 13001,
+            "UniqueId": 3001,
+            "CountDown": 2,
+            "FaithValue": 1,
+            "VariableX": 4,
+            "Buff": {},
+            "SupplementInfo": {
+              "crest": 3
+            },
+            "StyleId": 0,
+            "IsShowSkillNoticeEffect": true,
+            "IsShowSkillNoticeIcon": false,
+            "ActivatedRandomOnceIndexes": [1],
+            "CurrentRunInOrderCount": 2
+          }
+        ],
+        "ExtraCrests": [
+          {
+            "CardId": 14001,
+            "UniqueId": 4001,
+            "CountDown": 1,
+            "VariableX": 5,
+            "Buff": {},
+            "SupplementInfo": {
+              "extra": 4
+            },
+            "StyleId": 0,
+            "IsShowSkillNoticeEffect": false,
+            "IsShowSkillNoticeIcon": true,
+            "ActivatedRandomOnceIndexes": [2],
+            "CurrentRunInOrderCount": 3
+          }
+        ]
+      },
+      {
+        "Life": 3,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "UniqueId": 2,
+        "HandCards": [],
+        "FieldCards": []
+      }
+    ],
+    "CanAttackLeaderCards": [1001],
+    "AttackTargetsMap": {"1001": [2]}
+  },
+  "transitions": [
+    {
+      "action": {
+        "action_type": "attack_leader",
+        "source_uid": 1001,
+        "target_uid": 2
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "SkillEffectYellowCards": [],
+        "Players": [
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [
+              {
+                "UniqueId": 9001,
+                "CardId": 12001,
+                "BaseCardId": 12000,
+                "Name": "Recorded Spellboost Hand Card",
+                "Cost": 2,
+                "CardType": "spell",
+                "EnhanceCosts": [6],
+                "HasSpellBoost": true,
+                "SpellBoostCount": 3,
+                "VariableX": 2,
+                "AccelerateCosts": [1],
+                "CrystalCosts": [],
+                "FusionList": [[9002]],
+                "Tribes": [5],
+                "Buff": {
+                  "Cost": -1,
+                  "Atk": 0,
+                  "MaxLifeDiff": 0,
+                  "Quick": false,
+                  "Rush": false,
+                  "TempShield": false,
+                  "AttackLimit": 0,
+                  "AddDeadByReanimate": false,
+                  "AddTribe": []
+                },
+                "StyleId": 0,
+                "SupplementInfo": {
+                  "sample": 1
+                },
+                "CantActionType": 0,
+                "IsChangedAbility": false,
+                "CanEnhance": false,
+                "ActivatedRandomOnceIndexes": [0],
+                "CurrentRunInOrderCount": 1
+              }
+            ],
+            "FieldCards": [
+              {
+                "UniqueId": 1001,
+                "CardId": 11001,
+                "BaseCardId": 11000,
+                "Name": "Recorded Attacker",
+                "Atk": 3,
+                "Life": 3,
+                "MaxLife": 3,
+                "CardType": "follower",
+                "AttackTargets": [],
+                "Stack": 1,
+                "HasLastWord": true,
+                "Buff": {
+                  "TempShield": false,
+                  "AttackLimit": 1
+                },
+                "SupplementInfo": {
+                  "field": 2
+                },
+                "HasTempShield": false,
+                "AttackLimit": 1
+              }
+            ]
+          },
+          {
+            "Life": 0,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "UniqueId": 2,
+            "HandCards": [],
+            "FieldCards": []
+          }
+        ],
+        "CanAttackLeaderCards": []
+      }
+    }
+  ],
+  "expected_goal": {
+    "opponent_life_at_most": 0
+  }
+}

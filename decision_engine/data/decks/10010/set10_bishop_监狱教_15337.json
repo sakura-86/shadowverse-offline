@@ -1,0 +1,73 @@
+{
+  "class_id": 6,
+  "archetype_id": "set10_bishop_prison_bishop",
+  "archetype_label": "监狱教",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 11003210,
+      "count": 3
+    },
+    {
+      "card_id": 10761210,
+      "count": 2
+    },
+    {
+      "card_id": 10662210,
+      "count": 3
+    },
+    {
+      "card_id": 10762210,
+      "count": 2
+    },
+    {
+      "card_id": 10863210,
+      "count": 3
+    },
+    {
+      "card_id": 11063310,
+      "count": 3
+    },
+    {
+      "card_id": 10763210,
+      "count": 3
+    },
+    {
+      "card_id": 10663210,
+      "count": 3
+    },
+    {
+      "card_id": 10661110,
+      "count": 3
+    },
+    {
+      "card_id": 10864120,
+      "count": 3
+    },
+    {
+      "card_id": 10964110,
+      "count": 2
+    },
+    {
+      "card_id": 10963210,
+      "count": 1
+    },
+    {
+      "card_id": 10764120,
+      "count": 3
+    },
+    {
+      "card_id": 10963110,
+      "count": 2
+    },
+    {
+      "card_id": 10903210,
+      "count": 2
+    },
+    {
+      "card_id": 10664120,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

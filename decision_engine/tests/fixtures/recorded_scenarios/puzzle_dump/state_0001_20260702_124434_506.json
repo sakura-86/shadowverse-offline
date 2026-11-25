@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "puzzle_dump_state_0001_20260702_124434_506",
+    "title": "Puzzle dump current-turn fixture: state_0001_20260702_124434_506",
+    "status": "pending",
+    "source_kind": "puzzle_dump_current_turn_fixture",
+    "requires_runtime_confirmation": true,
+    "raw_dump": "puzzle_dump/state_0001_20260702_124434_506.json",
+    "raw_stem": "state_0001_20260702_124434_506",
+    "raw_prefix": "state",
+    "raw_index": 1,
+    "raw_timestamp": "20260702_124434_506",
+    "normalized_root": false,
+    "root_patches": [],
+    "identity_enriched": true,
+    "identity_enrichment_count": 7,
+    "identity_enrichment": [
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 0,
+        "unique_id": 6,
+        "card_id": 90074310,
+        "updates": {
+          "base_card_id": 90074310,
+          "name": "奏绝的独唱"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 1,
+        "unique_id": 7,
+        "card_id": 10374110,
+        "updates": {
+          "base_card_id": 10374110,
+          "name": "破坏的继承者·阿克西娅"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 2,
+        "unique_id": 8,
+        "card_id": 10373310,
+        "updates": {
+          "base_card_id": 10373310,
+          "name": "歼灭的歌声"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 3,
+        "card_id": 90074220,
+        "updates": {
+          "base_card_id": 90074220,
+          "name": "新约·黑之章"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 1,
+        "unique_id": 4,
+        "card_id": 90074210,
+        "updates": {
+          "base_card_id": 90074210,
+          "name": "新约·白之章"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 2,
+        "unique_id": 5,
+        "card_id": 90074220,
+        "updates": {
+          "base_card_id": 90074220,
+          "name": "新约·黑之章"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 14,
+        "card_id": 10144110,
+        "updates": {
+          "base_card_id": 10144110,
+          "name": "灼热的安纳提玛·班德奈特"
+        },
+        "source": "card_database"
+      }
+    ],
+    "turn_limit": "current_turn",
+    "executable_transition_count": 0,
+    "converted_transition_count": 0,
+    "is_bare_battle_root": true,
+    "is_svhook_raw_envelope": false,
+    "has_action_request": false,
+    "has_action_response": false,
+    "fixture_role": "current_turn_puzzle_search_start",
+    "pending_fields": [
+      "solution_transitions"
+    ],
+    "actionable_action_count": 4,
+    "non_turn_end_action_count": 3,
+    "legal_action_counts": {
+      "play": 3,
+      "attack_leader": 0,
+      "attack_follower": 0,
+      "evolve": 0,
+      "super_evolve": 0,
+      "activate": 0,
+      "fusion": 0,
+      "special_action": 0,
+      "extra_pp": 0,
+      "turn_end": 1,
+      "turn_start": 0
+    },
+    "legal_field_counts": {
+      "can_play_cards": 3,
+      "can_attack_leader_cards": 0,
+      "can_attack_field_cards": 0,
+      "can_evolve_cards": 0,
+      "can_super_evolve_cards": 0,
+      "can_fusion_cards": 0,
+      "can_activation_field_cards": 0,
+      "can_special_action_field_cards": 0,
+      "can_enhance_play_cards": 0,
+      "can_accelerate_play_cards": 0,
+      "can_crystal_play_cards": 0,
+      "can_super_evolve_with_skill_cards": 0,
+      "can_play_cards_with_ex_pp": 0,
+      "can_activation_field_cards_with_ex_pp": 0
+    },
+    "player_summary": {
+      "my_life": 20,
+      "opp_life": 9,
+      "my_pp": 6,
+      "my_ep": 0,
+      "my_sep": 1,
+      "my_hand_count": 3,
+      "my_field_count": 3,
+      "opp_field_count": 1
+    },
+    "adapter_snapshot_summary": {
+      "is_ally_turn": true,
+      "is_turn_ended": false,
+      "cards_by_uid_count": 7
+    }
+  },
+  "source": "puzzle_dump/state_0001_20260702_124434_506.json",
+  "expected_goal": {
+    "kind": "lethal",
+    "opponent_life_at_most": 0,
+    "self_survives": false,
+    "turn_limit": "current_turn",
+    "does_not_verify": [
+      "action identity",
+      "LocalPredictor transition correctness",
+      "full puzzle solution"
+    ]
+  },
+  "note": "Converted from a bare puzzle_dump BattleRoot-like state. It is an independent current-turn puzzle start; no action_request/action_response exists, so transitions are intentionally empty.",
+  "initial_root": {
+    "is_ally_turn": true,
+    "is_turn_ended": false,
+    "can_play_cards": [
+      6,
+      7,
+      8
+    ],
+    "can_attack_leader_cards": [],
+    "can_attack_field_cards": [],
+    "can_evolve_cards": [],
+    "can_super_evolve_cards": [],
+    "can_fusion_cards": [],
+    "can_activation_field_cards": [],
+    "can_special_action_field_cards": [],
+    "attack_targets_map": {
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "players": [
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 6,
+        "max_pp": 6,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 1,
+        "max_sep": 2,
+        "super_evolve_turn": 6,
+        "deck_count": 5,
+        "turn": 6,
+        "cemetery_count": 0,
+        "is_first_side": false,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 1,
+        "hand_cards": [
+          {
+            "unique_id": 6,
+            "card_id": 90074310,
+            "cost": 1,
+            "atk": 0,
+            "life": 0,
+            "card_type": 4,
+            "base_card_id": 90074310,
+            "name": "奏绝的独唱"
+          },
+          {
+            "unique_id": 7,
+            "card_id": 10374110,
+            "cost": 3,
+            "atk": 2,
+            "life": 4,
+            "card_type": 1,
+            "base_card_id": 10374110,
+            "name": "破坏的继承者·阿克西娅"
+          },
+          {
+            "unique_id": 8,
+            "card_id": 10373310,
+            "cost": 2,
+            "atk": 0,
+            "life": 0,
+            "card_type": 4,
+            "base_card_id": 10373310,
+            "name": "歼灭的歌声"
+          }
+        ],
+        "field_cards": [
+          {
+            "unique_id": 3,
+            "card_id": 90074220,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 1,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90074220,
+            "name": "新约·黑之章"
+          },
+          {
+            "unique_id": 4,
+            "card_id": 90074210,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 1,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90074210,
+            "name": "新约·白之章"
+          },
+          {
+            "unique_id": 5,
+            "card_id": 90074220,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 1,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90074220,
+            "name": "新约·黑之章"
+          }
+        ]
+      },
+      {
+        "life": 9,
+        "max_life": 20,
+        "pp": 6,
+        "max_pp": 6,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 0,
+        "max_sep": 2,
+        "super_evolve_turn": 7,
+        "deck_count": 5,
+        "turn": 6,
+        "cemetery_count": 0,
+        "is_first_side": true,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 2,
+        "hand_cards": [],
+        "field_cards": [
+          {
+            "unique_id": 14,
+            "card_id": 10144110,
+            "cost": 7,
+            "atk": 7,
+            "life": 7,
+            "max_life": 7,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10144110,
+            "name": "灼热的安纳提玛·班德奈特"
+          }
+        ]
+      }
+    ]
+  },
+  "transitions": []
+}

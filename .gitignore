@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# 私有数据（从游戏解包生成，含未公开卡）
+decision_engine/data/generated/
+decision_engine/data/private/
+decision_engine/training/artifacts/
+
+# 本地实验产物
+*.log
+*.pt

@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "puzzle_dump_state_0003_20260702_124510_369",
+    "title": "Puzzle dump current-turn fixture: state_0003_20260702_124510_369",
+    "status": "pending",
+    "source_kind": "puzzle_dump_current_turn_fixture",
+    "requires_runtime_confirmation": true,
+    "raw_dump": "puzzle_dump/state_0003_20260702_124510_369.json",
+    "raw_stem": "state_0003_20260702_124510_369",
+    "raw_prefix": "state",
+    "raw_index": 3,
+    "raw_timestamp": "20260702_124510_369",
+    "normalized_root": false,
+    "root_patches": [],
+    "identity_enriched": true,
+    "identity_enrichment_count": 7,
+    "identity_enrichment": [
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 0,
+        "unique_id": 8,
+        "card_id": 10364120,
+        "updates": {
+          "base_card_id": 10364120,
+          "name": "绝望的显现·玛温"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 1,
+        "unique_id": 9,
+        "card_id": 10204120,
+        "updates": {
+          "base_card_id": 10204120,
+          "name": "飓风天业·格里姆尼尔"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 5,
+        "card_id": 10361110,
+        "updates": {
+          "base_card_id": 10361110,
+          "name": "安息的肯定者"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 1,
+        "unique_id": 7,
+        "card_id": 10362110,
+        "updates": {
+          "base_card_id": 10362110,
+          "name": "安息的祈祷者"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 15,
+        "card_id": 10172120,
+        "updates": {
+          "base_card_id": 10172120,
+          "name": "依恋的人偶师"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 1,
+        "unique_id": 16,
+        "card_id": 10001120,
+        "updates": {
+          "base_card_id": 10001120,
+          "name": "叮当天使·莉亚"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 2,
+        "unique_id": 17,
+        "card_id": 10001120,
+        "updates": {
+          "base_card_id": 10001120,
+          "name": "叮当天使·莉亚"
+        },
+        "source": "card_database"
+      }
+    ],
+    "turn_limit": "current_turn",
+    "executable_transition_count": 0,
+    "converted_transition_count": 0,
+    "is_bare_battle_root": true,
+    "is_svhook_raw_envelope": false,
+    "has_action_request": false,
+    "has_action_response": false,
+    "fixture_role": "current_turn_puzzle_search_start",
+    "pending_fields": [
+      "solution_transitions"
+    ],
+    "actionable_action_count": 9,
+    "non_turn_end_action_count": 8,
+    "legal_action_counts": {
+      "play": 2,
+      "attack_leader": 0,
+      "attack_follower": 4,
+      "evolve": 0,
+      "super_evolve": 2,
+      "activate": 0,
+      "fusion": 0,
+      "special_action": 0,
+      "extra_pp": 0,
+      "turn_end": 1,
+      "turn_start": 0
+    },
+    "legal_field_counts": {
+      "can_play_cards": 2,
+      "can_attack_leader_cards": 2,
+      "can_attack_field_cards": 2,
+      "can_evolve_cards": 0,
+      "can_super_evolve_cards": 2,
+      "can_fusion_cards": 0,
+      "can_activation_field_cards": 0,
+      "can_special_action_field_cards": 0,
+      "can_enhance_play_cards": 0,
+      "can_accelerate_play_cards": 0,
+      "can_crystal_play_cards": 0,
+      "can_super_evolve_with_skill_cards": 0,
+      "can_play_cards_with_ex_pp": 0,
+      "can_activation_field_cards_with_ex_pp": 0
+    },
+    "player_summary": {
+      "my_life": 20,
+      "opp_life": 4,
+      "my_pp": 7,
+      "my_ep": 0,
+      "my_sep": 1,
+      "my_hand_count": 2,
+      "my_field_count": 2,
+      "opp_field_count": 3
+    },
+    "adapter_snapshot_summary": {
+      "is_ally_turn": true,
+      "is_turn_ended": false,
+      "cards_by_uid_count": 7
+    }
+  },
+  "source": "puzzle_dump/state_0003_20260702_124510_369.json",
+  "expected_goal": {
+    "kind": "lethal",
+    "opponent_life_at_most": 0,
+    "self_survives": false,
+    "turn_limit": "current_turn",
+    "does_not_verify": [
+      "action identity",
+      "LocalPredictor transition correctness",
+      "full puzzle solution"
+    ]
+  },
+  "note": "Converted from a bare puzzle_dump BattleRoot-like state. It is an independent current-turn puzzle start; no action_request/action_response exists, so transitions are intentionally empty.",
+  "initial_root": {
+    "is_ally_turn": true,
+    "is_turn_ended": false,
+    "can_play_cards": [
+      8,
+      9
+    ],
+    "can_attack_leader_cards": [
+      5,
+      7
+    ],
+    "can_attack_field_cards": [
+      5,
+      7
+    ],
+    "can_evolve_cards": [],
+    "can_super_evolve_cards": [
+      5,
+      7
+    ],
+    "can_fusion_cards": [],
+    "can_activation_field_cards": [],
+    "can_special_action_field_cards": [],
+    "attack_targets_map": {
+      "5": [
+        16,
+        17
+      ],
+      "7": [
+        16,
+        17
+      ]
+    },
+    "players": [
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 7,
+        "max_pp": 7,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 1,
+        "max_sep": 2,
+        "super_evolve_turn": 7,
+        "deck_count": 5,
+        "turn": 7,
+        "cemetery_count": 0,
+        "is_first_side": true,
+        "is_kakusei": true,
+        "play_count": 0,
+        "unique_id": 1,
+        "crests": [
+          {
+            "card_id": 10361112,
+            "countdown": 3,
+            "faith_value": 0,
+            "variable_x": 0
+          },
+          {
+            "card_id": 10362112,
+            "countdown": 3,
+            "faith_value": 0,
+            "variable_x": 0
+          }
+        ],
+        "hand_cards": [
+          {
+            "unique_id": 8,
+            "card_id": 10364120,
+            "cost": 4,
+            "atk": 4,
+            "life": 4,
+            "card_type": 1,
+            "base_card_id": 10364120,
+            "name": "绝望的显现·玛温"
+          },
+          {
+            "unique_id": 9,
+            "card_id": 10204120,
+            "cost": 3,
+            "atk": 2,
+            "life": 3,
+            "card_type": 1,
+            "base_card_id": 10204120,
+            "name": "飓风天业·格里姆尼尔"
+          }
+        ],
+        "field_cards": [
+          {
+            "unique_id": 5,
+            "card_id": 10361110,
+            "cost": 2,
+            "atk": 0,
+            "life": 4,
+            "max_life": 4,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": true,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10361110,
+            "name": "安息的肯定者"
+          },
+          {
+            "unique_id": 7,
+            "card_id": 10362110,
+            "cost": 3,
+            "atk": 1,
+            "life": 4,
+            "max_life": 4,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": true,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10362110,
+            "name": "安息的祈祷者"
+          }
+        ]
+      },
+      {
+        "life": 4,
+        "max_life": 20,
+        "pp": 6,
+        "max_pp": 6,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 0,
+        "max_sep": 2,
+        "super_evolve_turn": 6,
+        "deck_count": 5,
+        "turn": 6,
+        "cemetery_count": 0,
+        "is_first_side": false,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 2,
+        "hand_cards": [],
+        "field_cards": [
+          {
+            "unique_id": 15,
+            "card_id": 10172120,
+            "cost": 2,
+            "atk": 2,
+            "life": 2,
+            "max_life": 2,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10172120,
+            "name": "依恋的人偶师"
+          },
+          {
+            "unique_id": 16,
+            "card_id": 10001120,
+            "cost": 2,
+            "atk": 0,
+            "life": 2,
+            "max_life": 2,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": true,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10001120,
+            "name": "叮当天使·莉亚"
+          },
+          {
+            "unique_id": 17,
+            "card_id": 10001120,
+            "cost": 2,
+            "atk": 0,
+            "life": 2,
+            "max_life": 2,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": true,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10001120,
+            "name": "叮当天使·莉亚"
+          }
+        ]
+      }
+    ]
+  },
+  "transitions": []
+}

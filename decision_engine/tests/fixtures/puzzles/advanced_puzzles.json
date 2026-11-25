@@ -1,0 +1,135 @@
+[
+  {
+    "id": "adv_001_buff_then_attack",
+    "description": "操作顺序：先buff全场再攻击，凑够精确斩杀",
+    "my_life": 10,
+    "my_pp": 2,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "民兵A", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true},
+      {"name": "民兵B", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "全军突击", "cost": 2, "card_type": "spell", "is_buff": true, "buff_atk": 2, "buff_targets": "all_field"}
+    ],
+    "opp_life": 8,
+    "opp_field": [],
+    "expected_actions": ["play(全军突击)", "attack(民兵A → leader)", "attack(民兵B → leader)"],
+    "solution_note": "不buff: 2+2=4<8. buff后: (2+2)+(2+2)=8=精确斩杀"
+  },
+  {
+    "id": "adv_002_storm_then_buff",
+    "description": "操作顺序：先出疾驰随从再buff全场，疾驰随从也吃到buff",
+    "my_life": 15,
+    "my_pp": 5,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "剑士", "atk": 3, "life": 3, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "突击骑兵", "cost": 3, "atk": 2, "life": 1, "card_type": "follower", "has_storm": true},
+      {"name": "号令", "cost": 2, "card_type": "spell", "is_buff": true, "buff_atk": 1, "buff_targets": "all_field"}
+    ],
+    "opp_life": 7,
+    "opp_field": [],
+    "expected_actions": ["play(突击骑兵)", "play(号令)", "attack(剑士 → leader)", "attack(突击骑兵 → leader)"],
+    "solution_note": "先出疾驰(2/1)→再buff(剑士3→4,骑兵2→3)→攻击4+3=7=精确斩杀。错误顺序先buff再出疾驰=4+2=6<7"
+  },
+  {
+    "id": "adv_003_combo_fanfare",
+    "description": "连击入场曲：按正确顺序出牌让屠戮破魔虫获得最大ATK",
+    "my_life": 10,
+    "my_pp": 5,
+    "my_ep": 0,
+    "my_field": [],
+    "my_hand": [
+      {"name": "妖精A", "cost": 1, "atk": 1, "life": 1, "card_type": "follower"},
+      {"name": "妖精B", "cost": 1, "atk": 1, "life": 1, "card_type": "follower"},
+      {"name": "屠戮破魔虫", "cost": 3, "atk": 0, "life": 2, "card_type": "follower", "has_storm": true,
+       "condition_type": "combo_N", "condition_bonus_atk": 0,
+       "skill_desc": "入场曲: ATK+X, X=连击数"}
+    ],
+    "opp_life": 3,
+    "opp_field": [],
+    "expected_actions": ["play(妖精A)", "play(妖精B)", "play(屠戮破魔虫)", "attack(屠戮破魔虫 → leader)"],
+    "solution_note": "出妖精A(连击1)→妖精B(连击2)→破魔虫(连击3,ATK=0+3=3,疾驰)→攻击=3=精确斩杀"
+  },
+  {
+    "id": "adv_004_evolve_damage",
+    "description": "进化时效果：龙战士进化对守护造成伤害清除守护，让其他随从打脸",
+    "my_life": 10,
+    "my_pp": 0,
+    "my_ep": 1,
+    "my_field": [
+      {"name": "猛攻的龙战士", "atk": 4, "life": 5, "can_attack": true, "can_attack_leader": true, "can_evolve": true,
+       "evolve_desc": "进化时:对对方1个随从造成4点伤害", "evolve_damage": 4, "evolve_damage_target": "enemy_follower"},
+      {"name": "精灵弓手", "atk": 3, "life": 3, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 3,
+    "opp_field": [
+      {"name": "铁壁守卫", "atk": 4, "life": 4, "has_guard": true},
+      {"name": "突击兵", "atk": 5, "life": 3}
+    ],
+    "expected_actions": ["evolve(龙战士 → 铁壁守卫)", "attack(精灵弓手 → leader)"],
+    "solution_note": "进化龙战士(变6/7, 进化效果4伤害杀死4HP守护)→弓手3打脸=3=精确斩杀"
+  },
+  {
+    "id": "adv_005_field_count_fanfare",
+    "description": "夜曲将军艾瑟拉：入场曲ATK加成取决于场上其他随从数量",
+    "my_life": 12,
+    "my_pp": 4,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "小精灵A", "atk": 1, "life": 1, "can_attack": false, "can_attack_leader": false},
+      {"name": "小精灵B", "atk": 1, "life": 1, "can_attack": false, "can_attack_leader": false},
+      {"name": "小精灵C", "atk": 1, "life": 1, "can_attack": false, "can_attack_leader": false}
+    ],
+    "my_hand": [
+      {"name": "夜曲将军·艾瑟拉", "cost": 4, "atk": 1, "life": 3, "card_type": "follower", "has_storm": true,
+       "condition_type": "field_count", "condition_bonus_atk": 0,
+       "skill_desc": "入场曲: ATK+X, X=场上其他友方随从数"}
+    ],
+    "opp_life": 4,
+    "opp_field": [],
+    "expected_actions": ["play(艾瑟拉)", "attack(艾瑟拉 → leader)"],
+    "solution_note": "场上3个其他随从, 艾瑟拉入场曲+3, ATK=1+3=4, 疾驰打脸=4=精确斩杀"
+  },
+  {
+    "id": "adv_006_evolve_breaks_guard",
+    "description": "进化新上场随从获得攻击权打掉守护，让已有随从打脸",
+    "my_life": 10,
+    "my_pp": 0,
+    "my_ep": 1,
+    "my_field": [
+      {"name": "重甲骑兵", "atk": 5, "life": 5, "can_attack": false, "can_evolve": true},
+      {"name": "精锐剑士", "atk": 4, "life": 4, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 4,
+    "opp_field": [
+      {"name": "铁壁卫兵", "atk": 3, "life": 4, "has_guard": true}
+    ],
+    "expected_actions": ["evolve(重甲骑兵)", "attack(重甲骑兵 → 铁壁卫兵)", "attack(精锐剑士 → leader)"],
+    "solution_note": "进化重甲骑兵(变7/7, 获得攻击权)→打守护(7>=4杀死守护)→精锐剑士4打脸=4=精确斩杀"
+  },
+  {
+    "id": "adv_007_burn_kills_guard",
+    "description": "直伤法术解掉守护，让场上随从打脸斩杀",
+    "my_life": 8,
+    "my_pp": 2,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "龙骑士", "atk": 4, "life": 4, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "烈焰箭", "cost": 2, "card_type": "spell", "is_direct_damage": true, "direct_damage_amount": 3}
+    ],
+    "opp_life": 4,
+    "opp_field": [
+      {"name": "石壁守卫", "atk": 2, "life": 3, "has_guard": true}
+    ],
+    "expected_actions": ["play(烈焰箭 → 石壁守卫)", "attack(龙骑士 → leader)"],
+    "solution_note": "烈焰箭3伤害杀死3HP守护→龙骑士4打脸=4=精确斩杀。如果打脸3+4=7>4也斩杀但有守护挡着"
+  }
+]

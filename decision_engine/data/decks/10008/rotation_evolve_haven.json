@@ -1,0 +1,81 @@
+{
+  "class_id": 6,
+  "archetype_id": "evolve_haven",
+  "archetype_label": null,
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10403120,
+      "count": 2
+    },
+    {
+      "card_id": 10361120,
+      "count": 2
+    },
+    {
+      "card_id": 10861110,
+      "count": 3
+    },
+    {
+      "card_id": 10863210,
+      "count": 3
+    },
+    {
+      "card_id": 10304120,
+      "count": 2
+    },
+    {
+      "card_id": 10461110,
+      "count": 2
+    },
+    {
+      "card_id": 10863110,
+      "count": 3
+    },
+    {
+      "card_id": 10362220,
+      "count": 2
+    },
+    {
+      "card_id": 10463210,
+      "count": 2
+    },
+    {
+      "card_id": 10763210,
+      "count": 2
+    },
+    {
+      "card_id": 10403110,
+      "count": 1
+    },
+    {
+      "card_id": 10564110,
+      "count": 2
+    },
+    {
+      "card_id": 10864120,
+      "count": 3
+    },
+    {
+      "card_id": 10404110,
+      "count": 2
+    },
+    {
+      "card_id": 10862120,
+      "count": 2
+    },
+    {
+      "card_id": 10864110,
+      "count": 3
+    },
+    {
+      "card_id": 10464120,
+      "count": 2
+    },
+    {
+      "card_id": 10804120,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

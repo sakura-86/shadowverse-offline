@@ -1,0 +1,85 @@
+{
+  "class_id": 6,
+  "archetype_id": "amulet_bishop",
+  "archetype_label": null,
+  "format": null,
+  "cards": [
+    {
+      "card_id": 10503211,
+      "count": 2
+    },
+    {
+      "card_id": 10062210,
+      "count": 3
+    },
+    {
+      "card_id": 10761211,
+      "count": 2
+    },
+    {
+      "card_id": 10661211,
+      "count": 3
+    },
+    {
+      "card_id": 10662210,
+      "count": 2
+    },
+    {
+      "card_id": 10662211,
+      "count": 1
+    },
+    {
+      "card_id": 10762210,
+      "count": 2
+    },
+    {
+      "card_id": 10961210,
+      "count": 1
+    },
+    {
+      "card_id": 10961211,
+      "count": 1
+    },
+    {
+      "card_id": 10962120,
+      "count": 2
+    },
+    {
+      "card_id": 10763210,
+      "count": 3
+    },
+    {
+      "card_id": 10664110,
+      "count": 3
+    },
+    {
+      "card_id": 10061210,
+      "count": 2
+    },
+    {
+      "card_id": 10663210,
+      "count": 3
+    },
+    {
+      "card_id": 10964120,
+      "count": 2
+    },
+    {
+      "card_id": 10963210,
+      "count": 2
+    },
+    {
+      "card_id": 10764120,
+      "count": 2
+    },
+    {
+      "card_id": 10903210,
+      "count": 2
+    },
+    {
+      "card_id": 10664120,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

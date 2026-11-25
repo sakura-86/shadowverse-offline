@@ -1,0 +1,5648 @@
+{
+  "schema": "PuzzleSearchReport",
+  "version": 1,
+  "max_depth": 4,
+  "beam_width": 50,
+  "enumerator": "local",
+  "max_actions_per_node": 80,
+  "include_turn_end": false,
+  "template_effects_enabled": true,
+  "event_queue_effects_enabled": true,
+  "draft_effects_allowed": true,
+  "template_count": 1559,
+  "summary": {
+    "total": 49,
+    "goal_found": 1,
+    "not_found": 48,
+    "load_error": 0,
+    "adapter_error": 0,
+    "unsupported_goal": 0
+  },
+  "items": [
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\puzzle_0008_20260701_151559_678.json",
+      "scenario_id": "puzzle_dump_puzzle_0008_20260701_151559_678",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 10,
+        "my_pp": 0,
+        "my_ep": 2,
+        "my_sep": 0,
+        "my_hand_count": 5,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -38.800000000000004,
+      "certainty": "partial",
+      "expanded": 4,
+      "actions_enumerated": 3,
+      "predictions": 3,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 3
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 3
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 3,
+        "fanfare": 3
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -38.800000000000004
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\puzzle_0009_20260701_151644_421.json",
+      "scenario_id": "puzzle_dump_puzzle_0009_20260701_151644_421",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 10,
+        "my_pp": 0,
+        "my_ep": 2,
+        "my_sep": 0,
+        "my_hand_count": 5,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -38.800000000000004,
+      "certainty": "partial",
+      "expanded": 4,
+      "actions_enumerated": 3,
+      "predictions": 3,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 3
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 3
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 3,
+        "fanfare": 3
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -38.800000000000004
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260701_163140_583.json",
+      "scenario_id": "puzzle_dump_state_0001_20260701_163140_583",
+      "puzzle_id": "game_puzzle_01_necromancy_crest",
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [
+            [
+              15
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 8,
+        "my_pp": 4,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 2,
+        "my_field_count": 2,
+        "opp_field_count": 2,
+        "opp_followers": [
+          {
+            "uid": 13,
+            "atk": 4,
+            "life": 6
+          },
+          {
+            "uid": 14,
+            "atk": 4,
+            "life": 4
+          }
+        ]
+      },
+      "score": -63.114285714285714,
+      "certainty": "spec_only",
+      "expanded": 14,
+      "actions_enumerated": 13,
+      "predictions": 13,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 13
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 13
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -63.114285714285714
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -65.62
+        },
+        {
+          "depth": 3,
+          "beam_size": 6,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260701_174511_925.json",
+      "scenario_id": "puzzle_dump_state_0001_20260701_174511_925",
+      "puzzle_id": "game_puzzle_04_combo_unleash",
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 11,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            1
+          ],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -24,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 9,
+        "my_pp": 1,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 6,
+        "my_field_count": 2,
+        "opp_field_count": 5,
+        "opp_followers": [
+          {
+            "uid": 18,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 20,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 21,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 22,
+            "atk": 2,
+            "life": 5
+          },
+          {
+            "uid": 23,
+            "atk": 2,
+            "life": 5
+          }
+        ]
+      },
+      "score": -99.77499999999999,
+      "certainty": "partial",
+      "expanded": 118,
+      "actions_enumerated": 3818,
+      "predictions": 3818,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 1782,
+      "certainty_counts": {
+        "partial": 175,
+        "spec_only": 3643
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 3643,
+        "template effects enabled but no executable effects matched": 175
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 107,
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 68,
+        "fanfare": 68
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 17,
+          "predictions": 17,
+          "goal_found": 0,
+          "next_candidates": 17,
+          "best_score": -117.39999999999999
+        },
+        {
+          "depth": 2,
+          "beam_size": 17,
+          "actions_enumerated": 493,
+          "predictions": 493,
+          "goal_found": 0,
+          "next_candidates": 323,
+          "best_score": -99.77499999999999
+        },
+        {
+          "depth": 3,
+          "beam_size": 50,
+          "actions_enumerated": 2402,
+          "predictions": 2402,
+          "goal_found": 0,
+          "next_candidates": 1068,
+          "best_score": -114.34285714285714
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 906,
+          "predictions": 906,
+          "goal_found": 0,
+          "next_candidates": 628,
+          "best_score": -116.39999999999999
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260701_175144_507.json",
+      "scenario_id": "puzzle_dump_state_0001_20260701_175144_507",
+      "puzzle_id": "game_puzzle_05_treasure_fusion",
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 9,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              0
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 10,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 14,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 3,
+        "my_field_count": 2,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 16,
+            "atk": 2,
+            "life": 7
+          }
+        ]
+      },
+      "score": -87.0625,
+      "certainty": "spec_only",
+      "expanded": 84,
+      "actions_enumerated": 452,
+      "predictions": 452,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 239,
+      "certainty_counts": {
+        "spec_only": 452
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 452
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -98.7
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 47,
+          "predictions": 47,
+          "goal_found": 0,
+          "next_candidates": 26,
+          "best_score": -98.57142857142857
+        },
+        {
+          "depth": 3,
+          "beam_size": 26,
+          "actions_enumerated": 130,
+          "predictions": 130,
+          "goal_found": 0,
+          "next_candidates": 58,
+          "best_score": -87.0625
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 268,
+          "predictions": 268,
+          "goal_found": 0,
+          "next_candidates": 122,
+          "best_score": -95.25
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260702_120632_482.json",
+      "scenario_id": "puzzle_dump_state_0001_20260702_120632_482",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "goal_found",
+      "goal_reached": true,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 0,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 2,
+        "my_field_count": 2,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": 100036.05,
+      "certainty": "partial",
+      "expanded": 5,
+      "actions_enumerated": 16,
+      "predictions": 16,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 4,
+        "partial": 12
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 12,
+        "local core rules plus template effects": 4
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:last_words": 8,
+        "generated_cards_not_available:10062210_auto_001": 4,
+        "no_executable_template_effects:no_play_effect_expected": 4,
+        "generated_cards_not_available:10163210_auto_001": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -268.29999999999995
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 12,
+          "predictions": 12,
+          "goal_found": 1,
+          "next_candidates": 12,
+          "best_score": 100036.05
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260702_123843_342.json",
+      "scenario_id": "puzzle_dump_state_0001_20260702_123843_342",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 15,
+        "opp_life": 6,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 2,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 9,
+            "life": 11
+          },
+          {
+            "uid": 14,
+            "atk": 6,
+            "life": 9
+          },
+          {
+            "uid": 16,
+            "atk": 8,
+            "life": 8
+          }
+        ]
+      },
+      "score": -329.9866666666666,
+      "certainty": "spec_only",
+      "expanded": 8,
+      "actions_enumerated": 10,
+      "predictions": 10,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 3,
+      "certainty_counts": {
+        "spec_only": 10
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 10
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -329.9866666666666
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -330.9
+        },
+        {
+          "depth": 3,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260702_124434_506.json",
+      "scenario_id": "puzzle_dump_state_0001_20260702_124434_506",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 9,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 2,
+        "my_field_count": 4,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 14,
+            "atk": 7,
+            "life": 7
+          }
+        ]
+      },
+      "score": -65.10000000000001,
+      "certainty": "partial",
+      "expanded": 38,
+      "actions_enumerated": 82,
+      "predictions": 82,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 45,
+      "certainty_counts": {
+        "spec_only": 69,
+        "partial": 13
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 69,
+        "template effects enabled but no executable effects matched": 13
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 13
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -65.10000000000001
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 29,
+          "predictions": 29,
+          "goal_found": 0,
+          "next_candidates": 17,
+          "best_score": -68.15
+        },
+        {
+          "depth": 3,
+          "beam_size": 17,
+          "actions_enumerated": 46,
+          "predictions": 46,
+          "goal_found": 0,
+          "next_candidates": 13,
+          "best_score": -76.8
+        },
+        {
+          "depth": 4,
+          "beam_size": 13,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0001_20260702_124948_873.json",
+      "scenario_id": "puzzle_dump_state_0001_20260702_124948_873",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            2
+          ],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 9,
+        "opp_life": 20,
+        "my_pp": 2,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 4,
+        "opp_field_count": 2,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 12,
+            "life": 12
+          },
+          {
+            "uid": 13,
+            "atk": 9,
+            "life": 10
+          }
+        ]
+      },
+      "score": -476.4,
+      "certainty": "spec_only",
+      "expanded": 36,
+      "actions_enumerated": 85,
+      "predictions": 85,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 44,
+      "certainty_counts": {
+        "spec_only": 83,
+        "partial": 2
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 83,
+        "template effects enabled but no executable effects matched": 2
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 2
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -489.20000000000005
+        },
+        {
+          "depth": 2,
+          "beam_size": 6,
+          "actions_enumerated": 25,
+          "predictions": 25,
+          "goal_found": 0,
+          "next_candidates": 14,
+          "best_score": -476.98571428571427
+        },
+        {
+          "depth": 3,
+          "beam_size": 14,
+          "actions_enumerated": 36,
+          "predictions": 36,
+          "goal_found": 0,
+          "next_candidates": 15,
+          "best_score": -476.4
+        },
+        {
+          "depth": 4,
+          "beam_size": 15,
+          "actions_enumerated": 18,
+          "predictions": 18,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -486.7
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0002_20260701_163153_822.json",
+      "scenario_id": "puzzle_dump_state_0002_20260701_163153_822",
+      "puzzle_id": "game_puzzle_02_bat_drain",
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [],
+      "action_count": 0,
+      "final": {
+        "my_life": 2,
+        "opp_life": 9,
+        "my_pp": 7,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 4,
+        "my_field_count": 1,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 13,
+            "atk": 5,
+            "life": 10
+          }
+        ]
+      },
+      "score": -181.2,
+      "certainty": "exact",
+      "expanded": 31,
+      "actions_enumerated": 167,
+      "predictions": 167,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 125,
+      "certainty_counts": {
+        "spec_only": 151,
+        "partial": 16
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 151,
+        "template effects enabled but no executable effects matched": 16
+      },
+      "top_unresolved": {
+        "generated_cards_not_available:10052110_auto_001": 26,
+        "no_executable_template_effects:trigger_only:last_words": 12,
+        "no_executable_template_effects:no_play_effect_expected": 4
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -182.02142857142854
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 21,
+          "predictions": 21,
+          "goal_found": 0,
+          "next_candidates": 10,
+          "best_score": -183.74999999999997
+        },
+        {
+          "depth": 3,
+          "beam_size": 10,
+          "actions_enumerated": 76,
+          "predictions": 76,
+          "goal_found": 0,
+          "next_candidates": 16,
+          "best_score": -188.79999999999998
+        },
+        {
+          "depth": 4,
+          "beam_size": 16,
+          "actions_enumerated": 66,
+          "predictions": 66,
+          "goal_found": 0,
+          "next_candidates": 12,
+          "best_score": -187.05
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0002_20260702_120737_515.json",
+      "scenario_id": "puzzle_dump_state_0002_20260702_120737_515",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              4
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -15,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              5
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 4,
+      "final": {
+        "my_life": 18,
+        "opp_life": 6,
+        "my_pp": 5,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 2,
+        "my_field_count": 2,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 13,
+            "atk": 2,
+            "life": 2
+          }
+        ]
+      },
+      "score": -39.4,
+      "certainty": "partial",
+      "expanded": 49,
+      "actions_enumerated": 149,
+      "predictions": 149,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 45,
+      "certainty_counts": {
+        "partial": 68,
+        "spec_only": 81
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 81,
+        "template effects enabled but no executable effects matched": 68
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 44,
+        "generated_cards_not_available:10062210_auto_001": 40,
+        "no_executable_template_effects:trigger_only:on_self_entered_field": 24,
+        "target_selector_insufficient_candidates:90064320_auto_001": 8
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -66.68333333333334
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 13,
+          "predictions": 13,
+          "goal_found": 0,
+          "next_candidates": 13,
+          "best_score": -61.825
+        },
+        {
+          "depth": 3,
+          "beam_size": 13,
+          "actions_enumerated": 40,
+          "predictions": 40,
+          "goal_found": 0,
+          "next_candidates": 31,
+          "best_score": -46.107142857142854
+        },
+        {
+          "depth": 4,
+          "beam_size": 31,
+          "actions_enumerated": 92,
+          "predictions": 92,
+          "goal_found": 0,
+          "next_candidates": 56,
+          "best_score": -39.4
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0002_20260702_123907_530.json",
+      "scenario_id": "puzzle_dump_state_0002_20260702_123907_530",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [
+            [
+              13
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 20,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 3,
+        "opp_field_count": 2,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 5,
+            "life": 5
+          },
+          {
+            "uid": 13,
+            "atk": 4,
+            "life": 1
+          }
+        ]
+      },
+      "score": -200.98749999999998,
+      "certainty": "partial",
+      "expanded": 27,
+      "actions_enumerated": 26,
+      "predictions": 26,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 16,
+        "spec_only": 10
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 16,
+        "local core rules plus template effects": 10
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 8,
+        "fanfare": 8,
+        "no_executable_template_effects:trigger_only:activation": 8
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -201.7
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 10,
+          "predictions": 10,
+          "goal_found": 0,
+          "next_candidates": 10,
+          "best_score": -200.98749999999998
+        },
+        {
+          "depth": 3,
+          "beam_size": 10,
+          "actions_enumerated": 12,
+          "predictions": 12,
+          "goal_found": 0,
+          "next_candidates": 12,
+          "best_score": -202.98749999999998
+        },
+        {
+          "depth": 4,
+          "beam_size": 12,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0002_20260702_124453_479.json",
+      "scenario_id": "puzzle_dump_state_0002_20260702_124453_479",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 8,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 8,
+        "my_pp": 0,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 4,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -27.599999999999998,
+      "certainty": "spec_only",
+      "expanded": 6,
+      "actions_enumerated": 5,
+      "predictions": 5,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 4,
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 4,
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:template_without_executable_effects": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -27.800000000000004
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -27.599999999999998
+        },
+        {
+          "depth": 3,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0002_20260702_125009_240.json",
+      "scenario_id": "puzzle_dump_state_0002_20260702_125009_240",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 1,
+        "opp_life": 8,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 4,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -39.599999999999994,
+      "certainty": "partial",
+      "expanded": 5,
+      "actions_enumerated": 4,
+      "predictions": 4,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 3,
+        "spec_only": 1
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 3,
+        "local core rules plus template effects": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:on_discard_self": 2,
+        "no_executable_template_effects:matched_but_blocked": 1,
+        "target_selector_insufficient_candidates:10142140_auto_002": 1,
+        "fanfare": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -41.400000000000006
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -39.599999999999994
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260701_163118_786.json",
+      "scenario_id": "puzzle_dump_state_0003_20260701_163118_786",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 5,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 3,
+        "my_pp": 2,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 3,
+        "opp_field_count": 5,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 13,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 14,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 15,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 16,
+            "atk": 1,
+            "life": 3
+          }
+        ]
+      },
+      "score": 475.74285714285713,
+      "certainty": "spec_only",
+      "expanded": 5,
+      "actions_enumerated": 4,
+      "predictions": 4,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 2,
+        "partial": 2
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 2,
+        "template effects enabled but no executable effects matched": 2
+      },
+      "top_unresolved": {
+        "persistent_per_turn_limit_not_supported:10563110_auto_002_persistent": 2,
+        "no_executable_template_effects:trigger_only:activation": 2
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": 475.74285714285713
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": 472.75
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260701_163208_475.json",
+      "scenario_id": "puzzle_dump_state_0003_20260701_163208_475",
+      "puzzle_id": "game_puzzle_03_super_evolve_destroy",
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 9,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              15
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 8,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [
+            [
+              3
+            ]
+          ],
+          "random_target_groups": [
+            [
+              15
+            ]
+          ],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 11,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 5,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 15,
+            "atk": 5,
+            "life": 1
+          }
+        ]
+      },
+      "score": -59.959999999999994,
+      "certainty": "partial",
+      "expanded": 76,
+      "actions_enumerated": 121,
+      "predictions": 121,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 32,
+      "certainty_counts": {
+        "spec_only": 87,
+        "partial": 34
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 87,
+        "template effects enabled but no executable effects matched": 34
+      },
+      "top_unresolved": {
+        "generated_cards_not_materializable:history_same_name_pool_history_no_match": 34,
+        "no_executable_template_effects:no_play_effect_expected": 20,
+        "generated_cards_not_materializable:history_same_name_pool_history_empty": 15,
+        "no_executable_template_effects:matched_but_blocked": 14,
+        "target_selector_insufficient_candidates:10572310_auto_001": 14
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 9,
+          "predictions": 9,
+          "goal_found": 0,
+          "next_candidates": 9,
+          "best_score": -62.400000000000006
+        },
+        {
+          "depth": 2,
+          "beam_size": 9,
+          "actions_enumerated": 44,
+          "predictions": 44,
+          "goal_found": 0,
+          "next_candidates": 32,
+          "best_score": -62.97500000000001
+        },
+        {
+          "depth": 3,
+          "beam_size": 32,
+          "actions_enumerated": 54,
+          "predictions": 54,
+          "goal_found": 0,
+          "next_candidates": 34,
+          "best_score": -59.959999999999994
+        },
+        {
+          "depth": 4,
+          "beam_size": 34,
+          "actions_enumerated": 14,
+          "predictions": 14,
+          "goal_found": 0,
+          "next_candidates": 14,
+          "best_score": -71.1
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260702_120757_167.json",
+      "scenario_id": "puzzle_dump_state_0003_20260702_120757_167",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [],
+      "action_count": 0,
+      "final": {
+        "my_life": 20,
+        "opp_life": 4,
+        "my_pp": 5,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 2,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -23.0,
+      "certainty": "exact",
+      "expanded": 3,
+      "actions_enumerated": 2,
+      "predictions": 2,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 2
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 2
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_blocked": 2,
+        "target_selector_insufficient_candidates:10641310_auto_002": 1,
+        "target_selector_insufficient_candidates:10543310_auto_001": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -36.7
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260702_123925_311.json",
+      "scenario_id": "puzzle_dump_state_0003_20260702_123925_311",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 8,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [
+            [
+              3
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 8,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 10,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 5,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -41.85,
+      "certainty": "spec_only",
+      "expanded": 8,
+      "actions_enumerated": 7,
+      "predictions": 7,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 7
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 7
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 5,
+          "predictions": 5,
+          "goal_found": 0,
+          "next_candidates": 5,
+          "best_score": -47.1
+        },
+        {
+          "depth": 2,
+          "beam_size": 5,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -41.85
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260702_124510_369.json",
+      "scenario_id": "puzzle_dump_state_0003_20260702_124510_369",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 9,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 8,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 4,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 4,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 15,
+            "atk": 2,
+            "life": 2
+          },
+          {
+            "uid": 16,
+            "atk": 0,
+            "life": 2
+          },
+          {
+            "uid": 17,
+            "atk": 0,
+            "life": 2
+          }
+        ]
+      },
+      "score": 12.762499999999998,
+      "certainty": "spec_only",
+      "expanded": 6,
+      "actions_enumerated": 5,
+      "predictions": 5,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 4,
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 4,
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:template_without_executable_effects": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": 7.644285714285715
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": 12.762499999999998
+        },
+        {
+          "depth": 3,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0003_20260702_125025_190.json",
+      "scenario_id": "puzzle_dump_state_0003_20260702_125025_190",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 2,
+        "opp_life": 20,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 2,
+        "opp_field_count": 4,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 5,
+            "life": 7
+          },
+          {
+            "uid": 11,
+            "atk": 2,
+            "life": 3
+          },
+          {
+            "uid": 13,
+            "atk": 2,
+            "life": 6
+          },
+          {
+            "uid": 14,
+            "atk": 2,
+            "life": 4
+          }
+        ]
+      },
+      "score": -430.03749999999997,
+      "certainty": "spec_only",
+      "expanded": 5,
+      "actions_enumerated": 4,
+      "predictions": 4,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 1,
+        "spec_only": 3
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 3,
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 1,
+        "fanfare": 1,
+        "generated_cards_not_available:10153130_auto_003": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -430.8957142857143
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -430.03749999999997
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0004_20260701_163224_387.json",
+      "scenario_id": "puzzle_dump_state_0004_20260701_163224_387",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 11,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            1
+          ],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -24,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 9,
+        "my_pp": 1,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 6,
+        "my_field_count": 2,
+        "opp_field_count": 5,
+        "opp_followers": [
+          {
+            "uid": 18,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 20,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 21,
+            "atk": 4,
+            "life": 7
+          },
+          {
+            "uid": 22,
+            "atk": 2,
+            "life": 5
+          },
+          {
+            "uid": 23,
+            "atk": 2,
+            "life": 5
+          }
+        ]
+      },
+      "score": -89.77499999999999,
+      "certainty": "partial",
+      "expanded": 118,
+      "actions_enumerated": 4078,
+      "predictions": 4078,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 1966,
+      "certainty_counts": {
+        "partial": 175,
+        "spec_only": 3903
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 3903,
+        "template effects enabled but no executable effects matched": 175
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 111,
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 64,
+        "fanfare": 64
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 17,
+          "predictions": 17,
+          "goal_found": 0,
+          "next_candidates": 17,
+          "best_score": -107.1
+        },
+        {
+          "depth": 2,
+          "beam_size": 17,
+          "actions_enumerated": 493,
+          "predictions": 493,
+          "goal_found": 0,
+          "next_candidates": 323,
+          "best_score": -89.77499999999999
+        },
+        {
+          "depth": 3,
+          "beam_size": 50,
+          "actions_enumerated": 2260,
+          "predictions": 2260,
+          "goal_found": 0,
+          "next_candidates": 1020,
+          "best_score": -104.34285714285714
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 1308,
+          "predictions": 1308,
+          "goal_found": 0,
+          "next_candidates": 752,
+          "best_score": -106.39999999999999
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0004_20260702_120816_954.json",
+      "scenario_id": "puzzle_dump_state_0004_20260702_120816_954",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [
+            [
+              12,
+              13,
+              14,
+              15
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 17,
+        "opp_life": 9,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 3,
+        "my_field_count": 0,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -63.1,
+      "certainty": "spec_only",
+      "expanded": 95,
+      "actions_enumerated": 317,
+      "predictions": 317,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 217,
+      "certainty_counts": {
+        "spec_only": 288,
+        "partial": 29
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 288,
+        "template effects enabled but no executable effects matched": 29
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 29,
+        "target_selector_insufficient_candidates:10644110_auto_001": 4
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 17,
+          "predictions": 17,
+          "goal_found": 0,
+          "next_candidates": 17,
+          "best_score": -63.1
+        },
+        {
+          "depth": 2,
+          "beam_size": 17,
+          "actions_enumerated": 136,
+          "predictions": 136,
+          "goal_found": 0,
+          "next_candidates": 56,
+          "best_score": -64.3
+        },
+        {
+          "depth": 3,
+          "beam_size": 50,
+          "actions_enumerated": 164,
+          "predictions": 164,
+          "goal_found": 0,
+          "next_candidates": 27,
+          "best_score": -76.2
+        },
+        {
+          "depth": 4,
+          "beam_size": 27,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0004_20260702_123945_452.json",
+      "scenario_id": "puzzle_dump_state_0004_20260702_123945_452",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [
+            [
+              15
+            ],
+            [
+              11,
+              12,
+              14,
+              15
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 5,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            2
+          ],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 20,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 5,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 7,
+            "life": 9
+          },
+          {
+            "uid": 12,
+            "atk": 5,
+            "life": 7
+          },
+          {
+            "uid": 14,
+            "atk": 5,
+            "life": 7
+          }
+        ]
+      },
+      "score": -210.9625,
+      "certainty": "partial",
+      "expanded": 46,
+      "actions_enumerated": 69,
+      "predictions": 69,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 24,
+      "certainty_counts": {
+        "spec_only": 52,
+        "partial": 17
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 52,
+        "template effects enabled but no executable effects matched": 17
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 17
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -245.99999999999997
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 28,
+          "predictions": 28,
+          "goal_found": 0,
+          "next_candidates": 18,
+          "best_score": -218.40714285714287
+        },
+        {
+          "depth": 3,
+          "beam_size": 18,
+          "actions_enumerated": 34,
+          "predictions": 34,
+          "goal_found": 0,
+          "next_candidates": 20,
+          "best_score": -210.9625
+        },
+        {
+          "depth": 4,
+          "beam_size": 20,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0004_20260702_124529_788.json",
+      "scenario_id": "puzzle_dump_state_0004_20260702_124529_788",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [
+            [
+              0
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -17,
+          "play_kind": "normal",
+          "cost": 3,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 8,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 4,
+        "my_field_count": 1,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 14,
+            "atk": 3,
+            "life": 3
+          }
+        ]
+      },
+      "score": -54.225,
+      "certainty": "partial",
+      "expanded": 57,
+      "actions_enumerated": 175,
+      "predictions": 175,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 47,
+      "certainty_counts": {
+        "spec_only": 75,
+        "partial": 100
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 100,
+        "local core rules plus template effects": 75
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 70,
+        "no_executable_template_effects:trigger_only:last_words": 30
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 5,
+          "predictions": 5,
+          "goal_found": 0,
+          "next_candidates": 5,
+          "best_score": -62.642857142857146
+        },
+        {
+          "depth": 2,
+          "beam_size": 5,
+          "actions_enumerated": 21,
+          "predictions": 21,
+          "goal_found": 0,
+          "next_candidates": 14,
+          "best_score": -55.8
+        },
+        {
+          "depth": 3,
+          "beam_size": 14,
+          "actions_enumerated": 57,
+          "predictions": 57,
+          "goal_found": 0,
+          "next_candidates": 37,
+          "best_score": -54.225
+        },
+        {
+          "depth": 4,
+          "beam_size": 37,
+          "actions_enumerated": 92,
+          "predictions": 92,
+          "goal_found": 0,
+          "next_candidates": 72,
+          "best_score": -54.925
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0004_20260702_125041_261.json",
+      "scenario_id": "puzzle_dump_state_0004_20260702_125041_261",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 8,
+          "target_groups": [
+            [
+              3
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 1,
+        "opp_life": 10,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 0,
+        "my_field_count": 4,
+        "opp_field_count": 4,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 5,
+            "life": 7
+          },
+          {
+            "uid": 11,
+            "atk": 2,
+            "life": 4
+          },
+          {
+            "uid": 13,
+            "atk": 0,
+            "life": 4
+          },
+          {
+            "uid": 14,
+            "atk": 2,
+            "life": 4
+          }
+        ]
+      },
+      "score": -263.43750000000006,
+      "certainty": "spec_only",
+      "expanded": 2,
+      "actions_enumerated": 1,
+      "predictions": 1,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 1
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 1
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 1,
+          "predictions": 1,
+          "goal_found": 0,
+          "next_candidates": 1,
+          "best_score": -263.43750000000006
+        },
+        {
+          "depth": 2,
+          "beam_size": 1,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0005_20260701_163304_147.json",
+      "scenario_id": "puzzle_dump_state_0005_20260701_163304_147",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 9,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              0
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 10,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 7,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 14,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 3,
+        "my_field_count": 2,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 16,
+            "atk": 2,
+            "life": 7
+          }
+        ]
+      },
+      "score": -72.0625,
+      "certainty": "spec_only",
+      "expanded": 84,
+      "actions_enumerated": 452,
+      "predictions": 452,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 239,
+      "certainty_counts": {
+        "spec_only": 452
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 452
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -83.7
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 47,
+          "predictions": 47,
+          "goal_found": 0,
+          "next_candidates": 26,
+          "best_score": -83.57142857142857
+        },
+        {
+          "depth": 3,
+          "beam_size": 26,
+          "actions_enumerated": 130,
+          "predictions": 130,
+          "goal_found": 0,
+          "next_candidates": 58,
+          "best_score": -72.0625
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 268,
+          "predictions": 268,
+          "goal_found": 0,
+          "next_candidates": 122,
+          "best_score": -80.25
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0005_20260702_120833_031.json",
+      "scenario_id": "puzzle_dump_state_0005_20260702_120833_031",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 8,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 14,
+        "my_pp": 6,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 4,
+        "opp_field_count": 2,
+        "opp_followers": [
+          {
+            "uid": 15,
+            "atk": 2,
+            "life": 3
+          },
+          {
+            "uid": 16,
+            "atk": 5,
+            "life": 5
+          }
+        ]
+      },
+      "score": -108.56,
+      "certainty": "partial",
+      "expanded": 11,
+      "actions_enumerated": 12,
+      "predictions": 12,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 2,
+      "certainty_counts": {
+        "spec_only": 8,
+        "partial": 4
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 8,
+        "template effects enabled but no executable effects matched": 4
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:enhance": 4
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -108.56
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -109.01
+        },
+        {
+          "depth": 3,
+          "beam_size": 4,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -117.9
+        },
+        {
+          "depth": 4,
+          "beam_size": 4,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0005_20260702_124006_573.json",
+      "scenario_id": "puzzle_dump_state_0005_20260702_124006_573",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              3,
+              4
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -16,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 8,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 10,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 2,
+        "my_field_count": 5,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 4,
+            "life": 5
+          },
+          {
+            "uid": 13,
+            "atk": 4,
+            "life": 5
+          },
+          {
+            "uid": 14,
+            "atk": 4,
+            "life": 7
+          }
+        ]
+      },
+      "score": -109.1625,
+      "certainty": "partial",
+      "expanded": 35,
+      "actions_enumerated": 57,
+      "predictions": 57,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 17,
+      "certainty_counts": {
+        "spec_only": 30,
+        "partial": 27
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 30,
+        "template effects enabled but no executable effects matched": 27
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 27
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 9,
+          "predictions": 9,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -116.04999999999998
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 19,
+          "predictions": 19,
+          "goal_found": 0,
+          "next_candidates": 11,
+          "best_score": -111.16666666666666
+        },
+        {
+          "depth": 3,
+          "beam_size": 11,
+          "actions_enumerated": 23,
+          "predictions": 23,
+          "goal_found": 0,
+          "next_candidates": 19,
+          "best_score": -109.1625
+        },
+        {
+          "depth": 4,
+          "beam_size": 19,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -120.47142857142856
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0005_20260702_124545_359.json",
+      "scenario_id": "puzzle_dump_state_0005_20260702_124545_359",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [
+            [
+              12
+            ]
+          ],
+          "selected_indexes": [
+            1
+          ],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 4,
+        "opp_life": 20,
+        "my_pp": 2,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 2,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 14,
+            "atk": 2,
+            "life": 2
+          },
+          {
+            "uid": 15,
+            "atk": 2,
+            "life": 2
+          }
+        ]
+      },
+      "score": -253.2,
+      "certainty": "spec_only",
+      "expanded": 60,
+      "actions_enumerated": 59,
+      "predictions": 59,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 42,
+        "partial": 17
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 42,
+        "template effects enabled but no executable effects matched": 17
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:enhance": 17
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -259.0
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 22,
+          "predictions": 22,
+          "goal_found": 0,
+          "next_candidates": 22,
+          "best_score": -253.2
+        },
+        {
+          "depth": 3,
+          "beam_size": 22,
+          "actions_enumerated": 30,
+          "predictions": 30,
+          "goal_found": 0,
+          "next_candidates": 30,
+          "best_score": -254.6125
+        },
+        {
+          "depth": 4,
+          "beam_size": 30,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0005_20260702_125055_945.json",
+      "scenario_id": "puzzle_dump_state_0005_20260702_125055_945",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -14,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -13,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [
+            [
+              -14
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 4,
+      "final": {
+        "my_life": 1,
+        "opp_life": 11,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 2,
+        "my_field_count": 2,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 7,
+            "life": 7
+          }
+        ]
+      },
+      "score": -262.5,
+      "certainty": "partial",
+      "expanded": 28,
+      "actions_enumerated": 71,
+      "predictions": 71,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 10,
+      "certainty_counts": {
+        "spec_only": 39,
+        "partial": 32
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 39,
+        "template effects enabled but no executable effects matched": 32
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 30,
+        "no_executable_template_effects:matched_but_blocked": 2,
+        "target_selector_insufficient_candidates:10112130_auto_001": 2,
+        "fanfare": 2
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -264.05
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 8,
+          "predictions": 8,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -264.82142857142856
+        },
+        {
+          "depth": 3,
+          "beam_size": 7,
+          "actions_enumerated": 18,
+          "predictions": 18,
+          "goal_found": 0,
+          "next_candidates": 17,
+          "best_score": -262.7
+        },
+        {
+          "depth": 4,
+          "beam_size": 17,
+          "actions_enumerated": 42,
+          "predictions": 42,
+          "goal_found": 0,
+          "next_candidates": 34,
+          "best_score": -262.5
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0006_20260702_124028_256.json",
+      "scenario_id": "puzzle_dump_state_0006_20260702_124028_256",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 6,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 0,
+        "my_field_count": 2,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 5,
+            "life": 5
+          },
+          {
+            "uid": 11,
+            "atk": 3,
+            "life": 3
+          },
+          {
+            "uid": 12,
+            "atk": 3,
+            "life": 3
+          }
+        ]
+      },
+      "score": -30.775,
+      "certainty": "partial",
+      "expanded": 2,
+      "actions_enumerated": 1,
+      "predictions": 1,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_blocked": 1,
+        "generated_cards_not_materializable:source_pool_random_ambiguous": 1,
+        "previous_summoned_not_available:10864110_auto_002": 1,
+        "fanfare": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 1,
+          "predictions": 1,
+          "goal_found": 0,
+          "next_candidates": 1,
+          "best_score": -30.775
+        },
+        {
+          "depth": 2,
+          "beam_size": 1,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0006_20260702_124605_167.json",
+      "scenario_id": "puzzle_dump_state_0006_20260702_124605_167",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 7,
+        "my_pp": 0,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 3,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 2,
+            "life": 2
+          },
+          {
+            "uid": 13,
+            "atk": 5,
+            "life": 5
+          }
+        ]
+      },
+      "score": -33.575,
+      "certainty": "partial",
+      "expanded": 44,
+      "actions_enumerated": 174,
+      "predictions": 174,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 131,
+      "certainty_counts": {
+        "partial": 15,
+        "spec_only": 159
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 159,
+        "template effects enabled but no executable effects matched": 15
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 15,
+        "fanfare": 15
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 80,
+          "predictions": 80,
+          "goal_found": 0,
+          "next_candidates": 15,
+          "best_score": -33.900000000000006
+        },
+        {
+          "depth": 2,
+          "beam_size": 15,
+          "actions_enumerated": 94,
+          "predictions": 94,
+          "goal_found": 0,
+          "next_candidates": 28,
+          "best_score": -33.575
+        },
+        {
+          "depth": 3,
+          "beam_size": 28,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0007_20260702_124046_307.json",
+      "scenario_id": "puzzle_dump_state_0007_20260702_124046_307",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [
+            [
+              0,
+              0,
+              0,
+              12,
+              13
+            ]
+          ],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 1,
+        "opp_life": 6,
+        "my_pp": 4,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 2,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -13.34,
+      "certainty": "spec_only",
+      "expanded": 66,
+      "actions_enumerated": 268,
+      "predictions": 268,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 203,
+      "certainty_counts": {
+        "partial": 15,
+        "spec_only": 253
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 253,
+        "template effects enabled but no executable effects matched": 15
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:enhance": 15,
+        "target_selector_insufficient_candidates:10304120_auto_001": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 80,
+          "predictions": 80,
+          "goal_found": 0,
+          "next_candidates": 13,
+          "best_score": -13.34
+        },
+        {
+          "depth": 2,
+          "beam_size": 13,
+          "actions_enumerated": 182,
+          "predictions": 182,
+          "goal_found": 0,
+          "next_candidates": 48,
+          "best_score": -14.889999999999999
+        },
+        {
+          "depth": 3,
+          "beam_size": 48,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -115.80000000000001
+        },
+        {
+          "depth": 4,
+          "beam_size": 4,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0007_20260702_124623_206.json",
+      "scenario_id": "puzzle_dump_state_0007_20260702_124623_206",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [
+            [
+              3
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 14,
+        "my_pp": 6,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 2,
+        "opp_field_count": 5,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 3,
+            "life": 6
+          },
+          {
+            "uid": 14,
+            "atk": 3,
+            "life": 4
+          },
+          {
+            "uid": 15,
+            "atk": 3,
+            "life": 4
+          },
+          {
+            "uid": 16,
+            "atk": 1,
+            "life": 4
+          },
+          {
+            "uid": 17,
+            "atk": 5,
+            "life": 7
+          }
+        ]
+      },
+      "score": -135.01,
+      "certainty": "partial",
+      "expanded": 5,
+      "actions_enumerated": 4,
+      "predictions": 4,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 2,
+        "spec_only": 2
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 2,
+        "local core rules plus template effects": 2
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 2,
+        "fanfare": 2
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -135.01
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -136.10999999999999
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0008_20260702_124116_754.json",
+      "scenario_id": "puzzle_dump_state_0008_20260702_124116_754",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 5,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 6,
+        "my_pp": 3,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 2,
+        "my_field_count": 2,
+        "opp_field_count": 4,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 4,
+            "life": 4
+          },
+          {
+            "uid": 12,
+            "atk": 4,
+            "life": 4
+          },
+          {
+            "uid": 13,
+            "atk": 4,
+            "life": 4
+          },
+          {
+            "uid": 14,
+            "atk": 4,
+            "life": 4
+          }
+        ]
+      },
+      "score": -77.42499999999998,
+      "certainty": "spec_only",
+      "expanded": 16,
+      "actions_enumerated": 15,
+      "predictions": 15,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 10,
+        "spec_only": 5
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 10,
+        "local core rules plus template effects": 5
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 10
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -77.42499999999998
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -78.05714285714285
+        },
+        {
+          "depth": 3,
+          "beam_size": 6,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -78.19999999999999
+        },
+        {
+          "depth": 4,
+          "beam_size": 6,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0008_20260702_124637_968.json",
+      "scenario_id": "puzzle_dump_state_0008_20260702_124637_968",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 2,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 3,
+        "my_field_count": 1,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 2,
+            "life": 5
+          }
+        ]
+      },
+      "score": -3.1357142857142852,
+      "certainty": "spec_only",
+      "expanded": 14,
+      "actions_enumerated": 25,
+      "predictions": 25,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 8,
+      "certainty_counts": {
+        "spec_only": 20,
+        "partial": 5
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 20,
+        "template effects enabled but no executable effects matched": 5
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 5
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -3.1357142857142852
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -3.750000000000001
+        },
+        {
+          "depth": 3,
+          "beam_size": 4,
+          "actions_enumerated": 10,
+          "predictions": 10,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -9.4
+        },
+        {
+          "depth": 4,
+          "beam_size": 7,
+          "actions_enumerated": 9,
+          "predictions": 9,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -14.95
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0009_20260702_124155_801.json",
+      "scenario_id": "puzzle_dump_state_0009_20260702_124155_801",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 3,
+        "my_pp": 5,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 3,
+        "my_field_count": 2,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 1,
+            "life": 4
+          }
+        ]
+      },
+      "score": -7.142857142857141,
+      "certainty": "partial",
+      "expanded": 32,
+      "actions_enumerated": 71,
+      "predictions": 71,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 66,
+        "spec_only": 5
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 66,
+        "local core rules plus template effects": 5
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 66
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -8.583333333333332
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 8,
+          "predictions": 8,
+          "goal_found": 0,
+          "next_candidates": 8,
+          "best_score": -7.142857142857141
+        },
+        {
+          "depth": 3,
+          "beam_size": 8,
+          "actions_enumerated": 20,
+          "predictions": 20,
+          "goal_found": 0,
+          "next_candidates": 20,
+          "best_score": -7.699999999999999
+        },
+        {
+          "depth": 4,
+          "beam_size": 20,
+          "actions_enumerated": 40,
+          "predictions": 40,
+          "goal_found": 0,
+          "next_candidates": 40,
+          "best_score": -7.9
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0009_20260702_124659_435.json",
+      "scenario_id": "puzzle_dump_state_0009_20260702_124659_435",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [
+            [
+              11
+            ]
+          ],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -12,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 5,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 1,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 7,
+            "life": 4
+          }
+        ]
+      },
+      "score": -22.050000000000004,
+      "certainty": "partial",
+      "expanded": 6,
+      "actions_enumerated": 5,
+      "predictions": 5,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 4,
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 4,
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "persistent_per_turn_limit_not_supported:10344120_auto_003_persistent": 2,
+        "target_selector_insufficient_candidates:10343310_auto_001": 1,
+        "no_executable_template_effects:no_play_effect_expected": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -46.85
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -22.050000000000004
+        },
+        {
+          "depth": 3,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0010_20260702_124215_488.json",
+      "scenario_id": "puzzle_dump_state_0010_20260702_124215_488",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [],
+      "action_count": 0,
+      "final": {
+        "my_life": 20,
+        "opp_life": 9,
+        "my_pp": 7,
+        "my_ep": 1,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -51.0,
+      "certainty": "exact",
+      "expanded": 2,
+      "actions_enumerated": 1,
+      "predictions": 1,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 1,
+          "predictions": 1,
+          "goal_found": 0,
+          "next_candidates": 1,
+          "best_score": -60.28857142857143
+        },
+        {
+          "depth": 2,
+          "beam_size": 1,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0010_20260702_124715_094.json",
+      "scenario_id": "puzzle_dump_state_0010_20260702_124715_094",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 0,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 9,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 9,
+        "my_pp": 1,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 2,
+        "opp_field_count": 3,
+        "opp_followers": [
+          {
+            "uid": 13,
+            "atk": 4,
+            "life": 3
+          },
+          {
+            "uid": 14,
+            "atk": 4,
+            "life": 2
+          },
+          {
+            "uid": 16,
+            "atk": 4,
+            "life": 1
+          }
+        ]
+      },
+      "score": -92.7,
+      "certainty": "spec_only",
+      "expanded": 20,
+      "actions_enumerated": 19,
+      "predictions": 19,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 19
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 19
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -109.80000000000001
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 12,
+          "predictions": 12,
+          "goal_found": 0,
+          "next_candidates": 12,
+          "best_score": -92.7
+        },
+        {
+          "depth": 3,
+          "beam_size": 12,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0011_20260702_124245_832.json",
+      "scenario_id": "puzzle_dump_state_0011_20260702_124245_832",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 6,
+          "play_kind": "normal",
+          "cost": 6,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 7,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 0,
+        "my_field_count": 4,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 5,
+            "life": 10
+          }
+        ]
+      },
+      "score": 486.4375,
+      "certainty": "partial",
+      "expanded": 2,
+      "actions_enumerated": 1,
+      "predictions": 1,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:no_play_effect_expected": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 1,
+          "predictions": 1,
+          "goal_found": 0,
+          "next_candidates": 1,
+          "best_score": 486.4375
+        },
+        {
+          "depth": 2,
+          "beam_size": 1,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0011_20260702_124732_358.json",
+      "scenario_id": "puzzle_dump_state_0011_20260702_124732_358",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            1
+          ],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": -14,
+          "play_kind": "normal",
+          "cost": 0,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 3,
+      "final": {
+        "my_life": 20,
+        "opp_life": 5,
+        "my_pp": 1,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 4,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 2,
+            "life": 1
+          }
+        ]
+      },
+      "score": -6.534666666666666,
+      "certainty": "spec_only",
+      "expanded": 28,
+      "actions_enumerated": 31,
+      "predictions": 31,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 4,
+      "certainty_counts": {
+        "spec_only": 30,
+        "partial": 1
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 30,
+        "template effects enabled but no executable effects matched": 1
+      },
+      "top_unresolved": {
+        "mode_choice_count_modifier_not_supported:10354110_auto_002": 5,
+        "target_selector_insufficient_candidates:10352210_auto_004": 1,
+        "no_executable_template_effects:no_play_effect_expected": 1
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 5,
+          "predictions": 5,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -20.390000000000004
+        },
+        {
+          "depth": 2,
+          "beam_size": 4,
+          "actions_enumerated": 15,
+          "predictions": 15,
+          "goal_found": 0,
+          "next_candidates": 12,
+          "best_score": -10.1
+        },
+        {
+          "depth": 3,
+          "beam_size": 12,
+          "actions_enumerated": 11,
+          "predictions": 11,
+          "goal_found": 0,
+          "next_candidates": 11,
+          "best_score": -6.534666666666666
+        },
+        {
+          "depth": 4,
+          "beam_size": 11,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0012_20260702_124310_058.json",
+      "scenario_id": "puzzle_dump_state_0012_20260702_124310_058",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 2,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 2,
+        "my_field_count": 1,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 8,
+            "life": 10
+          }
+        ]
+      },
+      "score": -9.385714285714286,
+      "certainty": "spec_only",
+      "expanded": 10,
+      "actions_enumerated": 12,
+      "predictions": 12,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 3,
+      "certainty_counts": {
+        "spec_only": 12
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 12
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -9.385714285714286
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -12.439999999999998
+        },
+        {
+          "depth": 3,
+          "beam_size": 4,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -23.4
+        },
+        {
+          "depth": 4,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0012_20260702_124749_409.json",
+      "scenario_id": "puzzle_dump_state_0012_20260702_124749_409",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 2,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 5,
+          "play_kind": "normal",
+          "cost": 5,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [
+            1
+          ],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 20,
+        "my_pp": 0,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 0,
+        "my_field_count": 3,
+        "opp_field_count": 4,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 6,
+            "life": 9
+          },
+          {
+            "uid": 14,
+            "atk": 3,
+            "life": 6
+          },
+          {
+            "uid": 16,
+            "atk": 3,
+            "life": 6
+          },
+          {
+            "uid": 17,
+            "atk": 1,
+            "life": 6
+          }
+        ]
+      },
+      "score": -217.9,
+      "certainty": "spec_only",
+      "expanded": 8,
+      "actions_enumerated": 9,
+      "predictions": 9,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 2,
+      "certainty_counts": {
+        "spec_only": 9
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 9
+      },
+      "top_unresolved": {
+        "mode_choice_count_modifier_not_supported:10354110_auto_002": 3
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -219.00714285714287
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 5,
+          "predictions": 5,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -217.9
+        },
+        {
+          "depth": 3,
+          "beam_size": 4,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0013_20260702_124818_255.json",
+      "scenario_id": "puzzle_dump_state_0013_20260702_124818_255",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 5,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 1,
+      "final": {
+        "my_life": 20,
+        "opp_life": 10,
+        "my_pp": 5,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 5,
+        "my_field_count": 1,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -57.300000000000004,
+      "certainty": "partial",
+      "expanded": 87,
+      "actions_enumerated": 256,
+      "predictions": 256,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "partial": 256
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 256
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:fusion": 214,
+        "no_executable_template_effects:no_play_effect_expected": 42
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 6,
+          "predictions": 6,
+          "goal_found": 0,
+          "next_candidates": 6,
+          "best_score": -57.300000000000004
+        },
+        {
+          "depth": 2,
+          "beam_size": 6,
+          "actions_enumerated": 30,
+          "predictions": 30,
+          "goal_found": 0,
+          "next_candidates": 30,
+          "best_score": -57.900000000000006
+        },
+        {
+          "depth": 3,
+          "beam_size": 30,
+          "actions_enumerated": 96,
+          "predictions": 96,
+          "goal_found": 0,
+          "next_candidates": 96,
+          "best_score": -72.37
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 124,
+          "predictions": 124,
+          "goal_found": 0,
+          "next_candidates": 124,
+          "best_score": -73.99142857142857
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0014_20260702_124832_691.json",
+      "scenario_id": "puzzle_dump_state_0014_20260702_124832_691",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [],
+      "action_count": 0,
+      "final": {
+        "my_life": 20,
+        "opp_life": 12,
+        "my_pp": 10,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 7,
+        "my_field_count": 0,
+        "opp_field_count": 0,
+        "opp_followers": []
+      },
+      "score": -79.0,
+      "certainty": "exact",
+      "expanded": 89,
+      "actions_enumerated": 305,
+      "predictions": 305,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 35,
+      "certainty_counts": {
+        "partial": 305
+      },
+      "prediction_descriptions": {
+        "template effects enabled but no executable effects matched": 305
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:trigger_only:fusion": 176,
+        "no_executable_template_effects:matched_but_blocked": 86,
+        "target_selector_insufficient_candidates:10172320_auto_001": 86,
+        "no_executable_template_effects:no_play_effect_expected": 43
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 7,
+          "predictions": 7,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -85.2
+        },
+        {
+          "depth": 2,
+          "beam_size": 7,
+          "actions_enumerated": 42,
+          "predictions": 42,
+          "goal_found": 0,
+          "next_candidates": 31,
+          "best_score": -87.7088888888889
+        },
+        {
+          "depth": 3,
+          "beam_size": 31,
+          "actions_enumerated": 108,
+          "predictions": 108,
+          "goal_found": 0,
+          "next_candidates": 84,
+          "best_score": -89.37
+        },
+        {
+          "depth": 4,
+          "beam_size": 50,
+          "actions_enumerated": 148,
+          "predictions": 148,
+          "goal_found": 0,
+          "next_candidates": 148,
+          "best_score": -90.99142857142857
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0015_20260702_124851_745.json",
+      "scenario_id": "puzzle_dump_state_0015_20260702_124851_745",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              11
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [
+            [
+              11
+            ]
+          ],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 2,
+        "opp_life": 20,
+        "my_pp": 1,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 0,
+        "opp_field_count": 1,
+        "opp_followers": [
+          {
+            "uid": 12,
+            "atk": 2,
+            "life": 4
+          }
+        ]
+      },
+      "score": -249.39999999999998,
+      "certainty": "spec_only",
+      "expanded": 17,
+      "actions_enumerated": 32,
+      "predictions": 32,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 16,
+      "certainty_counts": {
+        "spec_only": 32
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 32
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 5,
+          "predictions": 5,
+          "goal_found": 0,
+          "next_candidates": 5,
+          "best_score": -305.7
+        },
+        {
+          "depth": 2,
+          "beam_size": 5,
+          "actions_enumerated": 16,
+          "predictions": 16,
+          "goal_found": 0,
+          "next_candidates": 7,
+          "best_score": -249.39999999999998
+        },
+        {
+          "depth": 3,
+          "beam_size": 7,
+          "actions_enumerated": 11,
+          "predictions": 11,
+          "goal_found": 0,
+          "next_candidates": 4,
+          "best_score": -253.89999999999998
+        },
+        {
+          "depth": 4,
+          "beam_size": 4,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0016_20260702_124906_783.json",
+      "scenario_id": "puzzle_dump_state_0016_20260702_124906_783",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 7,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 0,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 1,
+        "opp_life": 14,
+        "my_pp": 3,
+        "my_ep": 0,
+        "my_sep": 1,
+        "my_hand_count": 1,
+        "my_field_count": 5,
+        "opp_field_count": 4,
+        "opp_followers": [
+          {
+            "uid": 11,
+            "atk": 1,
+            "life": 3
+          },
+          {
+            "uid": 12,
+            "atk": 2,
+            "life": 2
+          },
+          {
+            "uid": 14,
+            "atk": 2,
+            "life": 2
+          },
+          {
+            "uid": 15,
+            "atk": 2,
+            "life": 2
+          }
+        ]
+      },
+      "score": -278.2,
+      "certainty": "spec_only",
+      "expanded": 7,
+      "actions_enumerated": 7,
+      "predictions": 7,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 1,
+      "certainty_counts": {
+        "spec_only": 7
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 7
+      },
+      "top_unresolved": {},
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 3,
+          "predictions": 3,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -283.52
+        },
+        {
+          "depth": 2,
+          "beam_size": 3,
+          "actions_enumerated": 4,
+          "predictions": 4,
+          "goal_found": 0,
+          "next_candidates": 3,
+          "best_score": -278.2
+        },
+        {
+          "depth": 3,
+          "beam_size": 3,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    },
+    {
+      "path": "decision_engine\\tests\\fixtures\\recorded_scenarios\\puzzle_dump\\state_0017_20260702_124926_573.json",
+      "scenario_id": "puzzle_dump_state_0017_20260702_124926_573",
+      "puzzle_id": null,
+      "goal": {
+        "kind": "lethal",
+        "opponent_life_at_most": 0,
+        "self_survives": false,
+        "turn_limit": "current_turn",
+        "does_not_verify": [
+          "action identity",
+          "LocalPredictor transition correctness",
+          "full puzzle solution"
+        ]
+      },
+      "status": "not_found",
+      "goal_reached": false,
+      "actions": [
+        {
+          "kind": "play",
+          "source_uid": 3,
+          "play_kind": "normal",
+          "cost": 1,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        },
+        {
+          "kind": "play",
+          "source_uid": 4,
+          "play_kind": "normal",
+          "cost": 4,
+          "target_groups": [],
+          "random_target_groups": [],
+          "selected_indexes": [],
+          "material_uids": [],
+          "variant": null
+        }
+      ],
+      "action_count": 2,
+      "final": {
+        "my_life": 20,
+        "opp_life": 20,
+        "my_pp": 1,
+        "my_ep": 0,
+        "my_sep": 0,
+        "my_hand_count": 1,
+        "my_field_count": 2,
+        "opp_field_count": 2,
+        "opp_followers": [
+          {
+            "uid": 10,
+            "atk": 4,
+            "life": 4
+          },
+          {
+            "uid": 11,
+            "atk": 4,
+            "life": 4
+          }
+        ]
+      },
+      "score": -201.49999999999997,
+      "certainty": "partial",
+      "expanded": 5,
+      "actions_enumerated": 4,
+      "predictions": 4,
+      "predict_errors": 0,
+      "unknown_skipped": 0,
+      "duplicate_skipped": 0,
+      "certainty_counts": {
+        "spec_only": 2,
+        "partial": 2
+      },
+      "prediction_descriptions": {
+        "local core rules plus template effects": 2,
+        "template effects enabled but no executable effects matched": 2
+      },
+      "top_unresolved": {
+        "no_executable_template_effects:matched_but_condition_false_or_unresolved": 2,
+        "fanfare": 2
+      },
+      "depths": [
+        {
+          "depth": 1,
+          "beam_size": 1,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -202.79999999999998
+        },
+        {
+          "depth": 2,
+          "beam_size": 2,
+          "actions_enumerated": 2,
+          "predictions": 2,
+          "goal_found": 0,
+          "next_candidates": 2,
+          "best_score": -201.49999999999997
+        },
+        {
+          "depth": 3,
+          "beam_size": 2,
+          "actions_enumerated": 0,
+          "predictions": 0,
+          "goal_found": 0,
+          "next_candidates": 0,
+          "best_score": null
+        }
+      ]
+    }
+  ]
+}

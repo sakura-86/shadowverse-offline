@@ -1,0 +1,65 @@
+{
+  "class_id": 4,
+  "archetype_id": "set10_dragon_face_dragon",
+  "archetype_label": "打脸龙",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10941110,
+      "count": 3
+    },
+    {
+      "card_id": 10941310,
+      "count": 3
+    },
+    {
+      "card_id": 10644120,
+      "count": 3
+    },
+    {
+      "card_id": 10842120,
+      "count": 3
+    },
+    {
+      "card_id": 10942110,
+      "count": 3
+    },
+    {
+      "card_id": 10943310,
+      "count": 2
+    },
+    {
+      "card_id": 10641110,
+      "count": 3
+    },
+    {
+      "card_id": 11042120,
+      "count": 3
+    },
+    {
+      "card_id": 10741120,
+      "count": 3
+    },
+    {
+      "card_id": 10641310,
+      "count": 2
+    },
+    {
+      "card_id": 10943110,
+      "count": 3
+    },
+    {
+      "card_id": 11044120,
+      "count": 3
+    },
+    {
+      "card_id": 10644110,
+      "count": 3
+    },
+    {
+      "card_id": 10944110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

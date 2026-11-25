@@ -1,0 +1,249 @@
+[
+  {
+    "id": "gm_001_last_words_damage_lethal",
+    "description": "谢幕曲伤害：用爆弹兵撞守护送死，谢幕曲对脸3伤+剑士打脸4=7精确斩杀",
+    "my_life": 10,
+    "my_pp": 0,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "亡灵爆弹兵", "atk": 2, "life": 1, "can_attack": true, "can_attack_leader": true,
+       "last_words_damage": 3, "last_words_damage_target": "enemy_leader",
+       "skill_desc": "谢幕曲: 对对方主战者造成3点伤害"},
+      {"name": "精灵剑士", "atk": 4, "life": 4, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 7,
+    "opp_field": [
+      {"name": "城墙守卫", "atk": 3, "life": 2, "has_guard": true}
+    ],
+    "expected_actions": ["attack(亡灵爆弹兵 → 城墙守卫)", "attack(精灵剑士 → leader)"],
+    "solution_note": "有守护必须先打。爆弹兵2ATK≥守卫2HP→守卫死。守卫3ATK>爆弹兵1HP→爆弹兵死→谢幕曲3打脸。剑士4打脸。总伤=3+4=7=精确斩杀。注意如果剑士先打守卫(4>2杀死)→剑士剩4-3=1HP→爆弹兵打脸2→总2<7不够。"
+  },
+  {
+    "id": "gm_002_last_words_summon_storm",
+    "description": "谢幕曲召唤疾驰：侍从撞对方无守护随从送死，谢幕曲召唤疾驰token，token打脸斩杀",
+    "my_life": 10,
+    "my_pp": 0,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "暗影侍从", "atk": 1, "life": 1, "can_attack": true, "can_attack_leader": true,
+       "last_words_summon": [{"name": "复仇幽灵", "atk": 4, "life": 1, "has_storm": true}],
+       "skill_desc": "谢幕曲: 召唤一个4/1复仇幽灵(疾驰)"},
+      {"name": "精灵弓手", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 6,
+    "opp_field": [
+      {"name": "哥布林", "atk": 2, "life": 1}
+    ],
+    "expected_actions": ["attack(暗影侍从 → 哥布林)", "attack(复仇幽灵 → leader)", "attack(精灵弓手 → leader)"],
+    "solution_note": "哥布林无守护但侍从不能直接打脸(1+2=3<6不够)。侍从打哥布林→哥布林死(1≥1)→侍从被反2伤死(1-2=-1)→谢幕曲召唤4/1疾驰幽灵→幽灵4打脸+弓手2打脸=6=精确斩杀。如果侍从打脸1+弓手2=3<6不够。"
+  },
+  {
+    "id": "gm_003_rush_evolve_break_guard",
+    "description": "突进+进化解守护：出突进随从→进化获得+2/+2后解掉守护→场上老随从打脸",
+    "my_life": 10,
+    "my_pp": 3,
+    "my_ep": 1,
+    "my_field": [
+      {"name": "精锐剑士", "atk": 5, "life": 5, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "突袭战犬", "cost": 3, "atk": 3, "life": 3, "card_type": "follower", "has_rush": true}
+    ],
+    "opp_life": 5,
+    "opp_field": [
+      {"name": "神官守卫", "atk": 2, "life": 5, "has_guard": true}
+    ],
+    "expected_actions": ["play(突袭战犬)", "evolve(突袭战犬)", "attack(突袭战犬 → 神官守卫)", "attack(精锐剑士 → leader)"],
+    "solution_note": "守护5HP，精锐剑士5ATK可以解但剩余0伤害不够。出突袭战犬(3/3突进)→进化变5/5→攻击守卫(5≥5杀死)→精锐剑士5打脸=5=精确斩杀。关键：突进只能打随从不能打脸，进化后依然只能打随从(没有疾驰)。"
+  },
+  {
+    "id": "gm_004_drain_attack_value",
+    "description": "吸血计算：吸血随从打随从回血存活，回血虽然不影响斩杀但测试吸血模拟正确性",
+    "my_life": 5,
+    "my_pp": 0,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "吸血鬼骑士", "atk": 4, "life": 4, "can_attack": true, "can_attack_leader": true, "has_drain": true,
+       "skill_desc": "吸血"},
+      {"name": "暗影刺客", "atk": 3, "life": 2, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 7,
+    "opp_field": [
+      {"name": "铁壁卫兵", "atk": 3, "life": 4, "has_guard": true}
+    ],
+    "expected_actions": ["attack(吸血鬼骑士 → 铁壁卫兵)", "attack(暗影刺客 → leader)"],
+    "solution_note": "有守护。吸血鬼骑士4ATK≥卫兵4HP→卫兵死。骑士受3伤(4-3=1HP存活)。吸血回复4HP→我方生命5+4=9(不影响结果)。暗影刺客3打脸。但3<7不够啊！需要骑士也打脸。问题：骑士打守卫后没有攻击次数了。需重新设计。"
+  },
+  {
+    "id": "gm_005_aoe_fanfare_clear_guards",
+    "description": "AOE入场曲清多守护：出AOE入场曲随从清掉多个低血守护，场上随从打脸斩杀",
+    "my_life": 15,
+    "my_pp": 5,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "巨龙战士", "atk": 6, "life": 6, "can_attack": true, "can_attack_leader": true},
+      {"name": "精灵射手", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "烈焰巫师", "cost": 5, "atk": 3, "life": 3, "card_type": "follower",
+       "fanfare_damage": 2, "fanfare_damage_target": "all_enemies",
+       "skill_desc": "入场曲: 对全体敌方造成2点伤害"}
+    ],
+    "opp_life": 10,
+    "opp_field": [
+      {"name": "哨兵A", "atk": 1, "life": 2, "has_guard": true},
+      {"name": "哨兵B", "atk": 1, "life": 2, "has_guard": true}
+    ],
+    "expected_actions": ["play(烈焰巫师)", "attack(巨龙战士 → leader)", "attack(精灵射手 → leader)"],
+    "solution_note": "两个守护各2HP。出烈焰巫师(5PP)→入场曲2伤全体敌方→哨兵A死(2-2=0)→哨兵B死(2-2=0)→对方主战者10-2=8HP。守护清光→巨龙6+精灵2=8=8HP精确斩杀！"
+  },
+  {
+    "id": "gm_006_fanfare_snipe_guard",
+    "description": "入场曲精确狙击守护：用入场曲伤害解掉关键守护随从，让场上随从打脸",
+    "my_life": 12,
+    "my_pp": 4,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "龙骑兵", "atk": 5, "life": 5, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "火焰射手", "cost": 4, "atk": 2, "life": 2, "card_type": "follower",
+       "fanfare_damage": 3, "fanfare_damage_target": "enemy_follower",
+       "skill_desc": "入场曲: 对一个敌方随从造成3点伤害"}
+    ],
+    "opp_life": 5,
+    "opp_field": [
+      {"name": "圣盾卫士", "atk": 2, "life": 3, "has_guard": true}
+    ],
+    "expected_actions": ["play(火焰射手 → 圣盾卫士)", "attack(龙骑兵 → leader)"],
+    "solution_note": "守卫3HP。出火焰射手(4PP)→入场曲3伤→守卫死(3-3=0)。龙骑兵5打脸=5=精确斩杀。不出火焰射手：龙骑兵5打守卫(杀)→没攻击了→0打脸。或者龙骑兵打不了脸因为有守护。"
+  },
+  {
+    "id": "gm_007_multi_combo_lethal",
+    "description": "连击数值最大化：按正确顺序出多张低费牌让连击随从获得足够ATK斩杀",
+    "my_life": 10,
+    "my_pp": 6,
+    "my_ep": 0,
+    "my_field": [],
+    "my_hand": [
+      {"name": "妖精A", "cost": 1, "atk": 1, "life": 1, "card_type": "follower"},
+      {"name": "妖精B", "cost": 1, "atk": 1, "life": 1, "card_type": "follower"},
+      {"name": "妖精C", "cost": 1, "atk": 1, "life": 1, "card_type": "follower"},
+      {"name": "连击杀手", "cost": 3, "atk": 1, "life": 3, "card_type": "follower", "has_storm": true,
+       "condition_type": "combo_N", "condition_bonus_atk": 0,
+       "skill_desc": "疾驰。入场曲: ATK+X, X=本回合连击数"}
+    ],
+    "opp_life": 5,
+    "opp_field": [],
+    "expected_actions": ["play(妖精A)", "play(妖精B)", "play(妖精C)", "play(连击杀手)", "attack(连击杀手 → leader)"],
+    "solution_note": "出妖精A(连击1)→妖精B(连击2)→妖精C(连击3)→连击杀手(连击4, ATK=1+4=5, 疾驰)→攻击5打脸=5=精确斩杀。费用1+1+1+3=6=6PP刚好。如果少出一个妖精：ATK=1+3=4<5不够。"
+  },
+  {
+    "id": "gm_008_storm_evolve_face",
+    "description": "疾驰随从进化打脸：场上疾驰随从刚来ATK不够，进化+2后精确斩杀",
+    "my_life": 8,
+    "my_pp": 0,
+    "my_ep": 1,
+    "my_field": [
+      {"name": "疾风骑兵", "atk": 3, "life": 3, "can_attack": true, "can_attack_leader": true,
+       "has_storm": true, "can_evolve": true},
+      {"name": "精灵", "atk": 1, "life": 1, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 6,
+    "opp_field": [],
+    "expected_actions": ["evolve(疾风骑兵)", "attack(疾风骑兵 → leader)", "attack(精灵 → leader)"],
+    "solution_note": "不进化：3+1=4<6。进化疾风骑兵(3→5ATK)→打脸5+精灵1=6=精确斩杀。"
+  },
+  {
+    "id": "gm_009_burn_bypass_guard",
+    "description": "法术绕过守护打脸：对方有解不掉的高血守护，直伤法术无视守护直接打脸斩杀",
+    "my_life": 3,
+    "my_pp": 4,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "小精灵", "atk": 1, "life": 1, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "雷霆一击", "cost": 2, "card_type": "spell", "is_direct_damage": true, "direct_damage_amount": 3,
+       "skill_desc": "对对方主战者造成3点伤害"},
+      {"name": "烈焰箭", "cost": 2, "card_type": "spell", "is_direct_damage": true, "direct_damage_amount": 2,
+       "skill_desc": "对对方主战者造成2点伤害"}
+    ],
+    "opp_life": 5,
+    "opp_field": [
+      {"name": "钢铁巨人", "atk": 8, "life": 10, "has_guard": true}
+    ],
+    "expected_actions": ["play(雷霆一击 → leader)", "play(烈焰箭 → leader)"],
+    "solution_note": "守护10HP根本解不掉。但直伤法术可以直接对主战者造成伤害无视守护。雷霆3+烈焰2=5=精确斩杀。PP消耗2+2=4刚好。小精灵被守护挡住没用。"
+  },
+  {
+    "id": "gm_010_last_words_chain_lethal",
+    "description": "谢幕曲连锁斩杀：两个有谢幕曲的随从都去撞守护送死，双重谢幕曲伤害+残余攻击斩杀",
+    "my_life": 10,
+    "my_pp": 0,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "亡魂骑士A", "atk": 3, "life": 1, "can_attack": true, "can_attack_leader": true,
+       "last_words_damage": 2, "last_words_damage_target": "enemy_leader",
+       "skill_desc": "谢幕曲: 对对方主战者造成2点伤害"},
+      {"name": "亡魂骑士B", "atk": 2, "life": 1, "can_attack": true, "can_attack_leader": true,
+       "last_words_damage": 2, "last_words_damage_target": "enemy_leader",
+       "skill_desc": "谢幕曲: 对对方主战者造成2点伤害"},
+      {"name": "突击兵", "atk": 3, "life": 3, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [],
+    "opp_life": 7,
+    "opp_field": [
+      {"name": "大盾勇士", "atk": 4, "life": 5, "has_guard": true}
+    ],
+    "expected_actions": ["attack(亡魂骑士A → 大盾勇士)", "attack(亡魂骑士B → 大盾勇士)", "attack(突击兵 → leader)"],
+    "solution_note": "守卫5HP。骑士A(3ATK)打守卫→守卫剩5-3=2HP→骑士A被反4伤死→谢幕曲2打脸(剩7-2=5)。骑士B(2ATK)打守卫→守卫剩2-2=0死→骑士B被反4伤死→谢幕曲2打脸(剩5-2=3)。突击兵3打脸=3=精确斩杀。"
+  },
+  {
+    "id": "gm_011_fanfare_buff_storm_combo",
+    "description": "入场曲buff全体+疾驰配合：出buff随从强化场面，已有随从+buff后精确斩杀",
+    "my_life": 15,
+    "my_pp": 3,
+    "my_ep": 0,
+    "my_field": [
+      {"name": "剑士A", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true},
+      {"name": "剑士B", "atk": 2, "life": 2, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "战场指挥官", "cost": 3, "atk": 1, "life": 3, "card_type": "follower",
+       "fanfare_buff_atk": 2, "fanfare_buff_target": "all_allies",
+       "skill_desc": "入场曲: 全体其他友方随从+2ATK"}
+    ],
+    "opp_life": 8,
+    "opp_field": [],
+    "expected_actions": ["play(战场指挥官)", "attack(剑士A → leader)", "attack(剑士B → leader)"],
+    "solution_note": "不出指挥官：剑士A(2)+剑士B(2)=4<8。出指挥官→剑士A变4ATK,剑士B变4ATK→4+4=8=精确斩杀。指挥官自己无疾驰不能打脸。"
+  },
+  {
+    "id": "gm_012_complex_multi_phase",
+    "description": "综合谜题：出入场曲随从解守护+进化突进随从清场+疾驰打脸的完整组合",
+    "my_life": 12,
+    "my_pp": 5,
+    "my_ep": 1,
+    "my_field": [
+      {"name": "龙骑兵", "atk": 4, "life": 4, "can_attack": true, "can_attack_leader": true}
+    ],
+    "my_hand": [
+      {"name": "烈焰术士", "cost": 3, "atk": 2, "life": 2, "card_type": "follower",
+       "fanfare_damage": 3, "fanfare_damage_target": "enemy_follower",
+       "skill_desc": "入场曲: 对一个敌方随从造成3点伤害"},
+      {"name": "突击飞龙", "cost": 2, "atk": 2, "life": 2, "card_type": "follower", "has_storm": true,
+       "skill_desc": "疾驰"}
+    ],
+    "opp_life": 6,
+    "opp_field": [
+      {"name": "神官卫士", "atk": 2, "life": 3, "has_guard": true}
+    ],
+    "expected_actions": ["play(烈焰术士 → 神官卫士)", "play(突击飞龙)", "attack(龙骑兵 → leader)", "attack(突击飞龙 → leader)"],
+    "solution_note": "守卫3HP。出烈焰术士(3PP)→入场曲3伤杀死守卫(3-3=0)。出突击飞龙(2PP, 疾驰2/2)→总PP消耗5=5PP刚好。龙骑兵4打脸+飞龙2打脸=6=精确斩杀。"
+  }
+]

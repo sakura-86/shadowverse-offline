@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_special_action_template_damage",
+  "metadata": {
+    "id": "special_action_template_damage",
+    "title": "Special action template damage",
+    "description": "A special action resolves a deterministic template damage effect."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 31,
+            "CardId": 831,
+            "BaseCardId": 831,
+            "Name": "Fixture Special Action Source",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 1,
+            "MaxLife": 1,
+            "CardType": "follower",
+            "CanSpecialAction": true
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ],
+    "CanSpecialActionFieldCards": [31]
+  },
+  "transitions": [
+    {
+      "note": "Special action deals 1 damage to opponent leader via template effect.",
+      "action": {
+        "kind": "special_action",
+        "source_uid": 31
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "Players": [
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [
+              {
+                "UniqueId": 31,
+                "CardId": 831,
+                "BaseCardId": 831,
+                "Name": "Fixture Special Action Source",
+                "Cost": 1,
+                "Atk": 1,
+                "Life": 1,
+                "MaxLife": 1,
+                "CardType": "follower",
+                "CanSpecialAction": true
+              }
+            ],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          },
+          {
+            "Life": 19,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          }
+        ],
+        "CanSpecialActionFieldCards": [31]
+      }
+    }
+  ]
+}

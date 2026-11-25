@@ -1,0 +1,69 @@
+{
+  "class_id": 2,
+  "archetype_id": "set10_royal_rally_royal",
+  "archetype_label": "连携皇",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10021110,
+      "count": 3
+    },
+    {
+      "card_id": 10722310,
+      "count": 3
+    },
+    {
+      "card_id": 10621110,
+      "count": 2
+    },
+    {
+      "card_id": 10624120,
+      "count": 3
+    },
+    {
+      "card_id": 10722110,
+      "count": 3
+    },
+    {
+      "card_id": 10721120,
+      "count": 3
+    },
+    {
+      "card_id": 11024120,
+      "count": 3
+    },
+    {
+      "card_id": 10724110,
+      "count": 3
+    },
+    {
+      "card_id": 10722120,
+      "count": 2
+    },
+    {
+      "card_id": 10723110,
+      "count": 3
+    },
+    {
+      "card_id": 10824110,
+      "count": 3
+    },
+    {
+      "card_id": 10624110,
+      "count": 2
+    },
+    {
+      "card_id": 10724120,
+      "count": 3
+    },
+    {
+      "card_id": 10021130,
+      "count": 1
+    },
+    {
+      "card_id": 10824120,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

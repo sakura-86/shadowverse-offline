@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_last_words_chain_destroy_damage",
+  "metadata": {
+    "id": "last_words_chain_destroy_damage",
+    "title": "Last Words effect destroys another Last Words follower",
+    "description": "My follower attacks and destroys enemy follower A. A's Last Words destroys enemy follower B, then B's Last Words deals fixed damage to my leader."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 1,
+            "CardId": 721,
+            "BaseCardId": 721,
+            "Name": "Fixture Chain Attacker",
+            "Cost": 1,
+            "Atk": 3,
+            "Life": 5,
+            "MaxLife": 5,
+            "CardType": "follower"
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 2,
+            "CardId": 722,
+            "BaseCardId": 722,
+            "Name": "Fixture Chain Destroyer",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 3,
+            "MaxLife": 3,
+            "CardType": "follower",
+            "HasLastWord": true
+          },
+          {
+            "UniqueId": 3,
+            "CardId": 723,
+            "BaseCardId": 723,
+            "Name": "Fixture Chain Damage",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 2,
+            "MaxLife": 2,
+            "CardType": "follower",
+            "HasLastWord": true
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ],
+    "CanAttackFieldCards": [1],
+    "AttackTargetsMap": {"1": [2]}
+  },
+  "transitions": [
+    {
+      "note": "Last Words of uid 2 destroys uid 3, then uid 3 Last Words deals 2 damage to my leader.",
+      "action": {
+        "kind": "attack_follower",
+        "source_uid": 1,
+        "target_groups": [[2]]
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "Players": [
+          {
+            "Life": 18,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [
+              {
+                "UniqueId": 1,
+                "CardId": 721,
+                "BaseCardId": 721,
+                "Name": "Fixture Chain Attacker",
+                "Cost": 1,
+                "Atk": 3,
+                "Life": 4,
+                "MaxLife": 5,
+                "CardType": "follower"
+              }
+            ],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          },
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 2,
+            "DestroyedCardIds": [
+              {"CardId": 722, "Count": 0},
+              {"CardId": 723, "Count": 0}
+            ]
+          }
+        ],
+        "CanAttackFieldCards": [],
+        "AttackTargetsMap": {}
+      }
+    }
+  ]
+}

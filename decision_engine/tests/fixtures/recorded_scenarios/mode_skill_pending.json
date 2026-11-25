@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "mode_skill_pending",
+    "title": "Pending CanModeSkillCards evidence scenario",
+    "status": "pending",
+    "requires_runtime_confirmation": true,
+    "pending_fields": ["CanModeSkillCards"],
+    "description": "Mock evidence fixture for mode skill candidate shape only. Candidate indexes are not confirmed executable action parameters."
+  },
+  "source": "protocol_mock_pending_evidence",
+  "note": "Contains only pending CanModeSkillCards candidates and no currently supported Can* legal-action fields.",
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 4,
+        "MaxPP": 4,
+        "HandCards": [
+          {
+            "UniqueId": 2201,
+            "CardId": 862201,
+            "BaseCardId": 862200,
+            "Name": "Pending Mode Source",
+            "Cost": 3,
+            "Atk": 0,
+            "Life": 0,
+            "MaxLife": 0,
+            "CardType": "spell"
+          }
+        ],
+        "FieldCards": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": []
+      }
+    ],
+    "CanModeSkillCards": {
+      "2201": {
+        "ModeGroup": 1,
+        "ModeCount": 2,
+        "SelectCount": 1,
+        "CandidateIndexList": [0, 1]
+      }
+    }
+  },
+  "transitions": []
+}

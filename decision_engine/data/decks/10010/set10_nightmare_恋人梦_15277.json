@@ -1,0 +1,65 @@
+{
+  "class_id": 5,
+  "archetype_id": "set10_nightmare_lover_nightmare",
+  "archetype_label": "恋人梦",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10503210,
+      "count": 3
+    },
+    {
+      "card_id": 10052110,
+      "count": 3
+    },
+    {
+      "card_id": 10851120,
+      "count": 3
+    },
+    {
+      "card_id": 11051310,
+      "count": 3
+    },
+    {
+      "card_id": 10803310,
+      "count": 3
+    },
+    {
+      "card_id": 10751110,
+      "count": 3
+    },
+    {
+      "card_id": 11054120,
+      "count": 3
+    },
+    {
+      "card_id": 10552310,
+      "count": 3
+    },
+    {
+      "card_id": 10651120,
+      "count": 3
+    },
+    {
+      "card_id": 10753310,
+      "count": 3
+    },
+    {
+      "card_id": 10851110,
+      "count": 2
+    },
+    {
+      "card_id": 10853110,
+      "count": 3
+    },
+    {
+      "card_id": 10502110,
+      "count": 2
+    },
+    {
+      "card_id": 10554110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

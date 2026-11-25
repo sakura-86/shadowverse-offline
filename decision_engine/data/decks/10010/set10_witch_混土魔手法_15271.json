@@ -1,0 +1,73 @@
+{
+  "class_id": 3,
+  "archetype_id": "set10_witch_hybrid_earth_spellhand_witch",
+  "archetype_label": "混土魔手法",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10631110,
+      "count": 2
+    },
+    {
+      "card_id": 10831310,
+      "count": 3
+    },
+    {
+      "card_id": 10632310,
+      "count": 2
+    },
+    {
+      "card_id": 11032310,
+      "count": 3
+    },
+    {
+      "card_id": 10031210,
+      "count": 3
+    },
+    {
+      "card_id": 10803310,
+      "count": 2
+    },
+    {
+      "card_id": 10531310,
+      "count": 1
+    },
+    {
+      "card_id": 10631310,
+      "count": 3
+    },
+    {
+      "card_id": 10732310,
+      "count": 2
+    },
+    {
+      "card_id": 11033310,
+      "count": 3
+    },
+    {
+      "card_id": 10634110,
+      "count": 3
+    },
+    {
+      "card_id": 10833310,
+      "count": 3
+    },
+    {
+      "card_id": 11034110,
+      "count": 1
+    },
+    {
+      "card_id": 10633310,
+      "count": 3
+    },
+    {
+      "card_id": 10733110,
+      "count": 3
+    },
+    {
+      "card_id": 10634120,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

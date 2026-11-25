@@ -1,0 +1,34 @@
+{
+  "schema": "PuzzleDumpRootPatchManifest",
+  "version": 1,
+  "patches": [
+    {
+      "raw_dump": "puzzle_dump/state_0001_20260701_163140_583.json",
+      "reason": "Captured puzzle start has protocol legal actions but is_turn_ended was marked true.",
+      "set": {
+        "is_turn_ended": false
+      }
+    },
+    {
+      "raw_dump": "puzzle_dump/state_0001_20260701_174511_925.json",
+      "reason": "Captured puzzle start has protocol legal actions but is_turn_ended was marked true.",
+      "set": {
+        "is_turn_ended": false
+      }
+    },
+    {
+      "raw_dump": "puzzle_dump/state_0001_20260701_175144_507.json",
+      "reason": "Captured puzzle start has protocol legal actions but is_turn_ended was marked true.",
+      "set": {
+        "is_turn_ended": false
+      }
+    },
+    {
+      "raw_dump": "puzzle_dump/state_0001_20260702_120632_482.json",
+      "reason": "Captured puzzle start has protocol legal actions but is_turn_ended was marked true.",
+      "set": {
+        "is_turn_ended": false
+      }
+    }
+  ]
+}

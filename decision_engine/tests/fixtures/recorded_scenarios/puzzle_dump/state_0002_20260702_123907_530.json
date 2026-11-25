@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "puzzle_dump_state_0002_20260702_123907_530",
+    "title": "Puzzle dump current-turn fixture: state_0002_20260702_123907_530",
+    "status": "pending",
+    "source_kind": "puzzle_dump_current_turn_fixture",
+    "requires_runtime_confirmation": true,
+    "raw_dump": "puzzle_dump/state_0002_20260702_123907_530.json",
+    "raw_stem": "state_0002_20260702_123907_530",
+    "raw_prefix": "state",
+    "raw_index": 2,
+    "raw_timestamp": "20260702_123907_530",
+    "normalized_root": false,
+    "root_patches": [],
+    "identity_enriched": true,
+    "identity_enrichment_count": 6,
+    "identity_enrichment": [
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 0,
+        "unique_id": 4,
+        "card_id": 10762110,
+        "updates": {
+          "base_card_id": 10762110,
+          "name": "神圣策划人"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 1,
+        "unique_id": 5,
+        "card_id": 10763210,
+        "updates": {
+          "base_card_id": 10763210,
+          "name": "海蚀三叉戟"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "hand_cards",
+        "card_index": 2,
+        "unique_id": 6,
+        "card_id": 10461210,
+        "updates": {
+          "base_card_id": 10461210,
+          "name": "莉莉艾的鼓舞"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 0,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 3,
+        "card_id": 10661112,
+        "updates": {
+          "base_card_id": 10661112,
+          "name": "结晶：崇奉的懦者"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 0,
+        "unique_id": 12,
+        "card_id": 10771110,
+        "updates": {
+          "base_card_id": 10771110,
+          "name": "个性店主"
+        },
+        "source": "card_database"
+      },
+      {
+        "player_index": 1,
+        "zone": "field_cards",
+        "card_index": 1,
+        "unique_id": 13,
+        "card_id": 90071150,
+        "updates": {
+          "base_card_id": 90071150,
+          "name": "神秘的创造物"
+        },
+        "source": "card_database"
+      }
+    ],
+    "turn_limit": "current_turn",
+    "executable_transition_count": 0,
+    "converted_transition_count": 0,
+    "is_bare_battle_root": true,
+    "is_svhook_raw_envelope": false,
+    "has_action_request": false,
+    "has_action_response": false,
+    "fixture_role": "current_turn_puzzle_search_start",
+    "pending_fields": [
+      "solution_transitions"
+    ],
+    "actionable_action_count": 4,
+    "non_turn_end_action_count": 3,
+    "legal_action_counts": {
+      "play": 3,
+      "attack_leader": 0,
+      "attack_follower": 0,
+      "evolve": 0,
+      "super_evolve": 0,
+      "activate": 0,
+      "fusion": 0,
+      "special_action": 0,
+      "extra_pp": 0,
+      "turn_end": 1,
+      "turn_start": 0
+    },
+    "legal_field_counts": {
+      "can_play_cards": 3,
+      "can_attack_leader_cards": 0,
+      "can_attack_field_cards": 0,
+      "can_evolve_cards": 0,
+      "can_super_evolve_cards": 0,
+      "can_fusion_cards": 0,
+      "can_activation_field_cards": 0,
+      "can_special_action_field_cards": 0,
+      "can_enhance_play_cards": 0,
+      "can_accelerate_play_cards": 0,
+      "can_crystal_play_cards": 0,
+      "can_super_evolve_with_skill_cards": 0,
+      "can_play_cards_with_ex_pp": 0,
+      "can_activation_field_cards_with_ex_pp": 0
+    },
+    "player_summary": {
+      "my_life": 20,
+      "opp_life": 20,
+      "my_pp": 5,
+      "my_ep": 0,
+      "my_sep": 0,
+      "my_hand_count": 3,
+      "my_field_count": 1,
+      "opp_field_count": 2
+    },
+    "adapter_snapshot_summary": {
+      "is_ally_turn": true,
+      "is_turn_ended": false,
+      "cards_by_uid_count": 6
+    }
+  },
+  "source": "puzzle_dump/state_0002_20260702_123907_530.json",
+  "expected_goal": {
+    "kind": "lethal",
+    "opponent_life_at_most": 0,
+    "self_survives": false,
+    "turn_limit": "current_turn",
+    "does_not_verify": [
+      "action identity",
+      "LocalPredictor transition correctness",
+      "full puzzle solution"
+    ]
+  },
+  "note": "Converted from a bare puzzle_dump BattleRoot-like state. It is an independent current-turn puzzle start; no action_request/action_response exists, so transitions are intentionally empty.",
+  "initial_root": {
+    "is_ally_turn": true,
+    "is_turn_ended": false,
+    "can_play_cards": [
+      4,
+      5,
+      6
+    ],
+    "can_attack_leader_cards": [],
+    "can_attack_field_cards": [],
+    "can_evolve_cards": [],
+    "can_super_evolve_cards": [],
+    "can_fusion_cards": [],
+    "can_activation_field_cards": [],
+    "can_special_action_field_cards": [],
+    "attack_targets_map": {
+      "3": []
+    },
+    "players": [
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 5,
+        "max_pp": 5,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 0,
+        "max_sep": 2,
+        "super_evolve_turn": 7,
+        "deck_count": 5,
+        "turn": 5,
+        "cemetery_count": 0,
+        "is_first_side": true,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 1,
+        "hand_cards": [
+          {
+            "unique_id": 4,
+            "card_id": 10762110,
+            "cost": 2,
+            "atk": 2,
+            "life": 2,
+            "card_type": 1,
+            "base_card_id": 10762110,
+            "name": "神圣策划人"
+          },
+          {
+            "unique_id": 5,
+            "card_id": 10763210,
+            "cost": 3,
+            "atk": 0,
+            "life": 0,
+            "card_type": 2,
+            "base_card_id": 10763210,
+            "name": "海蚀三叉戟"
+          },
+          {
+            "unique_id": 6,
+            "card_id": 10461210,
+            "cost": 0,
+            "atk": 0,
+            "life": 0,
+            "card_type": 2,
+            "base_card_id": 10461210,
+            "name": "莉莉艾的鼓舞"
+          }
+        ],
+        "field_cards": [
+          {
+            "unique_id": 3,
+            "card_id": 10661112,
+            "cost": 2,
+            "atk": 0,
+            "life": 0,
+            "max_life": 0,
+            "card_type": 3,
+            "evolve_state": 0,
+            "countdown": 2,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10661112,
+            "name": "结晶：崇奉的懦者"
+          }
+        ]
+      },
+      {
+        "life": 20,
+        "max_life": 20,
+        "pp": 4,
+        "max_pp": 4,
+        "ep": 0,
+        "max_ep": 2,
+        "sep": 0,
+        "max_sep": 2,
+        "super_evolve_turn": 6,
+        "deck_count": 5,
+        "turn": 4,
+        "cemetery_count": 0,
+        "is_first_side": false,
+        "is_kakusei": false,
+        "play_count": 0,
+        "unique_id": 2,
+        "hand_cards": [],
+        "field_cards": [
+          {
+            "unique_id": 12,
+            "card_id": 10771110,
+            "cost": 4,
+            "atk": 5,
+            "life": 5,
+            "max_life": 5,
+            "card_type": 1,
+            "evolve_state": 1,
+            "countdown": 0,
+            "has_guard": false,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 10771110,
+            "name": "个性店主"
+          },
+          {
+            "unique_id": 13,
+            "card_id": 90071150,
+            "cost": 3,
+            "atk": 4,
+            "life": 5,
+            "max_life": 5,
+            "card_type": 1,
+            "evolve_state": 0,
+            "countdown": 0,
+            "has_guard": true,
+            "has_drain": false,
+            "has_killer": false,
+            "has_sneak": false,
+            "base_card_id": 90071150,
+            "name": "神秘的创造物"
+          }
+        ]
+      }
+    ]
+  },
+  "transitions": []
+}

@@ -1,0 +1,65 @@
+{
+  "class_id": 2,
+  "archetype_id": "set10_royal_pirate_royal",
+  "archetype_label": "海贼皇",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10021110,
+      "count": 3
+    },
+    {
+      "card_id": 10722310,
+      "count": 2
+    },
+    {
+      "card_id": 10624120,
+      "count": 3
+    },
+    {
+      "card_id": 10722110,
+      "count": 3
+    },
+    {
+      "card_id": 10921110,
+      "count": 3
+    },
+    {
+      "card_id": 10922110,
+      "count": 3
+    },
+    {
+      "card_id": 11024120,
+      "count": 3
+    },
+    {
+      "card_id": 10523310,
+      "count": 3
+    },
+    {
+      "card_id": 10922310,
+      "count": 2
+    },
+    {
+      "card_id": 10923310,
+      "count": 3
+    },
+    {
+      "card_id": 10524120,
+      "count": 3
+    },
+    {
+      "card_id": 10923110,
+      "count": 3
+    },
+    {
+      "card_id": 10924110,
+      "count": 3
+    },
+    {
+      "card_id": 10824120,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

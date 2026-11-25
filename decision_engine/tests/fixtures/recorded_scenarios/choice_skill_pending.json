@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "id": "choice_skill_pending",
+    "title": "Pending ChoiceSkillMap evidence scenario",
+    "status": "pending",
+    "requires_runtime_confirmation": true,
+    "pending_fields": ["ChoiceSkillMap"],
+    "description": "Mock evidence fixture for ChoiceSkillMap shape only. It must not be treated as confirmed executable action mapping."
+  },
+  "source": "protocol_mock_pending_evidence",
+  "note": "Contains only pending ChoiceSkillMap candidates and no currently supported Can* legal-action fields.",
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 3,
+        "MaxPP": 3,
+        "HandCards": [
+          {
+            "UniqueId": 2101,
+            "CardId": 862101,
+            "BaseCardId": 862100,
+            "Name": "Pending Choice Source",
+            "Cost": 2,
+            "Atk": 0,
+            "Life": 0,
+            "MaxLife": 0,
+            "CardType": "spell"
+          }
+        ],
+        "FieldCards": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": []
+      }
+    ],
+    "ChoiceSkillMap": {
+      "play": {
+        "2101": {
+          "ChoiceCount": 1,
+          "ChoiceIdList": [862111, 862112],
+          "ChoiceType": "runtime_unconfirmed"
+        }
+      }
+    }
+  },
+  "transitions": []
+}

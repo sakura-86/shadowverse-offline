@@ -1,0 +1,65 @@
+{
+  "class_id": 4,
+  "archetype_id": "set10_dragon_ramp_dragon",
+  "archetype_label": "跳费龙",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 11041110,
+      "count": 3
+    },
+    {
+      "card_id": 11001110,
+      "count": 3
+    },
+    {
+      "card_id": 10543310,
+      "count": 3
+    },
+    {
+      "card_id": 11002110,
+      "count": 3
+    },
+    {
+      "card_id": 10042310,
+      "count": 3
+    },
+    {
+      "card_id": 11041310,
+      "count": 2
+    },
+    {
+      "card_id": 11043110,
+      "count": 3
+    },
+    {
+      "card_id": 10741310,
+      "count": 3
+    },
+    {
+      "card_id": 10644110,
+      "count": 3
+    },
+    {
+      "card_id": 10944120,
+      "count": 3
+    },
+    {
+      "card_id": 10844120,
+      "count": 3
+    },
+    {
+      "card_id": 10744110,
+      "count": 2
+    },
+    {
+      "card_id": 10544110,
+      "count": 3
+    },
+    {
+      "card_id": 11044110,
+      "count": 3
+    }
+  ],
+  "total_cards": 40
+}

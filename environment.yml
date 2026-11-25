@@ -1,0 +1,20 @@
+name: svagent
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch==2.5.1+cu121
+      - msgpack==1.1.2
+      - lz4==4.4.5
+
+# NOTE: 安装 torch 时需要指定 --index-url:
+#   pip install torch==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+#   pip install msgpack==1.1.2 lz4==4.4.5
+#
+# 或者直接用 conda 创建后手动安装:
+#   conda create -n svagent python=3.10 pip -c defaults -y
+#   conda activate svagent
+#   pip install torch==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+#   pip install msgpack==1.1.2 lz4==4.4.5

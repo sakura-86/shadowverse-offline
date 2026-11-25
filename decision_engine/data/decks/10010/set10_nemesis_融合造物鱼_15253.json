@@ -1,0 +1,73 @@
+{
+  "class_id": 7,
+  "archetype_id": "set10_nemesis_fusion_artifact_nemesis",
+  "archetype_label": "融合造物鱼",
+  "format": "rotation",
+  "cards": [
+    {
+      "card_id": 10573310,
+      "count": 3
+    },
+    {
+      "card_id": 10771310,
+      "count": 3
+    },
+    {
+      "card_id": 11073310,
+      "count": 2
+    },
+    {
+      "card_id": 10574120,
+      "count": 3
+    },
+    {
+      "card_id": 10874120,
+      "count": 3
+    },
+    {
+      "card_id": 11071110,
+      "count": 3
+    },
+    {
+      "card_id": 11072110,
+      "count": 2
+    },
+    {
+      "card_id": 11074120,
+      "count": 3
+    },
+    {
+      "card_id": 10774120,
+      "count": 3
+    },
+    {
+      "card_id": 10874110,
+      "count": 2
+    },
+    {
+      "card_id": 11072120,
+      "count": 2
+    },
+    {
+      "card_id": 10674110,
+      "count": 2
+    },
+    {
+      "card_id": 10974120,
+      "count": 2
+    },
+    {
+      "card_id": 10673110,
+      "count": 2
+    },
+    {
+      "card_id": 10774110,
+      "count": 3
+    },
+    {
+      "card_id": 11074110,
+      "count": 2
+    }
+  ],
+  "total_cards": 40
+}

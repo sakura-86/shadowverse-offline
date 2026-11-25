@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "source": "unit_test_last_words_attack_damage_leader",
+  "metadata": {
+    "id": "last_words_attack_damage_leader",
+    "title": "Attack follower triggers deterministic Last Words damage",
+    "description": "My follower attacks and destroys an enemy follower. The enemy follower's template Last Words effect deals 2 fixed damage to my leader; recorded next_root is the expected after state."
+  },
+  "initial_root": {
+    "IsAllyTurn": true,
+    "Players": [
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 1,
+            "CardId": 701,
+            "BaseCardId": 701,
+            "Name": "Fixture Attacker",
+            "Cost": 1,
+            "Atk": 3,
+            "Life": 5,
+            "MaxLife": 5,
+            "CardType": "follower"
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      },
+      {
+        "Life": 20,
+        "MaxLife": 20,
+        "PP": 0,
+        "MaxPP": 0,
+        "HandCards": [],
+        "FieldCards": [
+          {
+            "UniqueId": 2,
+            "CardId": 702,
+            "BaseCardId": 702,
+            "Name": "Fixture Last Words Follower",
+            "Cost": 1,
+            "Atk": 1,
+            "Life": 3,
+            "MaxLife": 3,
+            "CardType": "follower",
+            "HasLastWord": true
+          }
+        ],
+        "GraveyardCount": 0,
+        "DestroyedCardIds": []
+      }
+    ],
+    "CanAttackFieldCards": [1],
+    "AttackTargetsMap": {"1": [2]}
+  },
+  "transitions": [
+    {
+      "note": "The destroyed enemy follower's LAST_WORDS event is resolved by an opt-in template effect.",
+      "action": {
+        "kind": "attack_follower",
+        "source_uid": 1,
+        "target_groups": [[2]]
+      },
+      "next_root": {
+        "IsAllyTurn": true,
+        "Players": [
+          {
+            "Life": 18,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [
+              {
+                "UniqueId": 1,
+                "CardId": 701,
+                "BaseCardId": 701,
+                "Name": "Fixture Attacker",
+                "Cost": 1,
+                "Atk": 3,
+                "Life": 4,
+                "MaxLife": 5,
+                "CardType": "follower"
+              }
+            ],
+            "GraveyardCount": 0,
+            "DestroyedCardIds": []
+          },
+          {
+            "Life": 20,
+            "MaxLife": 20,
+            "PP": 0,
+            "MaxPP": 0,
+            "HandCards": [],
+            "FieldCards": [],
+            "GraveyardCount": 1,
+            "DestroyedCardIds": [
+              {"CardId": 702, "Count": 0}
+            ]
+          }
+        ],
+        "CanAttackFieldCards": [],
+        "AttackTargetsMap": {}
+      }
+    }
+  ]
+}
